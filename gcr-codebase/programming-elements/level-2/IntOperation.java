@@ -21,13 +21,8 @@ public class IntOperation {
         double result3 = c + a / b;
         double result4 = a % b + c;
 
-        // Output
-        System.out.println("The results of Double Operations are:");
-        System.out.println("a + b * c = " + result1);
-        System.out.println("a * b + c = " + result2);
-        System.out.println("c + a / b = " + result3);
-        System.out.println("a % b + c = " + result4);
-
-        sc.close();
+        //printing the IntOperation
+	System.out.println("The results of Double Operations are "+result1+" , "+result2+" , "+result3+" , and "+result4);
+	sc.close();
     }
 }
