@@ -12,7 +12,7 @@ public class SideOfSquare{
 		// Calculating Side of Square using Perimeter
 		double side = perimeter / 4;
 		
-		// Printing Side of Square
+		// Printing Side of Square and it's perimeter
 		System.out.println("The length of the side is " + side +" whose perimeter is " + perimeter);
 		
 		input.close(); // Closing the Scanner Object
