@@ -18,7 +18,7 @@ public class SumOfNaturalNumber{
 				num = num - 1;
 			}
 			
-			// Checking if counter reaches to 1 using for loop
+			// Comparing both sum result using == operator 
 			System.out.println(sumFormula == sum);
 			
 		sc.close(); // Closing the Scanner Object
