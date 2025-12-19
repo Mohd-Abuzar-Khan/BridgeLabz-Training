@@ -1,40 +1,46 @@
 import java.util.Scanner;
 
 public class Frequency {
-	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		
-		//Taking a number as an input
-		System.out.println("Enter a number :");
-		int num = sc.nextInt();
-		int count = 0;
-		int index = 0;
-		
-		while(num > 0){
-			int digit = num % 10;
-			num = num / 10;
-			count = count + 1;
-		}
-		
-		int arr[] = new int[count];
-		
-		while(num > 0){
-			int digit = num % 10;
-			num = num / 10;
-			arr[index] = digit;
-			index = index + 1;
-		}
-		
-		int frequency[] = new int[10];
-		
-		for (int i = 0; i < count; i++){
-			frequency[arr[i]] = frequency[arr[i]] + 1;
-		}
-		
-		for (int j = 0; j < count; j ++ ){
-			System.out.println(" The frequency of number " + arr[j] + " is " + frequency[arr[j]]);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-		}
-			
-	}
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+
+        int temp = num;   // store original number
+        int count = 0;
+
+        // Count digits
+        while (temp > 0) {
+            count++;
+            temp = temp / 10;
+        }
+
+        int arr[] = new int[count];
+        temp = num;   // reset temp
+        int index = 0;
+
+        // Store digits in array
+        while (temp > 0) {
+            arr[index] = temp % 10;
+            temp = temp / 10;
+            index++;
+        }
+
+        int frequency[] = new int[10];
+
+        // Calculate frequency
+        for (int i = 0; i < count; i++) {
+            frequency[arr[i]]++;
+        }
+
+        // Print frequency
+        for (int i = 0; i < 10; i++) {
+            if (frequency[i] > 0) {
+                System.out.println("Frequency of " + i + " is " + frequency[i]);
+            }
+        }
+
+        sc.close();
+    }
 }
