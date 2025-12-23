@@ -37,12 +37,12 @@ public class Anagram{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first text: ");
         String text1 = sc.nextLine();
-
+		
         System.out.print("Enter second text: ");
         String text2 = sc.nextLine();
 
         // Check anagram
-        boolean result = IsAnagram.isAnagram(text1, text2);
+        boolean result = Anagram.isAnagram(text1, text2);
 
         // Display result
         if (result) {
