@@ -32,7 +32,7 @@ public class DeckOfCards {
 		return deck;
 	}
 	
-	// Createing a method to distribute cards among people equally
+	// Creating a method to distribute cards among people equally
 	public static String[][] distributingDeck(String[] shuffle, int people, int cards){
 		int cardPerPerson = cards / people;
 		String ans[][] = new String[people][2];
