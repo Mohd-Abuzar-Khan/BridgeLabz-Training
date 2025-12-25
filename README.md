@@ -27,8 +27,7 @@ BridgeLabz-Training/
 │   │
 │   ├── leet-code-codebase/
 │   ├── scenario-based/
-│
-└── README.md
+│   │── README.md
 ```
 
 - Learned basic Git commands:
