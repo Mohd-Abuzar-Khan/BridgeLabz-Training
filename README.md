@@ -18,11 +18,11 @@ BridgeLabz-Training/
 ├── core-java-practice/
 │   ├── gcr-codebase/
 │   │   ├── arrays/
-│   │   ├── builtIn-functions/
 │   │   ├── control-flow/
-│   │   ├── method/
+│   │   ├── extras/
+    │   ├── method/
 │   │   ├── programming-elements/
-│   │   ├── string-handling/
+│   │   ├── programming-prerequisite/
 │   │   └── strings/
 │   │
 │   ├── leet-code-codebase/
