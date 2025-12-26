@@ -20,7 +20,7 @@ BridgeLabz-Training/
 │   │   ├── arrays/
 │   │   ├── control-flow/
 │   │   ├── extras/
-    │   ├── method/
+│   │   ├── method/
 │   │   ├── programming-elements/
 │   │   ├── programming-prerequisite/
 │   │   └── strings/
@@ -38,7 +38,7 @@ BridgeLabz-Training/
   - `git push`
 - Successfully pushed files to remote repository.
 
----
+  ---
 
 ### 📅 Day 2 – Git Practice & Basic Java Programs  
 **(Date: 17-Dec-2025)**
@@ -65,6 +65,74 @@ BridgeLabz-Training/
 
 🔗 **Code Link:**  
 👉 [Day 3 – Programming Elements](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+
+---
+
+### 📅 Day 4 – Java Control Flows  
+**(Date: 18-Dec-2025)**
+
+- Studied Java control flow concepts:
+  - Boolean Data Type  
+  - Boolean Expressions and Logical Operators  
+  - Conditional Statements (`if`, `else if`, `else`)  
+  - Loops (`for`, `while`)  
+  - `switch`, `break`, and `continue`
+
+- Solved practice problems based on control flow logic.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 4 – Java Control Flows](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
+
+---
+
+### 📅 Day 5 – Java Arrays  
+**(Date: 19-Dec-2025)**
+
+- Studied Java arrays and their usage:
+  - Creating, accessing, and modifying arrays  
+  - Using `for` loop and array `length`  
+  - Multi-dimensional and 2D arrays  
+
+- Solved practice problems using arrays.
+- Followed best programming practices.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 5 – Java Arrays](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
+---
+
+### 📅 Day 6 – Java Methods  
+**(Date: 20-Dec-2025)**
+
+- Studied Java methods:
+  - User-defined and reusable methods  
+  - Passing parameters and returning values  
+  - Recursive methods  
+  - Static and library methods  
+
+- Solved practice problems using methods.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 6 – Java Methods](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
+
+---
+
+### 📅 Day 7 – Java Strings  
+**(Date: 22-Dec-2025)**
+
+- Studied Java strings and exception handling:
+  - Creating and manipulating strings  
+  - String arrays and built-in methods  
+  - Exception types and hierarchy  
+
+- Solved practice problems using strings.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 7 – Java Strings](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
 
 ---
 
