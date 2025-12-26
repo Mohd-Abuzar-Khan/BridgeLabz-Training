@@ -1,0 +1,17 @@
+# =========================
+# Eclipse Workspace
+# =========================
+.metadata/
+
+# =========================
+# Eclipse Project Files
+# =========================
+JavaOopsConcepts/.settings/
+JavaOopsConcepts/.project
+JavaOopsConcepts/.classpath
+
+# =========================
+# Java Build Output
+# =========================
+JavaOopsConcepts/bin/
+JavaOopsConcepts/src/module-info.java
