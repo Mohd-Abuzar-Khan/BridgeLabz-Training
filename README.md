@@ -23,6 +23,6 @@
 - Committed and pushed solutions to the repository.
 
 🔗 **Code Link:**  
-👉 [Day 9 – Introduction to OOP](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice)
+👉 [Week 2 Day 1 – Introduction to OOP](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice)
 
 ---
