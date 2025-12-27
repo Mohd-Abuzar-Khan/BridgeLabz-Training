@@ -173,4 +173,33 @@ Strengthened problem-solving and logical thinking skills
 🔗 **Code Link:**  
 👉 [Day 9 – Introduction to OOP](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice)
 
+---
+
+## 📅 Day 10 – Constructors, Variables & Access Modifiers  
+**(Date: 27-Dec-2025)**
+
+### 📘 Topics Covered
+- Learned about **constructors** and their role in object initialization:
+  - Default constructors  
+  - Parameterized constructors  
+  - Constructor chaining using `this()`  
+  - Copy constructors  
+
+- Explored **instance variables vs class (static) variables**:
+  - Instance variables belong to individual objects.
+  - Static variables are shared across all objects of a class.
+
+- Practiced **instance methods vs static methods** and their use cases.
+
+- Gained hands-on experience with **access modifiers**:
+  - `public`
+  - `protected`
+  - `private`
+  - Understood how access levels affect visibility across classes and subclasses.
+ 
+🔗 **Code Link:**  
+👉 [Day 10 – Constructor & Access Modifiers](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/constructor/levelone)
+
+---
+
 ✨ *More updates coming as I continue my Java & DSA journey...*
