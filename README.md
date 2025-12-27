@@ -1,9 +1,5 @@
 # BridgeLabz Training
 
-## Week 1: Git, GitHub & Java Programming Fundamentals
-
----
-
 ### 📅 Day 1 – Git & GitHub Setup  
 **(Date: 16-Dec-2025)**
 
@@ -135,5 +131,46 @@ BridgeLabz-Training/
 👉 [Day 7 – Java Strings](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
 
 ---
+
+### Day 8 – Extra Java String and built-in functions Practice Problems
+(Date: 24-Dec-2025)
+Submitted Extra Java String Practice Problems
+Focused on strengthening practical usage of Strings through problem-solving
+Implemented programs emphasizing:
+      String handling techniques
+      Common string functions
+      Function usage for string operations
+      Function parameter passing
+      Returning values from functions
+Submitted Extra Built-In Function Practice Problems
+Focused on understanding and applying common Java built-in functions
+Practiced building correct program logic using standard library methods instead of manual implementations
+Solved 2 scenario-based programming questions
+Focused on applying Java fundamentals to real-world problem scenarios
+Strengthened problem-solving and logical thinking skills
+### 🔗 Code Link:
+[Day - 8 In-Built methods practice](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
+
+---
+
+### 📅 Day 9 – Introduction to Object-Oriented Programming  
+**(Date: 26-Dec-2025)**
+
+- Studied Procedural Programming and its limitations.
+- Compared Procedural Programming with Object-Oriented Programming.
+- Understood why OOP is preferred in modern software development.
+- Learned core OOP concepts:
+  - Class  
+  - Object  
+  - Encapsulation  
+  - Abstraction  
+  - Inheritance  
+  - Polymorphism  
+
+- Implemented a sample program using procedural approach.
+- Committed and pushed solutions to the repository.
+
+🔗 **Code Link:**  
+👉 [Day 9 – Introduction to OOP](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice)
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
