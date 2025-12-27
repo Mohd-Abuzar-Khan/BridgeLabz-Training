@@ -2,6 +2,7 @@
 # Eclipse Workspace
 # =========================
 .metadata/
+.gitignore/
 
 # =========================
 # Eclipse Project Files
