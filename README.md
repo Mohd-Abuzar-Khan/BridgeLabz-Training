@@ -27,7 +27,7 @@
 
 ---
 
-## 📅 Week 2 Day 2 – Constructors, Variables & Access Modifiers  
+### 📅 Week 2 Day 2 – Constructors, Variables & Access Modifiers  
 **(Date: 27-Dec-2025)**
 
 ### 📘 Topics Covered
