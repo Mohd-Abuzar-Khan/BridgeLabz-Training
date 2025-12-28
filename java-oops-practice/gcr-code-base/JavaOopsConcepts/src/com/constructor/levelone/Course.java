@@ -20,7 +20,6 @@ public class Course {
         System.out.println("Duration: " + duration + " months");
         System.out.println("Fee: ₹" + fee);
         System.out.println("Institute: " + instituteName);
-        System.out.println("----------------------------------");
     }
 
     // Class Method (Static Method)
