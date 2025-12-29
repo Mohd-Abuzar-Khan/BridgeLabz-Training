@@ -2,9 +2,8 @@ package com.constructor.levelone;
 
 public class Main {
 
+    // Executing All the testing method in main
     public static void main(String[] args) {
-
-        System.out.println("------------- PROGRAM EXECUTION STARTED -----------\n");
 
         testBookClass();
         testCircleClass();
@@ -18,8 +17,6 @@ public class Main {
         testManagerAndEmployee();
         testBankAccount();
         testEBook();
-
-        System.out.println("\n---------- PROGRAM EXECUTION COMPLETED ---------");
     }
     
 
