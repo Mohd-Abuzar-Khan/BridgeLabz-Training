@@ -54,3 +54,38 @@
 
 ---
 
+### 📅 Week 2 Day 3 – Keywords & Scenario-Based Programming
+
+**(Date: 29-Dec-2025)**
+
+### 📘 Topics Covered
+
+- Learned and implemented important Java keywords:
+  - `this` – to refer to current class instance variables and methods.
+  - `static` – to define class-level variables and methods.
+  - `final` – to restrict modification of variables, methods, and classes.
+
+- Understood differences between:
+  - this vs static
+  - Instance members vs static members
+  - Final variables vs non-final variables
+
+- Solved scenario-based problems to strengthen real-world understanding:
+  - Parking Lot Management System
+  - Phone Recharge Simulation
+  - Number Guessing Game
+  - Discount Calculation System
+
+- Focused on:
+  - Logical flow building
+  - Conditional statements (`if-else`, `switch`)
+  - Looping constructs
+  - Clean and readable code structure
+
+- Improved debugging skills and code readability.
+
+🔗 Code Link:
+👉 [Week 2 Day 3 – Keywords & Scenario-Based Programs](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/javakeywords/levelone)
+
+---
+
