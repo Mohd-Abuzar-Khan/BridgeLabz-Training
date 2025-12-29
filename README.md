@@ -132,24 +132,31 @@ BridgeLabz-Training/
 
 ---
 
-### Day 8 – Extra Java String and built-in functions Practice Problems
-(Date: 24-Dec-2025)
-Submitted Extra Java String Practice Problems
-Focused on strengthening practical usage of Strings through problem-solving
-Implemented programs emphasizing:
-      String handling techniques
-      Common string functions
-      Function usage for string operations
-      Function parameter passing
-      Returning values from functions
-Submitted Extra Built-In Function Practice Problems
-Focused on understanding and applying common Java built-in functions
-Practiced building correct program logic using standard library methods instead of manual implementations
-Solved 2 scenario-based programming questions
-Focused on applying Java fundamentals to real-world problem scenarios
-Strengthened problem-solving and logical thinking skills
-### 🔗 Code Link:
-[Day - 8 In-Built methods practice](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
+### 📅 Day 8 – Extra Java String and Built-in Functions Practice Problems
+
+**(Date: 24-Dec-2025)**
+
+### 📝 Topics Covered
+
+- Extra Java String Practice Problems
+  - Strengthened practical usage of Strings through problem-solving.
+  - Implemented programs emphasizing:
+  - String handling techniques
+  - Common string functions (`length()`, `substring()`, `charAt()`, `indexOf()`, etc.)
+
+- Function usage for string operations
+  - Passing strings as function parameters and returning values from functions
+  - Extra Built-In Function Practice Problems  
+  - Focused on understanding and applying common Java built-in functions.
+  - Practiced building correct program logic using standard library methods instead of manual implementations.
+
+- Scenario-Based Programming Questions
+  - Solved 2 scenario-based problems.
+  - Applied Java fundamentals to real-world problem scenarios.
+  - Strengthened problem-solving and logical thinking skills.
+
+🔗 **Code Link**
+👉 [Day 8 – Extra java In-built Functions](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
 
 ---
 
@@ -201,5 +208,41 @@ Strengthened problem-solving and logical thinking skills
 👉 [Day 10 – Constructor & Access Modifiers](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/constructor/levelone)
 
 ---
+
+### 📅 Day 11 – Keywords & Scenario-Based Programming
+
+**(Date: 29-Dec-2025)**
+
+### 📘 Topics Covered
+
+- Learned and implemented important Java keywords:
+  - `this` – to refer to current class instance variables and methods.
+  - `static` – to define class-level variables and methods.
+  - `final` – to restrict modification of variables, methods, and classes.
+
+- Understood differences between:
+  - this vs static
+  - Instance members vs static members
+  - Final variables vs non-final variables
+
+- Solved scenario-based problems to strengthen real-world understanding:
+  - Parking Lot Management System
+  - Phone Recharge Simulation
+  - Number Guessing Game
+  - Discount Calculation System
+
+- Focused on:
+  - Logical flow building
+  - Conditional statements (`if-else`, `switch`)
+  - Looping constructs
+  - Clean and readable code structure
+
+- Improved debugging skills and code readability.
+
+🔗 Code Link:
+👉 [Day 11 – Keywords & Scenario-Based Programs](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/javakeywords/levelone)
+
+---
+
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
