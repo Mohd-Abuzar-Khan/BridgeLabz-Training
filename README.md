@@ -113,4 +113,4 @@
     - Logical method responsibilities
 
 🔗 **Code Link:**
-👉 [Week 2 Day 4 - Object Modeling and Scenario-Based Question](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/javakeywords/levelone)
+👉 [Week 2 Day 4 - Object Modeling and Scenario-Based Question](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/objectmodeling/levelone)
