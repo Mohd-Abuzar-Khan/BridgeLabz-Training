@@ -1,7 +1,7 @@
 package ewallet;
 
 //Main class to run the application
-public class EWalletApp {
+public class Main {
 
  public static void main(String[] args) {
 
