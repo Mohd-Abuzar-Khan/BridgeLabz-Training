@@ -375,6 +375,49 @@ BridgeLabz-Training/
 🔗 **Code Link:**  
 👉 [*Day 15 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
 
+--- 
+
+### 📅 Day 16 – Data Structures Overview & Linked Lists  
+**(Date: 03-Jan-2026)**
+
+### 📘 Topics Covered
+
+- Understood the **fundamentals of Data Structures**:
+  - Learned how data structures organize and store data efficiently.
+  - Explored their role in optimizing operations like searching, sorting, and updating.
+  - Studied common examples such as Arrays, Stacks, Queues, Linked Lists, Trees, and Graphs.
+  - Identified **Linked Lists** as a key structure for dynamic memory management.
+
+- Explored **Key Features of Data Structures in Java**:
+  - **Predefined and Custom Implementations**:
+    - Used Java Collections Framework (Lists, Maps, Sets).
+    - Designed custom data structures using classes and objects.
+  - **Dynamic Memory Allocation**:
+    - Learned how structures like Lists and Maps grow and shrink dynamically.
+  - **Generics Support**:
+    - Ensured type safety and reduced runtime errors.
+  - **Thread-Safe Options**:
+    - Studied concurrent collections such as `ConcurrentHashMap` and `CopyOnWriteArrayList`.
+
+- Studied **Types of Data Structures in Java**:
+  - **Linear Data Structures**:
+    - Array (fixed-size, contiguous memory).
+    - Linked List (dynamic node-based structure).
+    - Stack (LIFO).
+    - Queue (FIFO).
+  - **Hierarchical Data Structures**:
+    - Tree, Binary Tree, Binary Search Tree (BST).
+    - Heap for priority-based operations.
+  - **Graph Data Structures**:
+    - Directed and undirected graphs representing relationships.
+  - **Hash-Based Data Structures**:
+    - HashMap for
+
+🔗 **Code Link:**  
+👉 [*Day 15 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
+
+---
+
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
