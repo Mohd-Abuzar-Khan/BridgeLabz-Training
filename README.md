@@ -7,24 +7,44 @@
 - Set up GitHub repository.
 - Understood basic Git workflow.
 
-#### 📂 Project Structure:
-``` bash
+---
+
+## 📂 Project Structure
+
+```
 BridgeLabz-Training/
 │
-├── core-java-practice/
-│   ├── gcr-codebase/
-│   │   ├── arrays/
-│   │   ├── control-flow/
-│   │   ├── extras/
-│   │   ├── method/
-│   │   ├── programming-elements/
-│   │   ├── programming-prerequisite/
-│   │   └── strings/
-│   │
-│   ├── leet-code-codebase/
-│   ├── scenario-based/
-│   │── README.md
+├── 📁 core-java-practice/
+│   ├── 📁 gcr-codebase/
+│   │   ├── 📁 prerequisites/          # Basic Java programs 
+│   │   ├── 📁 programming-elements/   # Java programming elements 
+│   │   ├── 📁 control-flows/          # If-else, loops, switch 
+│   │   ├── 📁 arrays/                 # Array operations
+│   │   ├── 📁 methods/                # Method practices
+│   │   ├── 📁 strings/                # String manipulation 
+│   │   └── 📁 Extras/                 # Built-in methods
+│   ├── 📁 leet-code-codebase/         # LeetCode solutions
+│   ├── 📁 scenario-based-codebase/    # Real-world problems
+│   └── 📄 README.md    # Readme file for week 1
+│
+└── 📁 java-oops-practice/
+    └── 📁 gcr-codebase/
+        └── 📁 JavaOopsConcepts/
+        │    └── 📁 src/
+        │        └── 📁 com/
+        │            ├── 📁 classandobject/    # Procedural vs OOP, fundamentals
+        │            └── 📁 constructor/       # Constructor, access modifiers
+        │            └── 📁 encapsulationandpolymorphism/    # Encapsulation Access Modifier & Polymorphism
+        │            └── 📁 objectmodeling/    # Diagrams, relationships, communication
+        │            └── 📁 inheritance/       # Types, method overriding, & access modifiers
+        ├── 📁 scenario-based-codebase/    # Real-world problems
+        └── 📄 README.md    # Readme file for week 2
+        
+
+
 ```
+
+---
 
 - Learned basic Git commands:
   - `git init`
@@ -414,9 +434,68 @@ BridgeLabz-Training/
     - HashMap for
 
 🔗 **Code Link:**  
-👉 [*Day 15 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
+👉 [*Day 16 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
 
 ---
+
+### 📅 Day 17 – Stack, Queue & Hashing Fundamentals  
+**(Date: 04-Jan-2026)**
+
+### 📘 Topics Covered
+
+- Studied **Stack Data Structure (LIFO)**:
+  - Understood core operations: `push`, `pop`, `peek`, `isEmpty`.
+  - Explored real-world use cases:
+    - Function call stack in recursion.
+    - Undo/Redo operations.
+    - Expression evaluation and parenthesis matching.
+  - Implemented **Balanced Parentheses Checker** using Stack:
+    - Validated proper nesting of `()`, `{}`, and `[]`.
+    - Applied stack-based traversal and matching logic.
+  - Analyzed:
+    - Time Complexity: **O(n)**
+    - Space Complexity: **O(n)**
+
+- Learned **Queue Data Structure (FIFO)**:
+  - Understood key operations: `offer`, `poll`, `peek`, `isEmpty`.
+  - Explored Java Queue implementations:
+    - `LinkedList`
+    - `PriorityQueue`
+    - `ArrayDeque`
+  - Implemented **Ticket Counter Management System**:
+    - Enqueued customers as they arrived.
+    - Dequeued customers in order of service.
+  - Studied queue usage in:
+    - Task scheduling.
+    - BFS traversal.
+    - Request handling systems.
+
+- Explored **HashMap & Hashing Concepts**:
+  - Understood key-value pair storage using `HashMap`.
+  - Learned core methods: `put`, `get`, `remove`, `containsKey`.
+  - Implemented word frequency counting using HashMap.
+  - Studied internal working of HashMap:
+    - Hashing and bucket indexing.
+    - Collision handling using separate chaining.
+    - Load factor (default: 0.75) and resizing.
+  - Compared:
+    - `HashMap` vs `LinkedHashMap`
+    - `HashMap` vs `ConcurrentHashMap`
+
+- Learned **Hashing Functions in Java**:
+  - Understood `hashCode()` and its role in hash-based collections.
+  - Studied rules for overriding `hashCode()` and `equals()`.
+  - Implemented custom `hashCode()` for user-defined classes.
+  - Learned best practices to minimize collisions and ensure consistency.
+
+- Focused on:
+  - Choosing the right data structure based on problem requirements.
+  - Understanding internal mechanics for interview readiness.
+  - Writing clean, efficient, and safe data-structure-based code.
+
+🔗 **Code Link:**  
+👉 [*Day 17 – Stack, Queue & HashMap Implementations*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
+
 
 
 
