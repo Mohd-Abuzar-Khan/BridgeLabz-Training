@@ -497,6 +497,71 @@ BridgeLabz-Training/
 👉 [*Day 17 – Stack, Queue & HashMap Implementations*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
 
 
+---
+
+### 📅 Day 18 – Sorting Algorithms (Core & Advanced)  
+**(Date: 05-Jan-2026)**
+
+### 📘 Topics Covered
+
+- Studied the importance of **Sorting Algorithms**:
+  - Organizing data efficiently for faster searching, processing, and analysis.
+  - Compared algorithms based on time complexity, space usage, and stability.
+
+### 🔹 Core Sorting Algorithms
+
+- **Bubble Sort**
+  - Concept: Repeatedly swaps adjacent elements; largest element bubbles to the end.
+  - Time Complexity:
+    - Best: O(n)
+    - Average/Worst: O(n²)
+  - Space Complexity: O(1)
+  - Stable: Yes
+  - Use Case: Small or nearly sorted datasets.
+
+- **Insertion Sort**
+  - Concept: Builds the sorted array incrementally by inserting elements in correct positions.
+  - Time Complexity:
+    - Best: O(n)
+    - Average/Worst: O(n²)
+  - Space Complexity: O(1)
+  - Stable: Yes
+  - Use Case: Small datasets, adaptive sorting, nearly sorted data.
+
+- **Merge Sort (Divide & Conquer)**
+  - Concept: Recursively divides the array and merges sorted halves.
+  - Time Complexity: O(n log n) in all cases.
+  - Space Complexity: O(n)
+  - Stable: Yes
+  - Use Case: Large datasets, linked lists, when stability is required.
+
+- **Quick Sort (Divide & Conquer)**
+  - Concept: Partition-based sorting using a pivot element.
+  - Time Complexity:
+    - Best/Average: O(n log n)
+    - Worst: O(n²) (poor pivot selection)
+  - Space Complexity: O(log n)
+  - Stable: No
+  - Use Case: High-performance systems, large datasets with randomized pivot.
+
+### 🔹 Additional Sorting Algorithms (Overview)
+
+- Explored:
+  - Selection Sort
+  - Heap Sort
+  - Counting Sort
+  - Radix Sort
+  - Bucket Sort
+- Compared algorithms based on:
+  - Best, average, and worst-case time complexity.
+  - Space complexity.
+  - Stability and use cases.
+
+
+🔗 **Code Link:**  
+👉 [*Day 18 – Sorting Algorithms Implementations*]()
+
+
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
