@@ -151,24 +151,10 @@
   - Stable: No
   - Use Case: High-performance systems, large datasets with randomized pivot.
 
-### 🔹 Additional Sorting Algorithms (Overview)
-
-- Explored:
-  - Selection Sort
-  - Heap Sort
-  - Counting Sort
-  - Radix Sort
-  - Bucket Sort
-- Compared algorithms based on:
-  - Best, average, and worst-case time complexity.
-  - Space complexity.
-  - Stability and use cases.
 
 
 🔗 **Code Link:**  
 👉 [*Week 3 Day 03 – Sorting Algorithms Implementations*]()
 
+---
 
-
-
-✨ *More updates coming as I continue my Java & DSA journey...*
