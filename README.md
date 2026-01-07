@@ -434,7 +434,7 @@ BridgeLabz-Training/
     - HashMap for
 
 🔗 **Code Link:**  
-👉 [*Day 16 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
+👉 [*Day 16 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/linkedlist)
 
 ---
 
@@ -494,72 +494,65 @@ BridgeLabz-Training/
   - Writing clean, efficient, and safe data-structure-based code.
 
 🔗 **Code Link:**  
-👉 [*Day 17 – Stack, Queue & HashMap Implementations*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
+👉 [*Day 17 – Stack, Queue & HashMap Implementations*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com)
 
 
 ---
 
-### 📅 Day 18 – Sorting Algorithms (Core & Advanced)  
+### 📅 Day 18 – Sorting Algorithms – Complete Overview  
 **(Date: 05-Jan-2026)**
 
 ### 📘 Topics Covered
 
-- Studied the importance of **Sorting Algorithms**:
-  - Organizing data efficiently for faster searching, processing, and analysis.
-  - Compared algorithms based on time complexity, space usage, and stability.
+Studied **7 essential sorting algorithms** in Java, focusing on concepts, complexities, and use cases:
 
-### 🔹 Core Sorting Algorithms
+---
 
-- **Bubble Sort**
-  - Concept: Repeatedly swaps adjacent elements; largest element bubbles to the end.
-  - Time Complexity:
-    - Best: O(n)
-    - Average/Worst: O(n²)
-  - Space Complexity: O(1)
-  - Stable: Yes
-  - Use Case: Small or nearly sorted datasets.
+###  1. Bubble Sort
+- **Concept:** Swap adjacent elements repeatedly; largest element “bubbles” to end.   
+- **Use Case:** Small or nearly sorted datasets.
 
-- **Insertion Sort**
-  - Concept: Builds the sorted array incrementally by inserting elements in correct positions.
-  - Time Complexity:
-    - Best: O(n)
-    - Average/Worst: O(n²)
-  - Space Complexity: O(1)
-  - Stable: Yes
-  - Use Case: Small datasets, adaptive sorting, nearly sorted data.
+###  2. Insertion Sort
+- **Concept:** Insert elements into the correct position of the sorted portion.  
+- **Use Case:** Adaptive sorting, small arrays.
 
-- **Merge Sort (Divide & Conquer)**
-  - Concept: Recursively divides the array and merges sorted halves.
-  - Time Complexity: O(n log n) in all cases.
-  - Space Complexity: O(n)
-  - Stable: Yes
-  - Use Case: Large datasets, linked lists, when stability is required.
+###  3. Selection Sort
+- **Concept:** Repeatedly find the minimum and place it at the beginning.  
+- **Use Case:** Simple implementation, small datasets.
 
-- **Quick Sort (Divide & Conquer)**
-  - Concept: Partition-based sorting using a pivot element.
-  - Time Complexity:
-    - Best/Average: O(n log n)
-    - Worst: O(n²) (poor pivot selection)
-  - Space Complexity: O(log n)
-  - Stable: No
-  - Use Case: High-performance systems, large datasets with randomized pivot.
+###  4. Counting Sort
+- **Concept:** Count occurrences of elements and place them at correct positions.   
+- **Use Case:** Integer keys with small range.
 
-### 🔹 Additional Sorting Algorithms (Overview)
+###  5. Merge Sort (Divide & Conquer)
+- **Concept:** Split array recursively, sort halves, merge.  
+- **Use Case:** Large datasets, stability required.
 
-- Explored:
-  - Selection Sort
-  - Heap Sort
-  - Counting Sort
-  - Radix Sort
-  - Bucket Sort
-- Compared algorithms based on:
-  - Best, average, and worst-case time complexity.
-  - Space complexity.
-  - Stability and use cases.
+### 6. Quick Sort (Divide & Conquer)
+- **Concept:** Choose pivot, partition array, sort partitions recursively.   
+- **Use Case:** High-performance sorting, large datasets.
+
+###  7. Heap Sort
+- **Concept:** Build a max heap and repeatedly extract the largest element.  
+- **Use Case:** Priority-based sorting, in-place large datasets.
+
+### 🔹 Comparison Table
+
+| Algorithm       | Best Case   | Average Case | Worst Case | Space   | Stable |
+|-----------------|------------|-------------|------------|--------|--------|
+| Bubble Sort      | O(n)       | O(n²)       | O(n²)      | O(1)   | Yes    |
+| Insertion Sort   | O(n)       | O(n²)       | O(n²)      | O(1)   | Yes    |
+| Selection Sort   | O(n²)      | O(n²)       | O(n²)      | O(1)   | No     |
+| Counting Sort    | O(n+k)     | O(n+k)      | O(n+k)     | O(k)   | Yes    |
+| Merge Sort       | O(n log n) | O(n log n)  | O(n log n) | O(n)   | Yes    |
+| Quick Sort       | O(n log n) | O(n log n)  | O(n²)      | O(log n)| No    |
+| Heap Sort        | O(n log n) | O(n log n)  | O(n log n) | O(1)   | No     |
 
 
 🔗 **Code Link:**  
-👉 [*Day 18 – Sorting Algorithms Implementations*]()
+👉 [*Day 18 – 7 Sorting Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting)
+
+---
 
 
 
