@@ -434,7 +434,7 @@ BridgeLabz-Training/
     - HashMap for
 
 🔗 **Code Link:**  
-👉 [*Day 16 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/linkedlist)
+👉 [*Day 16 – Dsa & Linked Lists (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/linkedlist)
 
 ---
 
@@ -561,22 +561,22 @@ Studied **7 essential sorting algorithms** in Java, focusing on concepts, comple
 
 Focused on **Java best practices** for string handling and file I/O, along with **Linear Search and Binary Search**, reinforced through practical and challenge-based problems.
 
-### 🔹 StringBuilder
+### 1. StringBuilder
 - **Use When:** Frequent string modifications in loops or performance-critical code.
 
-### 🔹 StringBuffer
+### 2. StringBuffer
 - **Use When:** Thread-safe string manipulation is required.
 
-### 🔹 FileReader
+### 3. FileReader
 - **Use When:** Reading character-based text files.
 
-### 🔹 InputStreamReader
+### 4. InputStreamReader
 - **Use When:** Converting byte streams to character streams.
 
-### 🔹 Linear Search
+### 5. Linear Search
 - **Use When:** Data is unsorted or small.
 
-### 🔹 Binary Search
+### 6. Binary Search
 - **Use When:** Data is sorted and fast lookup is required.
 
 🔗 **Code Link:**  
