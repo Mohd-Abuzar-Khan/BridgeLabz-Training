@@ -554,6 +554,34 @@ Studied **7 essential sorting algorithms** in Java, focusing on concepts, comple
 
 ---
 
+### 📅 Day 19 – Searching Algorithms – Complete Overview  
+**(Date: 05-Jan-2026)**
+
+## 📘 Topics Covered
+
+Focused on **Java best practices** for string handling and file I/O, along with **Linear Search and Binary Search**, reinforced through practical and challenge-based problems.
+
+### 🔹 StringBuilder
+- **Use When:** Frequent string modifications in loops or performance-critical code.
+
+### 🔹 StringBuffer
+- **Use When:** Thread-safe string manipulation is required.
+
+### 🔹 FileReader
+- **Use When:** Reading character-based text files.
+
+### 🔹 InputStreamReader
+- **Use When:** Converting byte streams to character streams.
+
+### 🔹 Linear Search
+- **Use When:** Data is unsorted or small.
+
+### 🔹 Binary Search
+- **Use When:** Data is sorted and fast lookup is required.
+
+🔗 **Code Link:**  
+👉 [*Day 19 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting)
+
 
 
 
