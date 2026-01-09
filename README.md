@@ -555,7 +555,7 @@ Studied **7 essential sorting algorithms** in Java, focusing on concepts, comple
 ---
 
 ### 📅 Day 19 – Searching Algorithms – Complete Overview  
-**(Date: 05-Jan-2026)**
+**(Date: 06-Jan-2026)**
 
 ## 📘 Topics Covered
 
@@ -582,6 +582,54 @@ Focused on **Java best practices** for string handling and file I/O, along with 
 🔗 **Code Link:**  
 👉 [*Day 19 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting)
 
+---
+
+### 📅 Day 20 – Runtime Analysis & Big O Notation  
+**(Date: 07-Jan-2026)**
+
+
+## 📘 Topics Covered
+Studied **Big O Notation** to analyze **time and space complexity** and evaluate algorithm performance as input size grows.
+
+##  Scenario-Based Analysis
+### Searching in Large Datasets
+- Linear Search → O(N)
+- Binary Search → O(log N)
+✔ Binary Search performs significantly better for large, sorted datasets
+
+
+### Sorting Algorithms Comparison
+- Bubble Sort → O(N²)
+- Merge Sort → O(N log N)
+- Quick Sort → O(N log N)
+✔ Bubble Sort is impractical for large inputs
+
+
+### String Concatenation Performance
+- `String` → O(N²)
+- `StringBuilder` / `StringBuffer` → O(N)
+✔ Mutable strings are more efficient
+
+
+### Large File Reading
+- `FileReader` → Character-based (slower)
+- `InputStreamReader` → Byte-based (faster)
+✔ Efficient stream selection improves performance
+
+
+### Fibonacci Computation
+- Recursive → O(2ⁿ)
+- Iterative → O(N)
+✔ Iterative approach is faster and memory-efficient
+
+### Searching Using Data Structures
+- Array → O(N)
+- HashSet → O(1)
+- TreeSet → O(log N)
+✔ HashSet offers fastest lookup; TreeSet maintains order
+
+🔗 **Code Link:**  
+👉 [*Day 20 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms)
 
 
 
