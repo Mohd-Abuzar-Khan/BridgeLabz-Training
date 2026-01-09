@@ -1,14 +1,5 @@
 # BridgeLabz Training
 
-### 📅 Day 1 – Git & GitHub Setup  
-**(Date: 16-Dec-2025)**
-
-- Installed and configured Git.
-- Set up GitHub repository.
-- Understood basic Git workflow.
-
----
-
 ## 📂 Project Structure
 
 ```
@@ -43,9 +34,59 @@ BridgeLabz-Training/
 
 
 ```
+---
+
+## 📊 Weekly Progress
+
+### 🔹 Week 1: Core Java Fundamentals
+
+| Day | Topics Covered                                   | Code Link |
+|----:|--------------------------------------------------|-----------|
+| 1   | Git & GitHub Setup, Basic Git Commands            | -         |
+| 2   | Basic Java Programs, Git Practice                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-prerequisite) |
+| 3   | Variables, Data Types, Operators, I/O             | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows) |
+| 4   | Control Flows, Loops, Conditional Statements      | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows) |
+| 5   | Arrays & Multi-dimensional Arrays                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays) |
+| 6   | Methods, Parameters, Recursion                    | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods) |
+| 7   | String Manipulation, Exception Handling           | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings) |
 
 ---
 
+### 🔹 Week 2: Object-Oriented Programming
+
+| Day | Topics Covered                                                        | Code Link |
+|----:|-----------------------------------------------------------------------|-----------|
+| 8   | Advanced String Functions, Built-in Methods                            | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras) |
+| 9   | Introduction to OOP Concepts                                           | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice) |
+| 10  | Constructors, Variables, Access Modifiers                              | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice) |
+| 11  | Keywords (`this`, `static`, `final`), Scenario-Based Problems          | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/javakeywords/levelone) |
+| 12  | Object Modeling, Class Relationships                                   | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/objectmodeling/levelone) |
+| 13  | Inheritance & Types                                                    | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/inheritance) |
+| 14  | Encapsulation, Interfaces, Abstract Classes, Polymorphism              | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/encapsulationandpolymorphism) |
+| 15  | Scenario-Based OOP Applications                                        | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based) |
+
+---
+
+### 🔹 Week 3: Data Structures & Algorithms
+
+| Day | Topics Covered                                   | Code Link |
+|----:|--------------------------------------------------|-----------|
+| 16  | Data Structures Overview, Linked Lists           | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/linkedlist) |
+| 17  | Stack, Queue, Hashing, HashMap                   | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com) |
+| 18  | Sorting Algorithms (7 Types)                     | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting) |
+| 19  | Searching Algorithms, Java Practices             | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms) |
+| 20  | Big O Notation, Runtime Analysis                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis) |
+
+---
+
+## Daily Overview
+
+### 📅 Day 1 – Git & GitHub Setup  
+**(Date: 16-Dec-2025)**
+
+- Installed and configured Git.
+- Set up GitHub repository.
+- Understood basic Git workflow.
 - Learned basic Git commands:
   - `git init`
   - `git clone`
@@ -54,7 +95,7 @@ BridgeLabz-Training/
   - `git push`
 - Successfully pushed files to remote repository.
 
-  ---
+---
 
 ### 📅 Day 2 – Git Practice & Basic Java Programs  
 **(Date: 17-Dec-2025)**
@@ -580,7 +621,7 @@ Focused on **Java best practices** for string handling and file I/O, along with 
 - **Use When:** Data is sorted and fast lookup is required.
 
 🔗 **Code Link:**  
-👉 [*Day 19 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting)
+👉 [*Day 19 – Searching Algorithms Implementation*]([https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms))
 
 ---
 
@@ -629,7 +670,7 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 ✔ HashSet offers fastest lookup; TreeSet maintains order
 
 🔗 **Code Link:**  
-👉 [*Day 20 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms)
+👉 [*Day 20 – Runtime Analysis Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis)
 
 
 
