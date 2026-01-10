@@ -76,6 +76,7 @@ BridgeLabz-Training/
 | 18  | Sorting Algorithms (7 Types)                     | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting) |
 | 19  | Searching Algorithms, Java Practices             | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms) |
 | 20  | Big O Notation, Runtime Analysis                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis) |
+| 21  | Scenario Based OOPs Questions                    | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based) |
 
 ---
 
@@ -671,6 +672,45 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 
 🔗 **Code Link:**  
 👉 [*Day 20 – Runtime Analysis Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis)
+
+---
+
+### 📅 Day 21 – Real-World Scenario-Based OOP Problems  
+**Focus:** Practical Application of OOP Concepts  
+**Concepts:** Encapsulation, Inheritance, Polymorphism, Interfaces
+
+### 📘 What Was Done
+
+Worked on **multiple real-world problem statements** to strengthen understanding of Object-Oriented Programming by designing scalable and modular systems.
+
+### 🧩 Scenarios Implemented
+
+### 1. Artify – Digital Art Marketplace
+- Modeled an artwork selling platform with purchase and licensing features.
+- Applied **encapsulation** to protect licensing terms.
+- Used **inheritance** (`DigitalArt`, `PrintArt`) to extend base artwork behavior.
+- Implemented **polymorphism** to vary licensing logic across art types.
+- Used **interfaces** to enforce purchasing contracts.
+- Performed wallet deductions using operators.
+
+### 2. FoodLoop – Restaurant Ordering System
+- Designed a food ordering workflow with dynamic pricing.
+- Applied **inheritance** for food categories (`VegItem`, `NonVegItem`).
+- Used **encapsulation** to hide stock and availability details.
+- Implemented **polymorphism** for discount calculation based on order value.
+- Used **interfaces** for order lifecycle management.
+
+### 3. SkillForge – Online Learning Portal
+- Built an e-learning model with students, instructors, and courses.
+- Used **inheritance** for role-based users.
+- Applied **interfaces** for certification generation.
+- Implemented **polymorphism** to vary certificate formats by course level.
+- Protected course rating and review logic using **access modifiers**.
+
+🔗 **Code Link:**  
+👉 [*Day 21 – Scenario Based Question Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
+
+---
 
 
 
