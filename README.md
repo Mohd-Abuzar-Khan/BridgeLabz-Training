@@ -548,8 +548,6 @@ BridgeLabz-Training/
 
 Studied **7 essential sorting algorithms** in Java, focusing on concepts, complexities, and use cases:
 
----
-
 ###  1. Bubble Sort
 - **Concept:** Swap adjacent elements repeatedly; largest element “bubbles” to end.   
 - **Use Case:** Small or nearly sorted datasets.
@@ -676,36 +674,23 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 ---
 
 ### 📅 Day 21 – Real-World Scenario-Based OOP Problems  
-**Focus:** Practical Application of OOP Concepts  
-**Concepts:** Encapsulation, Inheritance, Polymorphism, Interfaces
+**(Date: 07-Jan-2026)**
 
-### 📘 What Was Done
+### 📘 Topic Covered
 
 Worked on **multiple real-world problem statements** to strengthen understanding of Object-Oriented Programming by designing scalable and modular systems.
 
-### 🧩 Scenarios Implemented
+### Scenarios Implemented
 
-### 1. Artify – Digital Art Marketplace
-- Modeled an artwork selling platform with purchase and licensing features.
-- Applied **encapsulation** to protect licensing terms.
-- Used **inheritance** (`DigitalArt`, `PrintArt`) to extend base artwork behavior.
-- Implemented **polymorphism** to vary licensing logic across art types.
-- Used **interfaces** to enforce purchasing contracts.
-- Performed wallet deductions using operators.
+ - Implemented real-world **OOP scenarios** to apply concepts beyond theory.
 
-### 2. FoodLoop – Restaurant Ordering System
-- Designed a food ordering workflow with dynamic pricing.
-- Applied **inheritance** for food categories (`VegItem`, `NonVegItem`).
-- Used **encapsulation** to hide stock and availability details.
-- Implemented **polymorphism** for discount calculation based on order value.
-- Used **interfaces** for order lifecycle management.
+ - Used **encapsulation** to protect sensitive data and enforce controlled access.
 
-### 3. SkillForge – Online Learning Portal
-- Built an e-learning model with students, instructors, and courses.
-- Used **inheritance** for role-based users.
-- Applied **interfaces** for certification generation.
-- Implemented **polymorphism** to vary certificate formats by course level.
-- Protected course rating and review logic using **access modifiers**.
+ - Applied **inheritance** to model logical hierarchies and promote code reuse.
+
+ - Leveraged **polymorphism** to enable flexible behavior based on object types.
+
+ - Strengthened **system design** and interview readiness through scenario-driven problem solving..
 
 🔗 **Code Link:**  
 👉 [*Day 21 – Scenario Based Question Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
