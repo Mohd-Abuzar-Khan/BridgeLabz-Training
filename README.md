@@ -83,8 +83,10 @@ BridgeLabz-Training/
 
 ## Daily Overview
 
-### 📅 Day 1 – Git & GitHub Setup  
+## 📅 Day 1 – Git & GitHub Setup  
 **(Date: 16-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Installed and configured Git.
 - Set up GitHub repository.
@@ -99,8 +101,10 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 2 – Git Practice & Basic Java Programs  
+## 📅 Day 2 – Git Practice & Basic Java Programs  
 **(Date: 17-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Practiced Git workflow to understand commits and version control.
 - Solved basic Java programs to understand syntax and structure.
@@ -111,8 +115,10 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 3 – Programming Elements in Java  
+## 📅 Day 3 – Programming Elements in Java  
 **(Date: 18-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Studied core Java programming elements:
   - Variables and Data Types  
@@ -127,8 +133,10 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 4 – Java Control Flows  
+## 📅 Day 4 – Java Control Flows  
 **(Date: 18-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Studied Java control flow concepts:
   - Boolean Data Type  
@@ -145,8 +153,10 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 5 – Java Arrays  
+## 📅 Day 5 – Java Arrays  
 **(Date: 19-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Studied Java arrays and their usage:
   - Creating, accessing, and modifying arrays  
@@ -162,8 +172,10 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 6 – Java Methods  
+## 📅 Day 6 – Java Methods  
 **(Date: 20-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Studied Java methods:
   - User-defined and reusable methods  
@@ -179,8 +191,10 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 7 – Java Strings  
+## 📅 Day 7 – Java Strings  
 **(Date: 22-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Studied Java strings and exception handling:
   - Creating and manipulating strings  
@@ -195,36 +209,30 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 8 – Extra Java String and Built-in Functions Practice Problems
+## 📅 Day 8 – Extra Java String and Built-in Functions Practice Problems
 
 **(Date: 24-Dec-2025)**
 
 ### 📝 Topics Covered
 
-- Extra Java String Practice Problems
-  - Strengthened practical usage of Strings through problem-solving.
-  - Implemented programs emphasizing:
-  - String handling techniques
-  - Common string functions (`length()`, `substring()`, `charAt()`, `indexOf()`, etc.)
+- Practiced **Java String problems** focusing on core string operations and built-in methods  
+   - `length()`
+   - `substring()`
+   - `charAt()`
+   - `indexOf()`)
 
-- Function usage for string operations
-  - Passing strings as function parameters and returning values from functions
-  - Extra Built-In Function Practice Problems  
-  - Focused on understanding and applying common Java built-in functions.
-  - Practiced building correct program logic using standard library methods instead of manual implementations.
-
-- Scenario-Based Programming Questions
-  - Solved 2 scenario-based problems.
-  - Applied Java fundamentals to real-world problem scenarios.
-  - Strengthened problem-solving and logical thinking skills.
+- Used **functions** for string processing by passing parameters and returning results.
+- Solved **scenario-based problems** to apply Java fundamentals and improve logical thinking.
 
 🔗 **Code Link**
 👉 [Day 8 – Extra java In-built Functions](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
 
 ---
 
-### 📅 Day 9 – Introduction to Object-Oriented Programming  
+## 📅 Day 9 – Introduction to Object-Oriented Programming  
 **(Date: 26-Dec-2025)**
+
+### 📝 Topics Covered
 
 - Studied Procedural Programming and its limitations.
 - Compared Procedural Programming with Object-Oriented Programming.
@@ -248,59 +256,46 @@ BridgeLabz-Training/
 ## 📅 Day 10 – Constructors, Variables & Access Modifiers  
 **(Date: 27-Dec-2025)**
 
-### 📘 Topics Covered
-- Learned about **constructors** and their role in object initialization:
-  - Default constructors  
-  - Parameterized constructors  
-  - Constructor chaining using `this()`  
-  - Copy constructors  
+### 📝 Topics Covered
 
-- Explored **instance variables vs class (static) variables**:
-  - Instance variables belong to individual objects.
-  - Static variables are shared across all objects of a class.
+- Studied **constructors** for object initialization: default, parameterized, copy, and chaining using `this()`.
 
-- Practiced **instance methods vs static methods** and their use cases.
-
-- Gained hands-on experience with **access modifiers**:
+- Understood the difference between **instance variables** (object-level) and **static variables** (class-level).
+- Practiced **instance vs static methods** and identified their appropriate use cases.
+- Learned about **access modifiers**
   - `public`
   - `protected`
   - `private`
-  - Understood how access levels affect visibility across classes and subclasses.
+-  and their impact on visibility across classes and inheritance.
+
  
 🔗 **Code Link:**  
 👉 [Day 10 – Constructor & Access Modifiers](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/constructor/levelone)
 
 ---
 
-### 📅 Day 11 – Keywords & Scenario-Based Programming
+## 📅 Day 11 – Keywords & Scenario-Based Programming
 
 **(Date: 29-Dec-2025)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
-- Learned and implemented important Java keywords:
-  - `this` – to refer to current class instance variables and methods.
-  - `static` – to define class-level variables and methods.
-  - `final` – to restrict modification of variables, methods, and classes.
+- Implemented core Java keywords:  
+  - `this` for current object reference  
+  - `static` for class-level members  
+  - `final` to restrict modification  
 
-- Understood differences between:
-  - this vs static
-  - Instance members vs static members
-  - Final variables vs non-final variables
+- Understood key distinctions:  
+  - `this` vs `static`  
+  - Instance vs static members  
+  - Final vs non-final variables  
 
-- Solved scenario-based problems to strengthen real-world understanding:
-  - Parking Lot Management System
-  - Phone Recharge Simulation
-  - Number Guessing Game
-  - Discount Calculation System
-
-- Focused on:
-  - Logical flow building
-  - Conditional statements (`if-else`, `switch`)
-  - Looping constructs
-  - Clean and readable code structure
-
-- Improved debugging skills and code readability.
+- Solved real-world, scenario-based problems:
+  - Parking Lot System  
+  - Phone Recharge Simulation  
+  - Number Guessing Game  
+  - Discount Calculation  
+- Improved debugging and problem-solving skills.
 
 🔗 Code Link:
 👉 [Day 11 – Keywords & Scenario-Based Programs](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/objectmodeling/levelone)
@@ -311,230 +306,142 @@ BridgeLabz-Training/
 
 **(Date: 30-Dec-2025)**
 
-### 📘 Topics Covered
- - Practiced real-world scenario-based problem solving using Object-Oriented Programming concepts.
- - Learned how to identify entities, attributes, and relationships from problem statements.
- - Designed and implemented object models before writing code.
- - Understood and applied different types of relationships:
-   - Association – objects related but independent
-   - Aggregation – “has-a” relationship with independent lifecycles
-   - Composition – strong ownership and dependency
+### 📝 Topics Covered
 
- - Key Concepts Applied
-    - Breaking real-world problems into:
-    - Classes
-    - Objects
-    - Responsibilities
+- Applied **OOP concepts** to solve real-world, scenario-based problems.
+- Identified **entities, attributes, and relationships** from problem statements.
+- Designed **object models** before implementation.
 
- - Mapping real-life scenarios into:
-    - Class diagrams (conceptual understanding)
-    - Logical method responsibilities
+- Implemented object relationships:
+  - **Association** – independent related objects  
+  - **Aggregation** – has-a relationship with independent lifecycles  
+  - **Composition** – strong ownership and dependency  
+
+- Broke problems into:
+  - Classes  
+  - Objects  
+  - Responsibilities  
 
 🔗 **Code Link:**
 👉 [Day 12 - Object Modeling and Scenario-Based Question](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/objectmodeling/levelone)
 
 ---
 
-### 📅 Day 13 – Inheritance & Types of Inheritance in Java  
+## 📅 Day 13 – Inheritance & Types of Inheritance in Java  
 **(Date: 31-Dec-2025)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
-- Learned the concept of **Inheritance** in Object-Oriented Programming:
-  - Reusing properties and behaviors of an existing class.
-  - Promoting code reusability and logical hierarchy.
-  - Understanding the `extends` keyword.
+- Learned **Inheritance** to reuse properties and behaviors, improving code reusability and hierarchy using `extends`.
 
-- Explored different **types of inheritance supported in Java**:
-  - **Single Inheritance** – One child class inherits from one parent class.
-  - **Multilevel Inheritance** – A class derived from another derived class.
-  - **Hierarchical Inheritance** – Multiple subclasses inherit from a single parent class.
-  - **Multiple Inheritance (via Interfaces)** – Achieved using interfaces since Java does not support multiple inheritance with classes.
-  - **Hybrid Inheritance (conceptual)** – Combination of multiple and multilevel inheritance using interfaces.
+- Explored Java inheritance types:
+  - Single, Multilevel, Hierarchical  
+  - Multiple & Hybrid inheritance via **interfaces**
 
-- Practiced usage of:
-  - `super` keyword to access parent class constructors and methods.
-  - Method overriding and runtime polymorphism.
-  - Accessing inherited members based on access modifiers.
+- Practiced:
+  - `super` keyword for parent access
+  - Method overriding and runtime polymorphism
+  - Access control with inherited members
 
-- Implemented real-world examples such as:
-  - Person → Waiter → Chef hierarchy
-  - Vehicle → Electrical Vehicle
-  - Student → Teacher → Staff 
+- Implemented real-world hierarchies:
+  - Person → Waiter → Chef  
+  - Vehicle → ElectricVehicle  
+  - Student → Teacher → Staff  
 
 🔗 **Code Link:**  
 👉 [Day 13 – Inheritance & Types of Inheritance](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/inheritance)
 
 ---
 
-### 📅 Day 14 – Encapsulation, Interfaces, Abstract Classes & Polymorphism  
+## 📅 Day 14 – Encapsulation, Interfaces, Abstract Classes & Polymorphism  
 **(Date: 01-Jan-2026)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
-- Learned and implemented **Encapsulation**:
-  - Used `private` variables to protect data.
-  - Applied getters and setters to provide controlled access.
-
-- Understood **Polymorphism** concepts:
-  - Method overloading (compile-time polymorphism).
-  - Method overriding (runtime polymorphism).
-  - Achieved flexible and reusable code using dynamic method dispatch.
-
-- Studied **Interfaces**:
-  - Used to achieve multiple inheritance in Java.
-  - Enforced method contracts across implementing classes.
-
-- Learned **Abstract Classes**:
-  - Used for abstraction by defining abstract and non-abstract methods.
-  - Enabled partial implementation and code reuse.
-
-- Implemented practical programs focusing on:
-  - Object-oriented design principles.
-  - Real-world modeling using OOP concepts.
-  - Clean and maintainable code structure.
-
-- Pushed all implementations to the GitHub repository.
+- Implemented **Encapsulation** using private fields with getters and setters for controlled access.
+- Applied **Polymorphism** through method overloading (compile-time) and overriding (runtime) for flexible design.
+- Used **Interfaces** to enforce contracts and achieve multiple inheritance.
+- Leveraged **Abstract Classes** for abstraction and partial implementation.
+- Built real-world OOP programs emphasizing clean, reusable, and maintainable code.
 
 🔗 **Code Link:**  
 👉 [*Day 14 – Encapsulation, Interfaces, Abstract Classes & Polymorphism*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/encapsulationandpolymorphism)
 
 ---
 
-### 📅 Day 15 – Scenario-Based Programming using OOP Concepts  
+## 📅 Day 15 – Scenario-Based Programming using OOP Concepts  
 **(Date: 02-Jan-2026)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
-- Implemented **Encapsulation** through real-world scenarios:
-  - Used `private` data members to protect sensitive information.
-  - Applied getters and setters to validate and control data access.
-  - Ensured data integrity by restricting direct object manipulation.
-
-- Applied **Polymorphism** in scenario-based problems:
-  - Used method overriding to achieve runtime polymorphism.
-  - Demonstrated dynamic method dispatch using parent class references.
-  - Improved flexibility and scalability of code design.
-
-- Solved real-world OOP scenarios:
-  - **Bank Account System**
-    - Encapsulated account details such as balance and account number.
-    - Overrode methods for different account types (Savings, Current).
-  - **Employee Payroll System**
-    - Calculated salary differently for Full-Time and Part-Time employees using polymorphism.
-  - **Vehicle Rental System**
-    - Implemented polymorphic behavior for fare calculation across vehicle types.
-  - **Online Shopping Cart**
-    - Encapsulated product data and applied polymorphism for discount calculation.
-
-- Focused on:
-  - Designing classes based on real-world entities.
-  - Writing reusable and extensible code.
-  - Clean separation of responsibilities using OOP principles.
-  - Improving logical thinking and problem-solving skills.
-
-- Tested all scenarios thoroughly and pushed implementations to the GitHub repository.
+- Applied **Encapsulation** in real-world scenarios using private fields with validated getters/setters to ensure data integrity.
+- Used **Polymorphism** through method overriding and dynamic dispatch to build flexible and scalable designs.
+- Implemented scenario-based OOP systems:
+  - Bank Account (Savings vs Current)
+  - Employee Payroll (Full-Time vs Part-Time)
+  - Vehicle Rental (fare calculation)
+  - Online Shopping Cart (discount logic)
+- Emphasized real-world class design, reusability, clear responsibility separation, and problem-solving skills.
 
 🔗 **Code Link:**  
 👉 [*Day 15 – Scenario-Based OOP Programs (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
 
 --- 
 
-### 📅 Day 16 – Data Structures Overview & Linked Lists  
+## 📅 Day 16 – Data Structures Overview & Linked Lists  
 **(Date: 03-Jan-2026)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
-- Understood the **fundamentals of Data Structures**:
-  - Learned how data structures organize and store data efficiently.
-  - Explored their role in optimizing operations like searching, sorting, and updating.
-  - Studied common examples such as Arrays, Stacks, Queues, Linked Lists, Trees, and Graphs.
-  - Identified **Linked Lists** as a key structure for dynamic memory management.
-
-- Explored **Key Features of Data Structures in Java**:
-  - **Predefined and Custom Implementations**:
-    - Used Java Collections Framework (Lists, Maps, Sets).
-    - Designed custom data structures using classes and objects.
-  - **Dynamic Memory Allocation**:
-    - Learned how structures like Lists and Maps grow and shrink dynamically.
-  - **Generics Support**:
-    - Ensured type safety and reduced runtime errors.
-  - **Thread-Safe Options**:
-    - Studied concurrent collections such as `ConcurrentHashMap` and `CopyOnWriteArrayList`.
-
-- Studied **Types of Data Structures in Java**:
-  - **Linear Data Structures**:
-    - Array (fixed-size, contiguous memory).
-    - Linked List (dynamic node-based structure).
-    - Stack (LIFO).
-    - Queue (FIFO).
-  - **Hierarchical Data Structures**:
-    - Tree, Binary Tree, Binary Search Tree (BST).
-    - Heap for priority-based operations.
-  - **Graph Data Structures**:
-    - Directed and undirected graphs representing relationships.
-  - **Hash-Based Data Structures**:
-    - HashMap for
+- Learned **Data Structures fundamentals** and their role in efficient searching, sorting, and updates.
+- Studied common structures:
+  - Linear: Array, Linked List, Stack, Queue
+  - Hierarchical: Tree, BST, Heap
+  - Graphs and hash-based structures
+- Focused on **Linked Lists** for dynamic memory management.
+- Explored **Java-specific features**:
+  - Java Collections Framework vs custom implementations
+  - Dynamic resizing, generics for type safety
+  - Thread-safe collections (`ConcurrentHashMap`, `CopyOnWriteArrayList`)
 
 🔗 **Code Link:**  
 👉 [*Day 16 – Dsa & Linked Lists (Encapsulation & Polymorphism)*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/linkedlist)
 
 ---
 
-### 📅 Day 17 – Stack, Queue & Hashing Fundamentals  
+## 📅 Day 17 – Stack, Queue & Hashing Fundamentals  
 **(Date: 04-Jan-2026)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
-- Studied **Stack Data Structure (LIFO)**:
-  - Understood core operations: `push`, `pop`, `peek`, `isEmpty`.
-  - Explored real-world use cases:
-    - Function call stack in recursion.
-    - Undo/Redo operations.
-    - Expression evaluation and parenthesis matching.
-  - Implemented **Balanced Parentheses Checker** using Stack:
-    - Validated proper nesting of `()`, `{}`, and `[]`.
-    - Applied stack-based traversal and matching logic.
-  - Analyzed:
-    - Time Complexity: **O(n)**
-    - Space Complexity: **O(n)**
+- Studied **Stack (LIFO)**:
+  - Core operations: `push`, `pop`, `peek`
+  - Use cases: recursion, undo/redo, expression evaluation
+  - Implemented **Balanced Parentheses Checker**
+  - Complexity: **O(n)** time, **O(n)** space
 
-- Learned **Queue Data Structure (FIFO)**:
-  - Understood key operations: `offer`, `poll`, `peek`, `isEmpty`.
-  - Explored Java Queue implementations:
-    - `LinkedList`
-    - `PriorityQueue`
-    - `ArrayDeque`
-  - Implemented **Ticket Counter Management System**:
-    - Enqueued customers as they arrived.
-    - Dequeued customers in order of service.
-  - Studied queue usage in:
-    - Task scheduling.
-    - BFS traversal.
-    - Request handling systems.
+- Learned **Queue (FIFO)**:
+  - Operations: `offer`, `poll`, `peek`
+  - Implementations: `LinkedList`, `PriorityQueue`, `ArrayDeque`
+  - Built **Ticket Counter Management System**
+  - Use cases: BFS, scheduling, request handling
 
-- Explored **HashMap & Hashing Concepts**:
-  - Understood key-value pair storage using `HashMap`.
-  - Learned core methods: `put`, `get`, `remove`, `containsKey`.
-  - Implemented word frequency counting using HashMap.
-  - Studied internal working of HashMap:
-    - Hashing and bucket indexing.
-    - Collision handling using separate chaining.
-    - Load factor (default: 0.75) and resizing.
-  - Compared:
-    - `HashMap` vs `LinkedHashMap`
-    - `HashMap` vs `ConcurrentHashMap`
+- Explored **HashMap & Hashing**:
+  - Key methods: `put`, `get`, `remove`
+  - Implemented word frequency counter
+  - Understood hashing, collisions, load factor, resizing
+  - Compared `HashMap`, `LinkedHashMap`, `ConcurrentHashMap`
 
-- Learned **Hashing Functions in Java**:
-  - Understood `hashCode()` and its role in hash-based collections.
-  - Studied rules for overriding `hashCode()` and `equals()`.
-  - Implemented custom `hashCode()` for user-defined classes.
-  - Learned best practices to minimize collisions and ensure consistency.
+- Learned **hashCode() & equals()**:
+  - Role in hash-based collections
+  - Implemented custom hashing for user-defined classes
+  - Focused on collision minimization and consistency
 
-- Focused on:
-  - Choosing the right data structure based on problem requirements.
-  - Understanding internal mechanics for interview readiness.
-  - Writing clean, efficient, and safe data-structure-based code.
+- Emphasized:
+  - Right data structure selection
+  - Internal working for interviews
+  - Clean and efficient implementations
+
 
 🔗 **Code Link:**  
 👉 [*Day 17 – Stack, Queue & HashMap Implementations*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com)
@@ -542,40 +449,42 @@ BridgeLabz-Training/
 
 ---
 
-### 📅 Day 18 – Sorting Algorithms – Complete Overview  
+## 📅 Day 18 – Sorting Algorithms – Complete Overview  
 **(Date: 05-Jan-2026)**
 
-### 📘 Topics Covered
+### 📝 Topics Covered
 
 Studied **7 essential sorting algorithms** in Java, focusing on concepts, complexities, and use cases:
 
-###  1. Bubble Sort
-- **Concept:** Swap adjacent elements repeatedly; largest element “bubbles” to end.   
-- **Use Case:** Small or nearly sorted datasets.
+### Sorting Algorithms Overview
 
-###  2. Insertion Sort
-- **Concept:** Insert elements into the correct position of the sorted portion.  
-- **Use Case:** Adaptive sorting, small arrays.
+1. **Bubble Sort**
+   - Swaps adjacent elements repeatedly.
+   - Best for small or nearly sorted arrays.
 
-###  3. Selection Sort
-- **Concept:** Repeatedly find the minimum and place it at the beginning.  
-- **Use Case:** Simple implementation, small datasets.
+2. **Insertion Sort**
+   - Inserts elements into their correct position.
+   - Efficient for small and adaptive datasets.
 
-###  4. Counting Sort
-- **Concept:** Count occurrences of elements and place them at correct positions.   
-- **Use Case:** Integer keys with small range.
+3. **Selection Sort**
+   - Selects the minimum element and places it at the start.
+   - Simple but inefficient for large data.
 
-###  5. Merge Sort (Divide & Conquer)
-- **Concept:** Split array recursively, sort halves, merge.  
-- **Use Case:** Large datasets, stability required.
+4. **Counting Sort**
+   - Counts element frequencies and reconstructs the array.
+   - Works well for integers with a limited range.
 
-### 6. Quick Sort (Divide & Conquer)
-- **Concept:** Choose pivot, partition array, sort partitions recursively.   
-- **Use Case:** High-performance sorting, large datasets.
+5. **Merge Sort**
+   - Divides array, sorts recursively, then merges.
+   - Stable and efficient for large datasets.
 
-###  7. Heap Sort
-- **Concept:** Build a max heap and repeatedly extract the largest element.  
-- **Use Case:** Priority-based sorting, in-place large datasets.
+6. **Quick Sort**
+   - Partitions array around a pivot.
+   - Very fast on average for large datasets.
+
+7. **Heap Sort**
+   - Uses heap structure to sort elements.
+   - In-place and good for priority-based sorting.
 
 ### 🔹 Comparison Table
 
@@ -595,135 +504,113 @@ Studied **7 essential sorting algorithms** in Java, focusing on concepts, comple
 
 ---
 
-### 📅 Day 19 – Searching Algorithms – Complete Overview  
+## 📅 Day 19 – Searching Algorithms – Complete Overview  
 **(Date: 06-Jan-2026)**
 
-## 📘 Topics Covered
+### 📝 Topics Covered
 
 Focused on **Java best practices** for string handling and file I/O, along with **Linear Search and Binary Search**, reinforced through practical and challenge-based problems.
 
-### 1. StringBuilder
-- **Use When:** Frequent string modifications in loops or performance-critical code.
+- Practiced efficient **string handling** and **file I/O** using standard Java utilities.
+- Applied **searching algorithms** through problem-solving and challenges.
 
-### 2. StringBuffer
-- **Use When:** Thread-safe string manipulation is required.
+**Key Concepts**
+- **StringBuilder:** Fast, non-thread-safe string modification.
+- **StringBuffer:** Thread-safe string manipulation.
+- **FileReader:** Read text files (character-based).
+- **InputStreamReader:** Convert byte streams to character streams.
+- **Linear Search:** Simple search for small or unsorted data.
+- **Binary Search:** Fast search on sorted data.
 
-### 3. FileReader
-- **Use When:** Reading character-based text files.
-
-### 4. InputStreamReader
-- **Use When:** Converting byte streams to character streams.
-
-### 5. Linear Search
-- **Use When:** Data is unsorted or small.
-
-### 6. Binary Search
-- **Use When:** Data is sorted and fast lookup is required.
 
 🔗 **Code Link:**  
 👉 [*Day 19 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms)
 
 ---
 
-### 📅 Day 20 – Runtime Analysis & Big O Notation  
+## 📅 Day 20 – Runtime Analysis & Big O Notation  
 **(Date: 07-Jan-2026)**
 
 
-## 📘 Topics Covered
+### 📝 Topics Covered
+
 Studied **Big O Notation** to analyze **time and space complexity** and evaluate algorithm performance as input size grows.
+### Algorithm Analysis & Big O – Scenario-Based Insights
 
-##  Scenario-Based Analysis
-### Searching in Large Datasets
-- Linear Search → O(N)
-- Binary Search → O(log N)
-✔ Binary Search performs significantly better for large, sorted datasets
+- Studied **Big O Notation** to evaluate time & space complexity for growing inputs.
 
+**Scenario-Based Learnings**
 
-### Sorting Algorithms Comparison
-- Bubble Sort → O(N²)
-- Merge Sort → O(N log N)
-- Quick Sort → O(N log N)
-✔ Bubble Sort is impractical for large inputs
+1. **Searching Large Datasets**
+   - Linear Search → O(N)
+   - Binary Search → O(log N)  Efficient for large, sorted data
 
+2. **Sorting Algorithms**
+   - Bubble Sort → O(N²)
+   - Merge Sort → O(N log N)
+   - Quick Sort → O(N log N) Avoid Bubble Sort for large inputs
 
-### String Concatenation Performance
-- `String` → O(N²)
-- `StringBuilder` / `StringBuffer` → O(N)
-✔ Mutable strings are more efficient
+3. **String Concatenation**
+   - `String` → O(N²)
+   - `StringBuilder` / `StringBuffer` → O(N) Mutable strings are faster
 
+4. **Large File Reading**
+   - `FileReader` → Slower (character-based)
+   - `InputStreamReader` → Faster (byte-based) Efficient stream selection matters
 
-### Large File Reading
-- `FileReader` → Character-based (slower)
-- `InputStreamReader` → Byte-based (faster)
-✔ Efficient stream selection improves performance
+5. **Fibonacci Computation**
+   - Recursive → O(2ⁿ)
+   - Iterative → O(N) Iterative is faster & memory-efficient
 
-
-### Fibonacci Computation
-- Recursive → O(2ⁿ)
-- Iterative → O(N)
-✔ Iterative approach is faster and memory-efficient
-
-### Searching Using Data Structures
-- Array → O(N)
-- HashSet → O(1)
-- TreeSet → O(log N)
-✔ HashSet offers fastest lookup; TreeSet maintains order
+6. **Data Structure Lookups**
+   - Array → O(N)
+   - HashSet → O(1)
+   - TreeSet → O(log N) HashSet offers fastest lookup; TreeSet maintains order
 
 🔗 **Code Link:**  
 👉 [*Day 20 – Runtime Analysis Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis)
 
 ---
 
-### 📅 Day 21 – Real-World Scenario-Based OOP Problems  
+## 📅 Day 21 – Real-World Scenario-Based OOP Problems  
 **(Date: 07-Jan-2026)**
 
-### 📘 Topic Covered
+### 📝 Topics Covered
 
 Worked on **multiple real-world problem statements** to strengthen understanding of Object-Oriented Programming by designing scalable and modular systems.
 
-### Scenarios Implemented
-
- - Implemented real-world **OOP scenarios** to apply concepts beyond theory.
-
- - Used **encapsulation** to protect sensitive data and enforce controlled access.
-
- - Applied **inheritance** to model logical hierarchies and promote code reuse.
-
- - Leveraged **polymorphism** to enable flexible behavior based on object types.
-
- - Strengthened **system design** and interview readiness through scenario-driven problem solving..
+### Scenario-Based OOP Practice
+- Implemented real-world **OOP scenarios** to apply concepts practically.  
+- Used **Encapsulation** to protect data and control access.  
+- Applied **Inheritance** for logical hierarchies and code reuse.  
+- Leveraged **Polymorphism** for flexible behavior across object types.  
+- Enhanced **system design skills** and interview readiness through scenario-driven problems.
 
 🔗 **Code Link:**  
 👉 [*Day 21 – Scenario Based Question Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
 
 ---
 
-### 📅 Day 22 – Real-World Scenario-Based DSA Problems  
+## 📅 Day 22 – Real-World Scenario-Based DSA Problems  
 **(Date: 08-Jan-2026)**
 
-### 📘 Topic Covered
-- Applied core **Data Structures** to real-world problem scenarios.
-- Focused on selecting appropriate structures for efficient design.
-- Strengthened logical modeling and implementation skills.
+### 📝 Topics Covered
 
-### 🧩 Scenarios Implemented
-- **BookShelf – Library Organizer**
-  - `HashMap + LinkedList` for genre-wise book management.
-  - Efficient insert and delete operations.
+- Applied **core Data Structures** to practical problems.
+- Focused on **efficient structure selection** and logical implementation.
 
-- **BrowserBuddy – Tab History Manager**
-  - `Doubly Linked List` for back/forward navigation.
-  - `Stack` for restoring recently closed tabs.
+#### Scenario-Based DSA Implemented
+1. **BookShelf – Library Organizer**
+   - `HashMap + LinkedList` for genre-wise book management.
+   - Efficient insert/delete operations.
 
-- **AmbulanceRoute – Emergency Navigation**
-  - `Circular Linked List` to rotate through hospital units.
-  - Dynamic removal of unavailable units.
+2. **BrowserBuddy – Tab History Manager**
+   - `Doubly Linked List` for back/forward navigation.
+   - `Stack` for recently closed tabs restoration.
 
-### Concepts Reinforced
-- Singly, Doubly, and Circular Linked Lists  
-- Stack-based operations  
-- HashMap lookups  
-- Modular, function-driven logic  
+3. **AmbulanceRoute – Emergency Navigation**
+   - `Circular Linked List` for rotating through hospital units.
+   - Dynamically remove unavailable units.
 
 🔗 **Code:**  
 👉 [Day 22 - Scenario-Based Data Structures](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/scenario)
