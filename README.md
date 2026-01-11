@@ -77,6 +77,7 @@ BridgeLabz-Training/
 | 19  | Searching Algorithms, Java Practices             | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms) |
 | 20  | Big O Notation, Runtime Analysis                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis) |
 | 21  | Scenario Based OOPs Questions                    | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based) |
+| 22  | Scenario Based DSA Questions                    | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based) |
 
 ---
 
@@ -620,7 +621,7 @@ Focused on **Java best practices** for string handling and file I/O, along with 
 - **Use When:** Data is sorted and fast lookup is required.
 
 🔗 **Code Link:**  
-👉 [*Day 19 – Searching Algorithms Implementation*]([https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/sorting](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms))
+👉 [*Day 19 – Searching Algorithms Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/searchingalgorithms)
 
 ---
 
@@ -696,6 +697,39 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 👉 [*Day 21 – Scenario Based Question Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based)
 
 ---
+
+### 📅 Day 22 – Real-World Scenario-Based DSA Problems  
+**(Date: 08-Jan-2026)**
+
+### 📘 Topic Covered
+- Applied core **Data Structures** to real-world problem scenarios.
+- Focused on selecting appropriate structures for efficient design.
+- Strengthened logical modeling and implementation skills.
+
+### 🧩 Scenarios Implemented
+- **BookShelf – Library Organizer**
+  - `HashMap + LinkedList` for genre-wise book management.
+  - Efficient insert and delete operations.
+
+- **BrowserBuddy – Tab History Manager**
+  - `Doubly Linked List` for back/forward navigation.
+  - `Stack` for restoring recently closed tabs.
+
+- **AmbulanceRoute – Emergency Navigation**
+  - `Circular Linked List` to rotate through hospital units.
+  - Dynamic removal of unavailable units.
+
+### Concepts Reinforced
+- Singly, Doubly, and Circular Linked Lists  
+- Stack-based operations  
+- HashMap lookups  
+- Modular, function-driven logic  
+
+🔗 **Code:**  
+👉 [Day 22 - Scenario-Based Data Structures](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/scenario)
+
+---
+
 
 
 
