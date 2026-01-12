@@ -5,7 +5,7 @@ with emphasis on **performance, complexity, and interview relevance**.
 
 ---
 
-## 📅 Day 1 – Data Structures Overview & Linked Lists  
+## 📅 Week 3 Day 1 – Data Structures Overview & Linked Lists  
 **Date:** 03-Jan-2026
 
 ### 📘 Key Learnings
@@ -19,7 +19,7 @@ with emphasis on **performance, complexity, and interview relevance**.
   - Dynamic memory allocation
   - Advantages over arrays
 
-### 🧠 Java-Specific Insights
+###  Java-Specific Insights
 - Java Collections Framework vs custom implementations
 - Generics for type safety
 - Overview of thread-safe collections
@@ -29,7 +29,7 @@ with emphasis on **performance, complexity, and interview relevance**.
 
 ---
 
-## 📅 Day 2 – Stack, Queue & Hashing  
+## 📅 Week 3 Day 2 – Stack, Queue & Hashing  
 **Date:** 04-Jan-2026
 
 ### 📘 Key Learnings
@@ -53,7 +53,7 @@ with emphasis on **performance, complexity, and interview relevance**.
 
 ---
 
-## 📅 Day 3 – Sorting Algorithms  
+## 📅 Week 3 Day 3 – Sorting Algorithms  
 **Date:** 05-Jan-2026
 
 ### 📘 Algorithms Implemented
@@ -82,7 +82,7 @@ with emphasis on **performance, complexity, and interview relevance**.
 
 ---
 
-## 📅 Day 4 – Searching Algorithms  
+## 📅 Week 3 Day 4 – Searching Algorithms  
 **Date:** 06-Jan-2026
 
 ### 📘 Topics Covered
@@ -100,7 +100,7 @@ with emphasis on **performance, complexity, and interview relevance**.
 
 ---
 
-## 📅 Day 5 – Algorithm Analysis & Big O Notation  
+## 📅 Week 3 Day 5 – Algorithm Analysis & Big O Notation  
 **Date:** 07-Jan-2026
 
 ### 📘 Key Learnings
@@ -115,3 +115,30 @@ with emphasis on **performance, complexity, and interview relevance**.
 
 🔗 **Code:**  
 👉 [Analysis Algorithms](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmananlysis)
+
+---
+
+## 📅 Week 3 Day 6 – Scenario-Based Data Structures  
+**Date:** 08-Jan-2026
+
+### 📘 Overview
+- Applied core **Data Structures** to real-world problem scenarios.
+- Focused on selecting appropriate structures for efficient design.
+- Strengthened logical modeling and implementation skills.
+
+### 🧩 Scenarios Implemented
+- **BookShelf – Library Organizer**
+  - `HashMap + LinkedList` for genre-wise book management.
+  - Efficient insert and delete operations.
+
+- **BrowserBuddy – Tab History Manager**
+  - `Doubly Linked List` for back/forward navigation.
+  - `Stack` for restoring recently closed tabs.
+
+- **AmbulanceRoute – Emergency Navigation**
+  - `Circular Linked List` to rotate through hospital units.
+  - Dynamic removal of unavailable units.
+
+🔗 **Code:**  
+👉 [Scenario-Based Data Structures](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/scenario-based)
+
