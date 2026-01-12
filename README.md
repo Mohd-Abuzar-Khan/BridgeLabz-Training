@@ -573,7 +573,7 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 ---
 
 ## 📅 Day 21 – Real-World Scenario-Based OOP Problems  
-**(Date: 07-Jan-2026)**
+**(Date: 08-Jan-2026)**
 
 ### 📝 Topics Covered
 
@@ -592,7 +592,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 ---
 
 ## 📅 Day 22 – Real-World Scenario-Based DSA Problems  
-**(Date: 08-Jan-2026)**
+**(Date: 09-Jan-2026)**
 
 ### 📝 Topics Covered
 
