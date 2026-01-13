@@ -650,6 +650,50 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 ---
 
+## 📅 Day 24 – Real-World OOP Scenario-Based Java Problems  
+**(Date: 12-Jan-2026)**
+
+### 📝 Topics Covered
+- Implemented **story-driven, real-world Java applications** using OOP principles.
+- Integrated **Classes, Objects, Constructors, Interfaces, Operators, and Access Modifiers**.
+- Strengthened **system design thinking** and interview readiness through complex scenarios.
+
+#### Scenario-Based OOP Implemented
+
+22. **HomeNest – Smart Home Device Manager**
+   - Base `Device` class with common attributes and behavior.
+   - Subclasses: `Light`, `Camera`, `Thermostat`, `Lock`.
+   - `IControllable` interface for device operations.
+   - Used constructors for device registration.
+   - Applied encapsulation to protect device state.
+   - Implemented polymorphic `reset()` behavior.
+   - Used operators for energy usage calculations.
+   - Secured firmware logs using access modifiers.
+
+23. **BudgetWise – Personal Finance Tracker**
+   - `Transaction` and `Budget` classes for financial modeling.
+   - `IAnalyzable` interface for reports and overspend detection.
+   - Constructors for customizable monthly budgets.
+   - Used operators for net savings calculation.
+   - Applied encapsulation to restrict expense modification.
+   - Implemented inheritance: `MonthlyBudget`, `AnnualBudget`.
+   - Used polymorphism for different report formats.
+
+24. **GameBox – Mobile Game Distribution Platform**
+   - `Game` and `User` classes for game management.
+   - `IDownloadable` interface for download and demo features.
+   - Constructors for free and paid games.
+   - Applied operators for seasonal discounts.
+   - Used encapsulation to protect user-owned data.
+   - Implemented inheritance: `ArcadeGame`, `StrategyGame`.
+   - Polymorphic demo behavior based on game genre.
+
+🔗 **Code:**  
+👉 [Day 24 - Real-World OOP Java Scenarios](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
