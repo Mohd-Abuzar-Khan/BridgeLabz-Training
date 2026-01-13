@@ -660,7 +660,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 #### Scenario-Based OOP Implemented
 
-22. **HomeNest – Smart Home Device Manager**
+1. **HomeNest – Smart Home Device Manager**
    - Base `Device` class with common attributes and behavior.
    - Subclasses: `Light`, `Camera`, `Thermostat`, `Lock`.
    - `IControllable` interface for device operations.
@@ -670,7 +670,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
    - Used operators for energy usage calculations.
    - Secured firmware logs using access modifiers.
 
-23. **BudgetWise – Personal Finance Tracker**
+2. **BudgetWise – Personal Finance Tracker**
    - `Transaction` and `Budget` classes for financial modeling.
    - `IAnalyzable` interface for reports and overspend detection.
    - Constructors for customizable monthly budgets.
@@ -679,7 +679,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
    - Implemented inheritance: `MonthlyBudget`, `AnnualBudget`.
    - Used polymorphism for different report formats.
 
-24. **GameBox – Mobile Game Distribution Platform**
+3. **GameBox – Mobile Game Distribution Platform**
    - `Game` and `User` classes for game management.
    - `IDownloadable` interface for download and demo features.
    - Constructors for free and paid games.
