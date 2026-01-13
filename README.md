@@ -617,6 +617,38 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 ---
 
+## 📅 Day 23 – Advanced Scenario-Based DSA Problems  
+**(Date: 10-Jan-2026)**
+
+### 📝 Topics Covered
+- Applied **Queues, Stacks, HashMaps, Priority Queues, and Doubly Linked Lists** to real-world systems.
+- Focused on **efficient data handling, traversal, and state management**.
+- Strengthened **interview-oriented problem-solving** using scenario-driven design.
+
+#### Scenario-Based DSA Implemented
+
+4. **CallCenter – Customer Queue Manager**
+   - `Queue` for managing incoming customer calls.
+   - `PriorityQueue` for handling VIP customers.
+   - `HashMap` to track call frequency per customer.
+   - Ensured fair processing with priority handling.
+
+5. **TrainCompanion – Compartment Navigation System**
+   - `Doubly Linked List` to model train compartments.
+   - Enabled forward and backward traversal.
+   - Supported dynamic insertion and removal of compartments.
+   - Displayed adjacent compartments for quick navigation decisions.
+
+6. **TextEditor – Undo/Redo Functionality**
+   - `Stack` to track user actions (insert, delete, format).
+   - Implemented **Undo** using the primary stack.
+   - Maintained a separate stack for **Redo** operations.
+   - Simulated real-world editor behavior with action history.
+
+🔗 **Code:**  
+👉 [Day 23 - Advanced Scenario-Based DSA](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/scenario)
+
+---
 
 
 
