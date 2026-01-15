@@ -621,6 +621,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 **(Date: 10-Jan-2026)**
 
 ### 📝 Topics Covered
+
 - Applied **Queues, Stacks, HashMaps, Priority Queues, and Doubly Linked Lists** to real-world systems.
 - Focused on **efficient data handling, traversal, and state management**.
 - Strengthened **interview-oriented problem-solving** using scenario-driven design.
@@ -654,6 +655,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 **(Date: 12-Jan-2026)**
 
 ### 📝 Topics Covered
+
 - Implemented **story-driven, real-world Java applications** using OOP principles.
 - Integrated **Classes, Objects, Constructors, Interfaces, Operators, and Access Modifiers**.
 - Strengthened **system design thinking** and interview readiness through complex scenarios.
@@ -693,7 +695,36 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 ---
 
+## 📅 Day 25 – Advanced Scenario-Based OOP & Java Concepts
+**(Date: 13-Jan-2026)**
 
+### 📝 Topics Covered
+
+- Applied **OOP principles** through real-world, story-driven scenarios.
+- Strengthened understanding of **Encapsulation, Inheritance, Interfaces, and Polymorphism**.
+- Introduced **advanced Java concepts** like Annotations and Reflection.
+
+###  Scenarios Implemented
+
+1. **PayXpress – Utility Bill Payment System**
+   - Modeled bills using inheritance (`ElectricityBill`, `WaterBill`, `InternetBill`).
+   - Used `IPayable` interface for payments and reminders.
+   - Applied encapsulation for payment status and polymorphism for utility-specific reminders.
+
+2. **EcoWing – Bird Sanctuary Management System**
+   - Base `Bird` class with interfaces `Flyable` and `Swimmable`.
+   - Demonstrated polymorphism by invoking behaviors dynamically.
+   - Implemented bird tracking, search by abilities, removal, and sanctuary reports.
+
+3. **Annotations & Reflection (Conceptual Scenario)**
+   - Used **custom annotations** (e.g., `@DeveloperInfo`).
+   - Applied **Reflection API** for metadata access and dynamic method invocation.
+   - Explored runtime inspection for flexible system design.
+
+🔗 **Code:**  
+👉 [Day 25 - Real-World OOP Java Scenarios](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
