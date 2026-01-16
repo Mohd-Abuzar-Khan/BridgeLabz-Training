@@ -726,5 +726,71 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 ---
 
+## 📅 Day 25 – Advanced Scenario-Based OOP & Java Concepts
+**(Date: 13-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Applied **OOP principles** through real-world, story-driven scenarios.
+- Strengthened understanding of **Encapsulation, Inheritance, Interfaces, and Polymorphism**.
+- Introduced **advanced Java concepts** like Annotations and Reflection.
+
+###  Scenarios Implemented
+
+1. **PayXpress – Utility Bill Payment System**
+   - Modeled bills using inheritance (`ElectricityBill`, `WaterBill`, `InternetBill`).
+   - Used `IPayable` interface for payments and reminders.
+   - Applied encapsulation for payment status and polymorphism for utility-specific reminders.
+
+2. **EcoWing – Bird Sanctuary Management System**
+   - Base `Bird` class with interfaces `Flyable` and `Swimmable`.
+   - Demonstrated polymorphism by invoking behaviors dynamically.
+   - Implemented bird tracking, search by abilities, removal, and sanctuary reports.
+
+3. **Annotations & Reflection (Conceptual Scenario)**
+   - Used **custom annotations** (e.g., `@DeveloperInfo`).
+   - Applied **Reflection API** for metadata access and dynamic method invocation.
+   - Explored runtime inspection for flexible system design.
+
+🔗 **Code:**  
+👉 [Day 25 - Real-World OOP Java Scenarios](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+## 📅 Day 26 – Java Generics: Best Practices & Real-World Scenarios
+
+### 📝 Topics Covered
+- Type-safe programming using generics (`<T>`, `<E>`, `<K, V>`).
+- Generic methods over method overloading.
+- Upper (`? extends T`) and lower (`? super T`) bounded wildcards.
+- Avoiding raw types and type-erasure pitfalls.
+- Designing clean, maintainable generic APIs.
+
+### Scenario-Based Implementations
+1. **Smart Warehouse Management System**
+   - Generic storage for different item types using bounded type parameters.
+   - Wildcards to display heterogeneous inventory safely.
+
+2. **Dynamic Online Marketplace**
+   - Generic product catalog with type-restricted categories.
+   - Generic discount application across product types.
+
+3. **University Course Management System**
+   - Generic course handling with different evaluation models.
+   - Wildcards for dynamic course processing.
+
+4. **Personalized Meal Plan Generator**
+   - Generic meal handling with validated meal categories.
+   - Type-safe generation using bounded generics.
+
+5. **AI-Driven Resume Screening System**
+   - Generic resume processing for multiple job roles.
+   - Wildcards for flexible screening pipelines.
+   - 
+🔗 **Code:**  
+👉 [Day 26 - Java Generics](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
