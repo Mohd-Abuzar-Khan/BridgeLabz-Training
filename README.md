@@ -758,6 +758,7 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 ---
 
 ## 📅 Day 26 – Java Generics: Best Practices & Real-World Scenarios
+**(Date: 14-Jan-2026)**
 
 ### 📝 Topics Covered
 - Type-safe programming using generics (`<T>`, `<E>`, `<K, V>`).
@@ -789,6 +790,41 @@ Worked on **multiple real-world problem statements** to strengthen understanding
    - 
 🔗 **Code:**  
 👉 [Day 26 - Java Generics](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+## 📅 Day 27 – Trees & Graphs Fundamentals
+**(Date: 15-Jan-2026)**
+
+Focused on understanding **Trees and Graphs** as core non-linear data structures used in complex problem solving and system design.
+
+### 📝 Topics Covered
+- **Trees**
+  - Concept of hierarchical data representation.
+  - Key terminology: root, parent, child, leaf, depth, height.
+  - Types of trees: Binary Tree, Binary Search Tree (BST).
+  - Tree traversals: Inorder, Preorder, Postorder (conceptual understanding).
+  - Use cases: file systems, organizational structures, search optimization.
+
+- **Graphs**
+  - Representation of relationships using vertices and edges.
+  - Types: Directed vs Undirected, Weighted vs Unweighted.
+  - Graph representations: Adjacency List and Adjacency Matrix.
+  - Conceptual understanding of graph traversal (BFS, DFS).
+
+### Real-World Sorting Scenarios
+
+#### 1. **EventManager – Ticket Price Optimizer (Quick Sort)**
+- Sorts millions of unsorted ticket prices.
+- Displays top 50 cheapest or costliest tickets.
+
+#### 2. **ExamCell – Student Rank Generator (Merge Sort)**
+- Merges scores from multiple exam centers.
+- Generates accurate, state-level rank lists.
+
+  
+🔗 **Code:**  
+👉 [Day 27 - Sorting Scenario](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
 
 ---
 
