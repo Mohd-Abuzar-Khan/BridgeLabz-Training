@@ -828,5 +828,21 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 28 – Java Collections Framework
+**(Date: 15-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Learned the structure and purpose of the **Java Collections Framework** for efficient data handling.
+- Studied core collection interfaces: **List, Set, Queue, and Map**.
+- Explored common implementations: `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`.
+- Understood differences in **ordering, duplication, performance, and use cases**.
+- Practiced choosing the right collection based on **time complexity and problem requirements**.
+
+🔗 **Code:**  
+👉 [Day 28 - Java Collections](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
