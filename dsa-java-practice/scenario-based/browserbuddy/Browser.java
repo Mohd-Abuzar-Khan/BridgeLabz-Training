@@ -77,7 +77,7 @@ public class Browser {
     }
 
     // Opens a tab and adds provided pages sequentially
-    private static void openTab(Tabs tab, Page pages) {
+    private static void openTab(Tabs tab, Page... pages) {
         System.out.println("\nOpening Tab: " + tab.getTabName());
         for (Page page : pages) {
             tab.addPage(page);
@@ -85,7 +85,7 @@ public class Browser {
     }
 
     // Displays browsing history for given tabs
-    private static void displayHistory(Tabs tabs) {
+    private static void displayHistory(Tabs... tabs) {
         System.out.println("\nBrowsing History");
         System.out.println("----------------");
         for (Tabs tab : tabs) {
