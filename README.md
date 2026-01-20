@@ -726,37 +726,6 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 
 ---
 
-## 📅 Day 25 – Advanced Scenario-Based OOP & Java Concepts
-**(Date: 13-Jan-2026)**
-
-### 📝 Topics Covered
-
-- Applied **OOP principles** through real-world, story-driven scenarios.
-- Strengthened understanding of **Encapsulation, Inheritance, Interfaces, and Polymorphism**.
-- Introduced **advanced Java concepts** like Annotations and Reflection.
-
-###  Scenarios Implemented
-
-1. **PayXpress – Utility Bill Payment System**
-   - Modeled bills using inheritance (`ElectricityBill`, `WaterBill`, `InternetBill`).
-   - Used `IPayable` interface for payments and reminders.
-   - Applied encapsulation for payment status and polymorphism for utility-specific reminders.
-
-2. **EcoWing – Bird Sanctuary Management System**
-   - Base `Bird` class with interfaces `Flyable` and `Swimmable`.
-   - Demonstrated polymorphism by invoking behaviors dynamically.
-   - Implemented bird tracking, search by abilities, removal, and sanctuary reports.
-
-3. **Annotations & Reflection (Conceptual Scenario)**
-   - Used **custom annotations** (e.g., `@DeveloperInfo`).
-   - Applied **Reflection API** for metadata access and dynamic method invocation.
-   - Explored runtime inspection for flexible system design.
-
-🔗 **Code:**  
-👉 [Day 25 - Real-World OOP Java Scenarios](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
-
----
-
 ## 📅 Day 26 – Java Generics: Best Practices & Real-World Scenarios
 **(Date: 14-Jan-2026)**
 
@@ -829,7 +798,7 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 ---
 
 ## 📅 Day 28 – Java Collections Framework
-**(Date: 15-Jan-2026)**
+**(Date: 16-Jan-2026)**
 
 ### 📝 Topics Covered
 
@@ -844,5 +813,20 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 29 – Scenario-Based Sorting Algorithms
+**(Date: 17-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Applied **sorting algorithms** to real-world, story-driven problems for better conceptual clarity.
+- Used **Bubble Sort** for small datasets requiring simple, adjacent comparisons (IceCreamRush).
+- Applied **Insertion Sort** for dynamically growing and nearly sorted data (SmartLibrary, ArtExpo).
+- Used **Merge Sort** to efficiently combine multiple pre-sorted lists from different sources (FleetManager).
+- Strengthened understanding of **algorithm selection based on data size, order, and insertion patterns**.
+
+🔗 **Code:**  
+👉 [Day 29 - Scenario-Based Sorting Algorithms](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
