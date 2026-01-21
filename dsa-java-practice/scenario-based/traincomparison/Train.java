@@ -1,0 +1,173 @@
+package traincomparison;
+
+public class Train {
+	
+	Compartment head;
+	Compartment current;
+	Compartment tail;
+	
+	// Parameterized constructor
+	public Train(String compartmentNumber, boolean pantry, boolean wifi) {
+		addCompartment(compartmentNumber, pantry, wifi);
+	}
+	
+	void addCompartment(String compartmentNumber, boolean pantry, boolean wifi) {
+		Compartment node = new Compartment(compartmentNumber, pantry, wifi);
+		if (head == null) {
+			head = tail = current = node;
+		}
+		node.next = head;
+		head.prev = node;
+		head = node;
+		current = node;
+
+	}
+	
+	void removeCompartment(String compartmentNumber) {
+
+	    if (head == null) {
+	        System.out.println("List is empty");
+	        return;
+	    }
+
+	    Compartment temp = head;
+
+	    // Traverse the list
+	    while (temp != null) {
+
+	        if (compartmentNumber.equals(temp.compartmentNumber)) {
+
+	            // Case 1: Only one node
+	            if (temp == head && temp == tail) {
+	                head = tail = current = null;
+	            }
+
+	            // Case 2: Deleting head
+	            else if (temp == head) {
+	                head = head.next;
+	                head.prev = null;
+	            }
+
+	            // Case 3: Deleting tail
+	            else if (temp == tail) {
+	                tail = tail.prev;
+	                tail.next = null;
+	            }
+
+	            // Case 4: Deleting middle node
+	            else {
+	                temp.prev.next = temp.next;
+	                temp.next.prev = temp.prev;
+	            }
+
+	            System.out.println("Compartment removed successfully");
+	            return; // ❗ stop after deletion
+	        }
+
+	        temp = temp.next;
+	    }
+	    
+
+	    // If not found after traversal
+	    System.out.println("Compartment not found");
+	}
+	
+	
+	void displayCompartment(Compartment temp) {
+
+		System.out.println("Compartment No -> " + temp.compartmentNumber);
+		System.out.println("Is pantry available -> " + temp.pantry);
+		System.out.println("Is Wifi available -> " + temp.wifi);
+
+	}
+	
+	// Method to move backward
+	void moveBackward() {
+
+		if (current.prev == null) {
+			System.out.println("There is no prev compartment");
+		} else {
+			System.out.println("Moving from " + current.compartmentNumber + " to " + current.prev.compartmentNumber);
+			current = current.prev;
+		}
+		if (current == null) {
+			System.out.println("No Compartment exist");
+		}
+
+	}
+	
+	
+	
+	void displayAdjecentCompartment() {
+
+		if (current.prev == null && current.next == null) {
+			System.out.println("-----------------------------");
+			System.out.println("Its is the only compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current);
+			System.out.println("-----------------------------");
+		} else if (current.prev == null) {
+			System.out.println(
+					"No prev compartment <-> " + current.compartmentNumber + " <-> " + current.next.compartmentNumber);
+			System.out.println("-----------------------------");
+			System.out.println("Current Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current);
+			System.out.println("-----------------------------");
+			System.out.println("Next Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current.next);
+			System.out.println("-----------------------------");
+		} else if (current.next == null) {
+			System.out.println(
+					current.prev.compartmentNumber + " <-> " + current.compartmentNumber + "<-> No next compartment");
+			System.out.println("-----------------------------");
+			System.out.println("Current Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current);
+			System.out.println("-----------------------------");
+			System.out.println("Previous Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current.prev);
+			System.out.println("-----------------------------");
+
+		} else {
+			System.out.println(current.prev.compartmentNumber + " <-> " + current.compartmentNumber + " <-> "
+					+ current.next.compartmentNumber);
+			System.out.println("-----------------------------");
+			System.out.println("Current Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current);
+			System.out.println("-----------------------------");
+			System.out.println("Previous Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current.prev);
+			System.out.println("-----------------------------");
+			System.out.println("Next Compartment");
+			System.out.println("-----------------------------");
+			displayCompartment(current.next);
+			System.out.println("-----------------------------");
+		}
+	}
+	
+	// Method to move forward
+	void moveForward() {
+
+		if (current == null) {
+			System.out.println("No Compartment exist");
+			return;
+		}
+
+		if (current.next == null) {
+			System.out.println("There is no next compartment");
+		} else {
+			System.out.println("Moving from " + current.compartmentNumber + " to " + current.next.compartmentNumber);
+			current = current.next;
+		}
+
+	}
+
+	
+	
+
+}
