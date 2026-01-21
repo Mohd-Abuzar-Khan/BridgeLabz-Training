@@ -860,4 +860,21 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 30 – Java File Handling & Streams
+**(Date: 19-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Learned **core Java I/O concepts** including file reading/writing, buffering, and stream hierarchies.
+- Implemented **efficient file operations** using buffered streams, chunk-based reading, and performance comparison with unbuffered streams.
+- Practiced **data persistence techniques** such as serialization/deserialization and storing primitive data using data streams.
+- Explored **advanced stream usage** including byte array streams for binary files and piped streams for inter-thread communication.
+- Solved real-world problems like **large file processing**, word frequency analysis, error log scanning, and user input handling with proper exception management.
+
+🔗 **Code:**  
+👉 [Day 30 - Java File Handling & Streams](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+
 ✨ *More updates coming as I continue my Java & DSA journey...*
