@@ -761,33 +761,20 @@ Worked on **multiple real-world problem statements** to strengthen understanding
 **(Date: 14-Jan-2026)**
 
 ### 📝 Topics Covered
-- Type-safe programming using generics (`<T>`, `<E>`, `<K, V>`).
-- Generic methods over method overloading.
-- Upper (`? extends T`) and lower (`? super T`) bounded wildcards.
-- Avoiding raw types and type-erasure pitfalls.
-- Designing clean, maintainable generic APIs.
+-- Applied **type-safe Java Generics** (`<T>`, `<E>`, `<K, V>`) to build reusable and reliable components.
+- Used **generic methods and bounded wildcards** (`? extends`, `? super`) to achieve flexibility without compromising safety.
+- Avoided **raw types and type-erasure pitfalls**, ensuring cleaner and more maintainable code.
+- Designed **clean generic APIs** through real-world systems like warehouse, marketplace, and course management.
+- Implemented **scenario-driven solutions** (meal planning, resume screening) showcasing scalable, interview-ready generic designs.
+
 
 ### Scenario-Based Implementations
 1. **Smart Warehouse Management System**
-   - Generic storage for different item types using bounded type parameters.
-   - Wildcards to display heterogeneous inventory safely.
-
 2. **Dynamic Online Marketplace**
-   - Generic product catalog with type-restricted categories.
-   - Generic discount application across product types.
-
 3. **University Course Management System**
-   - Generic course handling with different evaluation models.
-   - Wildcards for dynamic course processing.
-
 4. **Personalized Meal Plan Generator**
-   - Generic meal handling with validated meal categories.
-   - Type-safe generation using bounded generics.
-
 5. **AI-Driven Resume Screening System**
-   - Generic resume processing for multiple job roles.
-   - Wildcards for flexible screening pipelines.
-   - 
+
 🔗 **Code:**  
 👉 [Day 26 - Java Generics](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
 
