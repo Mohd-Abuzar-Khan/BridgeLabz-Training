@@ -863,5 +863,22 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 31 – Exception Handling in Java
+**(Date: 20-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Understood **Java exception handling fundamentals** using `try`, `catch`, `finally`, `throw`, and `throws`, along with the complete exception hierarchy.
+- Differentiated between **checked and unchecked exceptions**, their use cases, and how compile-time vs runtime errors are handled.
+- Practiced handling **common runtime exceptions** (NullPointer, Arithmetic, ArrayIndexOutOfBounds, etc.) with single, multiple, and nested try-catch blocks.
+- Designed and implemented **custom exceptions** for real-world scenarios like banking transactions and user authentication.
+- Learned **best practices** including try-with-resources, specific exception handling, meaningful messages, and clean resource management.
+
+🔗 **Code:**  
+👉 [Day 31 - Exception Handling in Java](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
