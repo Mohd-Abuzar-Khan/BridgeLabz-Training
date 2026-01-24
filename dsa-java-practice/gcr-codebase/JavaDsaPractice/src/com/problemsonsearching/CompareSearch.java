@@ -1,4 +1,4 @@
-package com.challengeproblem;
+package com.problemsonsearching;
 
 import java.util.Arrays;
 

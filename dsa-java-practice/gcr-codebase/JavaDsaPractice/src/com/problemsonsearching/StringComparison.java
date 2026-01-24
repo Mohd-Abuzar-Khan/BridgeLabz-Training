@@ -1,4 +1,4 @@
-package com.challengeproblem;
+package com.problemsonsearching;
 
 public class StringComparison {
 
