@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.librarymanagement;
+package com.linkedlist.doublylinkedlist.librarymanagement;
 
 //Main class to test Library Management System
 public class LibraryManagementApp {

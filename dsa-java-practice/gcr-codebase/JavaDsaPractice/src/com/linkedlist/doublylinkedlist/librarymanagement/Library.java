@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.librarymanagement;
+package com.linkedlist.doublylinkedlist.librarymanagement;
 
 //Library Management using Doubly Linked List
 public class Library {

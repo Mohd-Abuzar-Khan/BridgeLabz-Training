@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.librarymanagement;
+package com.linkedlist.doublylinkedlist.librarymanagement;
 
 //Doubly Linked List Node representing a Book
 public class BookNode {
