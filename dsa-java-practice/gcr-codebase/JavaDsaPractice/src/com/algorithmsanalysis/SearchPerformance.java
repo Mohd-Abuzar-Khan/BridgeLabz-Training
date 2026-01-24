@@ -1,6 +1,4 @@
-package com.algorithmanalysis;
-
-import java.util.Arrays;
+package com.algorithmsanalysis;
 
 public class SearchPerformance {
 

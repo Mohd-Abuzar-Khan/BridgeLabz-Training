@@ -1,4 +1,4 @@
-package com.algorithmanalysis;
+package com.algorithmsanalysis;
 
 import java.io.*;
 
