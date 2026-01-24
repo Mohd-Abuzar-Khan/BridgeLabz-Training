@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.moviemanagement;
+package com.linkedlist.doublylinkedlist.moviemanagement;
 
 //Doubly Linked List to manage movies
 public class MovieList {

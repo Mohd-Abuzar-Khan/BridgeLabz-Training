@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.moviemanagement;
+package com.linkedlist.doublylinkedlist.moviemanagement;
 
 //Main class to test Movie Management System
 public class MovieManagementApp {
