@@ -1,4 +1,4 @@
-package com.linearandbinarysearch;
+package com.searchingalgorithms;
 
 import java.util.Scanner; // Import Scanner for user input
 
@@ -13,16 +13,16 @@ public class ReverseString {
         System.out.print("Enter a string: ");
         String input = sc.nextLine();
 
-        // Step 1: Create a StringBuilder object
+        // Create a StringBuilder object
         StringBuilder sb = new StringBuilder();
 
-        // Step 2: Append the input string to StringBuilder
+        // Append the input string to StringBuilder
         sb.append(input);
 
-        // Step 3: Reverse the string using reverse() method
+        // Reverse the string using reverse() method
         sb.reverse();
 
-        // Step 4: Convert StringBuilder back to String
+        // Convert StringBuilder back to String
         String reversedString = sb.toString();
 
         // Display the reversed string
