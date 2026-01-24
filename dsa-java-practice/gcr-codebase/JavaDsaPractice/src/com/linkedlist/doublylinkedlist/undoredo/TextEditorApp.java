@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.undoredo;
+package com.linkedlist.doublylinkedlist.undoredo;
 
 //Main class to test Undo/Redo functionality
 public class TextEditorApp {

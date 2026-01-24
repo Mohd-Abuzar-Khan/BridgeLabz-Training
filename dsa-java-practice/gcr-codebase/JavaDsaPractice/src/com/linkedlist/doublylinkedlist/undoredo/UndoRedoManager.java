@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.undoredo;
+package com.linkedlist.doublylinkedlist.undoredo;
 
 //Manages Undo and Redo operations using Doubly Linked List
 public class UndoRedoManager {

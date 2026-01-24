@@ -1,4 +1,4 @@
-package com.linkedlist.doublelinkedlist.undoredo;
+package com.linkedlist.doublylinkedlist.undoredo;
 
 //Doubly Linked List Node representing a text state
 public class TextStateNode {
