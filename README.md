@@ -879,6 +879,23 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 32 – JUnit Testing & Java Regular Expressions (Regex)
+**(Date: 22-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Practiced **JUnit testing fundamentals** including unit tests for calculators, string utilities, list operations, exception handling, parameterized tests, lifecycle annotations (`@BeforeEach`, `@AfterEach`), timeouts, and file handling.
+- Implemented **advanced JUnit scenarios** such as banking transactions, password validation, temperature conversion, date formatting, and user registration with proper exception assertions.
+- Learned **Java Regex basics** using `Pattern` and `Matcher` classes for matching, searching, and replacing text.
+- Explored **regex metacharacters and quantifiers** to build flexible patterns for digits, words, boundaries, repetitions, and validations.
+- Built **real-world regex validations and extractors** including email, password, phone number checks, hashtag extraction, date parsing, domain extraction, and text cleanup using `find()`, `matches()`, and `replaceAll()`.
+
+🔗 **Code:**  
+👉 [Day 32 - JUnit Testing & Java Regular Expressions (Regex)](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+
+---
+
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
