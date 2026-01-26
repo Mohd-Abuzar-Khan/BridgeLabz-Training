@@ -859,7 +859,7 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Solved real-world problems like **large file processing**, word frequency analysis, error log scanning, and user input handling with proper exception management.
 
 🔗 **Code:**  
-👉 [Day 30 - Java File Handling & Streams](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+👉 [Day 30 - Java File Handling & Streams](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/streams)
 
 ---
 
@@ -875,7 +875,7 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Learned **best practices** including try-with-resources, specific exception handling, meaningful messages, and clean resource management.
 
 🔗 **Code:**  
-👉 [Day 31 - Exception Handling in Java](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+👉 [Day 31 - Exception Handling in Java](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/exceptions)
 
 ---
 
@@ -891,7 +891,8 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Built **real-world regex validations and extractors** including email, password, phone number checks, hashtag extraction, date parsing, domain extraction, and text cleanup using `find()`, `matches()`, and `replaceAll()`.
 
 🔗 **Code:**  
-👉 [Day 32 - JUnit Testing & Java Regular Expressions (Regex)](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+👉 [Day 32 - Java Regular Expressions (Regex)](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/regex)
+👉 [Day 32 - JUnit Testing ](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/testing)
 
 
 ---
