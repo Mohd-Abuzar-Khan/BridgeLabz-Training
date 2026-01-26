@@ -966,7 +966,23 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 ---
 
 
+## 📅 Day 36 – JSON Data Handling & Operations in Java
+**(Date: 26-Jan-2026)**
 
+### 📝 Topics Covered
+
+- Learned **JSON fundamentals** as a lightweight, text-based format for structured data exchange in APIs, configuration files, and persistence.  
+- Implemented **JSON parsing** in Java using multiple approaches: Core library (`org.json`), **Gson**, and **Jackson** for flexible and robust handling.  
+- Practiced **creating, updating, and deleting JSON objects** and arrays, including handling **nested structures**.  
+- Performed **JSON file operations**, including reading from and writing to files while managing exceptions effectively.  
+- Converted JSON data to **Java POJOs** using **Gson** and **Jackson ObjectMapper** for object mapping and structured processing.  
+- Implemented **validation checks** on JSON content, ensuring required keys exist, correct data types, and handling null or missing values.  
+- Explored **real-world use cases** such as API response handling, data persistence, configuration management, and dynamic updates to JSON content.
+
+🔗 **Code:**  
+👉[ Day 36 - JSON Data Handling](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/JavaIOStreams/src/com/json)
+
+---
 
 
 
