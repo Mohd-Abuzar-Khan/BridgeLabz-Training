@@ -112,6 +112,20 @@ BridgeLabz-Training/
 
 ---
 
+### 🔹 Week 4: Collection Framework and Streams
+
+| Day | Topics Covered                                   | Code Link |
+|----:|--------------------------------------------------|-----------|
+| 23  | Generics                                         | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/linkedlist) |
+| 24  | Collections Frameworks                           | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com) |
+| 25  | Streams and File Handling                        | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/streams) |
+| 26  | Exception Handling                               | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/exceptions) |
+| 27  | Regex and JUnit Testing                          | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/testing) |
+| 28  | Annotations and Reflections                      | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based) |
+| 29  | Scenario Based Collections Questions             | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based) |
+
+---
+
 ## Daily Overview
 
 ## 📅 Day 1 – Git & GitHub Setup  
