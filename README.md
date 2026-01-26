@@ -911,8 +911,27 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
-## 📅 Day 33 – CSV Data Handling in Java
+## 📅 Day 33 – Java Annotations & Reflection
 **(Date: 23-Jan-2026)**
+
+### 📝 Topic Covered
+
+- Explored **Java Reflection API** to inspect classes at runtime, including methods, fields, constructors, and metadata without knowing class details at compile time.
+- Practiced **dynamic object creation, method invocation, and private member access**, enabling flexible and framework-like behavior.
+- Implemented **custom annotations** and learned how to retrieve annotation data at runtime using reflection.
+- Applied reflection to **modify static and private fields**, demonstrating advanced runtime configuration handling.
+- Built **real-world advanced use cases** such as object mappers, JSON generation, dynamic proxies for logging, dependency injection using annotations, and execution-time measurement of methods.
+
+🔗 **Code** 
+
+📌 [**Annotations**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/annotations)  
+📌 [**Reflections**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/reflection)  
+
+
+---
+
+## 📅 Day 35 – CSV Data Handling in Java
+**(Date: 26-Jan-2026)**
 
 ### 📝 Topics Covered
 
@@ -925,7 +944,7 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Understood **real-world use cases** such as employee record processing, bulk data import/export, and pre-database validation.
 
 🔗 **Code:**  
-👉 [Day 33 - CSV Data Handling (Add your repository link here)]()
+👉 [Day 35 - CSV Data Handling (Add your repository link here)]()
 
 ---
 
