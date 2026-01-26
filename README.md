@@ -904,9 +904,9 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Explored **regex metacharacters and quantifiers** to build flexible patterns for digits, words, boundaries, repetitions, and validations.
 - Built **real-world regex validations and extractors** including email, password, phone number checks, hashtag extraction, date parsing, domain extraction, and text cleanup using `find()`, `matches()`, and `replaceAll()`.
 
-🔗 **Code:**  
-👉 [Day 32 - Java Regular Expressions (Regex)](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/regex)
-👉 [Day 32 - JUnit Testing ](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/testing)
+
+📌 [**Regex**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/regex)
+📌 [**JUnit Testing**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/testing)
 
 
 ---
@@ -922,7 +922,6 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Applied reflection to **modify static and private fields**, demonstrating advanced runtime configuration handling.
 - Built **real-world advanced use cases** such as object mappers, JSON generation, dynamic proxies for logging, dependency injection using annotations, and execution-time measurement of methods.
 
-🔗 **Code** 
 
 📌 [**Annotations**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/annotations)  
 📌 [**Reflections**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/reflection)  
@@ -930,8 +929,26 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 34 – Collections Scenarios & Real-World Use Cases
+**(Date: 24-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Explored **real-world scenarios** for Java Collections in diverse domains like healthcare, messaging, music libraries, education, and e-commerce.  
+- Implemented **Map, List, Set, and PriorityQueue** to handle practical requirements such as categorization, deduplication, sorting, and filtering.  
+- Practiced **file reading using I/O streams** (`BufferedReader`, `FileReader`, `FileInputStream`) to ingest CSV and plain text data.  
+- Applied **Regex** for data validation, parsing timestamps, expiry dates, and structured fields from text files.  
+- Used **Generics** to build flexible, type-safe solutions across various data types (medicines, songs, exams, deals).  
+- Raised **custom exceptions** to handle edge cases like critically low inventory, invalid marks, or malformed deal entries.  
+- Leveraged **Java Streams and Comparators** for filtering, sorting, and processing large datasets efficiently.
+
+📌 [**Scenario Based Questions**](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/reflection)  
+
+---
+
+
 ## 📅 Day 35 – CSV Data Handling in Java
-**(Date: 26-Jan-2026)**
+**(Date: 25-Jan-2026)**
 
 ### 📝 Topics Covered
 
@@ -944,9 +961,10 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Understood **real-world use cases** such as employee record processing, bulk data import/export, and pre-database validation.
 
 🔗 **Code:**  
-👉 [Day 35 - CSV Data Handling (Add your repository link here)]()
+👉 [Day 35 - CSV Data Handling (Add your repository link here)](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/JavaIOStreams/src/com/csv)
 
 ---
+
 
 
 
