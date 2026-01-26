@@ -896,6 +896,26 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 33 – CSV Data Handling in Java
+**(Date: 23-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Learned **CSV fundamentals** and its role in storing tabular data for real-world systems like HR, finance, and analytics.
+- Implemented **CSV reading using Core Java** (`BufferedReader`) with manual parsing and understood its limitations.
+- Explored **OpenCSV library** for robust CSV handling, including support for quoted values, custom delimiters, and cleaner APIs.
+- Practiced **writing CSV files** using both Core Java (`BufferedWriter`) and OpenCSV (`CSVWriter`) with proper formatting.
+- Converted CSV data into **Java objects (POJOs)** using `CsvToBean` for structured data processing.
+- Implemented **CSV data validation** using regex and conditional checks for numeric fields and missing values.
+- Understood **real-world use cases** such as employee record processing, bulk data import/export, and pre-database validation.
+
+🔗 **Code:**  
+👉 [Day 33 - CSV Data Handling (Add your repository link here)]()
+
+---
+
+
+
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
