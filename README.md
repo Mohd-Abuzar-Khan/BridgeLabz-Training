@@ -1,83 +1,144 @@
-# Java Collections Framework Practice - Week 4
+# Java Collections Framework Practice – Week 4
 
-Focused on writing type-safe, scalable Java code using Generics, Collections, and File Handling with real-world scenarios.
-Strengthened understanding of performance, data management, and clean API design, aligning code with industry and interview standards.
+Focused on writing **type-safe, scalable, and maintainable Java code** using Generics, Collections, File Handling, Exceptions, Regex, Testing, and Reflection.
+Strengthened understanding of **performance, robustness, and clean API design**, aligning implementations with **industry standards and interview expectations**.
 
 ---
-## Week 4 Day 1 Java Generics: Best Practices & Real-World Scenarios  
+
+## Week 4 Day 1 – Java Generics: Best Practices & Real-World Scenarios  
 **Date: 17-Jan-2026**
 
-Day 1 of Week 4 focused on mastering **Java Generics** to write type-safe, reusable, and scalable code. The goal was to move beyond syntax and apply generics to realistic system design problems.
+Day 1 focused on mastering **Java Generics** to build reusable, type-safe components and apply them to realistic system design problems.
 
 ### 📝 Topics Covered
-- Implemented **type-safe programming** using generics (`<T>`, `<E>`, `<K, V>`).
-- Preferred **generic methods** over excessive method overloading.
-- Used **bounded wildcards** (`? extends T`, `? super T`) for flexibility with safety.
-- Avoided **raw types** and understood limitations caused by **type erasure**.
-- Designed **clean, maintainable, and reusable generic APIs**.
+- Type-safe programming using generics (`<T>`, `<E>`, `<K, V>`).
+- Generic methods preferred over excessive method overloading.
+- Bounded wildcards (`? extends T`, `? super T`) for flexibility with safety.
+- Avoiding raw types and understanding **type erasure** limitations.
+- Designing clean, maintainable, reusable generic APIs.
 
 ### Scenario-Based Implementations
-1. **Smart Warehouse Management System**  
-   - Generic storage handling multiple item types with bounds.  
-
-2. **Dynamic Online Marketplace**  
-   - Generic product catalogs with category constraints.
-
-3. **University Course Management System**  
-   - Generic course models with flexible evaluation schemes. 
-
-4. **Personalized Meal Plan Generator**  
-   - Type-restricted meal planning using bounded generics.  
-
-5. **AI-Driven Resume Screening System**  
-   - Generic resume processing across multiple job roles.  
-   - Flexible screening pipelines using wildcards.
+- Smart Warehouse Management System  
+- Dynamic Online Marketplace  
+- University Course Management System  
+- Personalized Meal Plan Generator  
+- AI-Driven Resume Screening System  
 
 🔗 **Code Reference:**  
 👉 [Week 4 - Day 1 | Java Generics](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
 
 ---
-  
-## Week 4 Day 2 Java Collections Framework – Advanced Usage  
+
+## Week 4 Day 2 – Java Collections Framework (Advanced Usage)  
 **Date: 18-Jan-2026**
 
-On Day 2 of Week 4, I deepened my understanding of the **Java Collections Framework** by focusing on advanced operations, internal behaviors, and real-world decision-making while selecting collections.
+Day 2 focused on deep diving into the **Java Collections Framework**, emphasizing performance trade-offs and real-world usage decisions.
 
 ### 📝 Topics Covered
-- Internal working and performance characteristics of core collections.
-- Differences between **ArrayList vs LinkedList**, **HashSet vs TreeSet**, and **HashMap vs TreeMap**.
-- Importance of **hashing, equals(), and compareTo()** in collections.
-- Use of **Iterators, enhanced for-loops, and collection traversal techniques**.
-- Time and space complexity analysis for common collection operations.
+- Internal working of core collections.
+- `ArrayList vs LinkedList`, `HashSet vs TreeSet`, `HashMap vs TreeMap`.
+- Role of hashing, `equals()`, `hashCode()`, and `compareTo()`.
+- Iteration techniques and traversal strategies.
+- Time and space complexity analysis.
 
 ### Practical Implementations
-- Implemented CRUD operations using different collection types.
-- Used collections for real-world scenarios like student records, frequency counting, and task queues.
-- Applied sorting using **Comparable and Comparator** interfaces.
-- Chose optimal collections based on access patterns and performance needs.
+- CRUD systems using Lists, Sets, and Maps.
+- Sorting with `Comparable` and `Comparator`.
+- Frequency counting, task scheduling, and record management.
 
 🔗 **Code Reference:**  
-👉 [Week 4 - Day 2 | Java Collections Framework](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+👉 [Week 4 - Day 2 | Java Collections](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
 
 ---
 
-## Week 4 Day 3 Java File Handling & Streams  
+## Week 4 Day 3 – Java File Handling & Streams  
 **Date: 19-Jan-2026**
 
-### 📝Topics Covered
-- Core Java I/O concepts including **InputStream, OutputStream, Reader, and Writer** hierarchies.
-- File reading and writing using **buffered and unbuffered streams** and their performance differences.
-- Handling persistent data using **serialization and deserialization**.
-- Working with **byte streams, character streams, and data streams**.
-- Exception handling and resource management using **try-with-resources**.
+Focused on **persistent data handling** and efficient file processing using Java I/O streams.
+
+### 📝 Topics Covered
+- Stream hierarchy: InputStream, OutputStream, Reader, Writer.
+- Buffered vs unbuffered streams and performance comparison.
+- Serialization and deserialization.
+- Byte streams, character streams, and data streams.
+- Resource handling with try-with-resources.
 
 ### Practical Implementations
-- Reading and writing large files efficiently.
-- Word frequency analysis from text files.
-- Error log scanning and structured file processing.
-- Handling binary and text-based data safely.
+- Large file processing and log scanning.
+- Word frequency analysis.
+- Binary file handling.
+- Structured text data processing.
 
 🔗 **Code Reference:**  
-👉 [Week 4 - Day 3 | Java File Handling & Streams](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+👉 [Week 4 - Day 3 | File Handling & Streams](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+## Week 4 Day 4 – Java Exception Handling  
+**Date: 20-Jan-2026**
+
+Day 4 focused on building **robust and fault-tolerant Java applications** using proper exception handling strategies.
+
+### 📝 Topics Covered
+- Checked vs unchecked exceptions.
+- Custom exception creation.
+- Exception propagation using `throw` and `throws`.
+- Try-catch-finally and try-with-resources.
+- Designing meaningful error messages and recovery flows.
+
+### Practical Implementations
+- Input validation with custom exceptions.
+- File and resource failure handling.
+- Business-rule-based exception design.
+- Graceful failure and logging strategies.
+
+🔗 **Code Reference:**  
+👉 [Week 4 - Day 4 | Exception Handling](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+## Week 4 Day 5 – Regex & Unit Testing with JUnit  
+**Date: 21-Jan-2026**
+
+Day 5 emphasized **data validation and test-driven development**, crucial for production-ready code.
+
+### 📝 Topics Covered
+- Regular Expressions for pattern matching and validation.
+- Validating emails, phone numbers, passwords, and inputs.
+- Introduction to **JUnit** framework.
+- Writing unit tests using assertions.
+- Positive, negative, and edge-case testing.
+
+### Practical Implementations
+- Input validation systems using Regex.
+- Automated test cases with JUnit.
+- Testing business logic independently.
+- Improving code reliability through testing.
+
+🔗 **Code Reference:**  
+👉 [Week 4 - Day 5 | Regex & JUnit](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
+
+---
+
+## Week 4 Day 6 – Java Annotations & Reflection  
+**Date: 22-Jan-2026**
+
+Day 6 explored **advanced Java capabilities** that power modern frameworks like Spring and Hibernate.
+
+### 📝 Topics Covered
+- Java Reflection API for runtime class inspection.
+- Dynamic object creation and method invocation.
+- Accessing and modifying private and static members.
+- Custom annotations and runtime metadata processing.
+- Dynamic proxies and dependency injection concepts.
+
+### Advanced Implementations
+- Runtime method execution and timing.
+- Annotation-driven configuration.
+- Object mapping and JSON generation via reflection.
+- Logging proxies and lightweight DI container design.
+
+🔗 **Code Reference:**  
+👉 [Week 4 - Day 6 | Annotations & Reflection](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
 
 ---
