@@ -1,69 +1,46 @@
 package com.json.mergetwojsonfiles;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import org.json.JSONObject;
 
-// Merge two JSON files into a single JSON object
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+// Merges two JSON files into a single JSON object
 public class MergeTwoJSONFiles {
+
     public static void main(String[] args) {
-        String jsonFile1 = "src/com/json/mergetwojsonfiles/file1.json";
-        String jsonFile2 = "src/com/json/mergetwojsonfiles/file2.json";
-        String outputFile = "src/com/json/mergetwojsonfiles/merged.json";
-        
-        Map<String, String> mergedFields = new HashMap<>();
-        
-        readAndExtract(jsonFile1, mergedFields);
-        readAndExtract(jsonFile2, mergedFields);
-        
-        writeMergedJSON(outputFile, mergedFields);
-    }
-    
-    private static void readAndExtract(String filename, Map<String, String> fields) {
-        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-            StringBuilder content = new StringBuilder();
-            String line;
-            while ((line = br.readLine()) != null) content.append(line);
-            extractFields(content.toString(), fields);
-        } catch (IOException e) {
-            System.err.println("Error reading JSON file: " + filename);
-        }
-    }
-    
-    private static void writeMergedJSON(String filename, Map<String, String> fields) {
-        try (FileWriter writer = new FileWriter(filename)) {
-            writer.write("{\n");
-            int count = 0;
-            for (Map.Entry<String, String> entry : fields.entrySet()) {
-                writer.write("  \"" + entry.getKey() + "\": " + entry.getValue());
-                writer.write(++count < fields.size() ? ",\n" : "\n");
+        String jsonFilePath1 = "src/com/json/mergetwojsonfiles/file1.json";
+        String jsonFilePath2 = "src/com/json/mergetwojsonfiles/file2.json";
+        String outputFilePath = "src/com/json/mergetwojsonfiles/merged.json";
+
+        try {
+            // Read and parse the first JSON file
+            String jsonContent1 = Files.readString(Paths.get(jsonFilePath1));
+            JSONObject object1 = new JSONObject(jsonContent1);
+
+            // Read and parse the second JSON file
+            String jsonContent2 = Files.readString(Paths.get(jsonFilePath2));
+            JSONObject object2 = new JSONObject(jsonContent2);
+
+            // Copy the first object
+            JSONObject merged = new JSONObject(object1.toString());
+
+            // Add fields from the second object
+            for (String key : object2.keySet()) {
+                merged.put(key, object2.get(key));
             }
-            writer.write("}\n");
-            writer.flush();
-            
-            System.out.println("Merged JSON file created successfully: " + filename);
-            System.out.println("Total fields: " + fields.size());
+
+            // Write merged JSON to file
+            Files.writeString(Paths.get(outputFilePath), merged.toString(2));
+
+            System.out.println("Merged JSON file created: " + outputFilePath);
+            System.out.println("Total fields: " + merged.length());
+
         } catch (IOException e) {
-            System.err.println("Error writing merged JSON: " + e.getMessage());
+            System.err.println("Failed to read or write JSON files: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Invalid JSON format: " + e.getMessage());
         }
-    }
-    
-    private static void extractFields(String json, Map<String, String> fields) {
-        Pattern stringPattern = Pattern.compile("\"([^\"]+)\"\\s*:\\s*\"([^\"]+)\"");
-        Matcher stringMatcher = stringPattern.matcher(json);
-        while (stringMatcher.find()) fields.put(stringMatcher.group(1), "\"" + stringMatcher.group(2) + "\"");
-        
-        Pattern numberPattern = Pattern.compile("\"([^\"]+)\"\\s*:\\s*(\\d+(?:\\.\\d+)?)");
-        Matcher numberMatcher = numberPattern.matcher(json);
-        while (numberMatcher.find()) fields.put(numberMatcher.group(1), numberMatcher.group(2));
-        
-        Pattern booleanPattern = Pattern.compile("\"([^\"]+)\"\\s*:\\s*(true|false)");
-        Matcher booleanMatcher = booleanPattern.matcher(json);
-        while (booleanMatcher.find()) fields.put(booleanMatcher.group(1), booleanMatcher.group(2));
     }
 }
