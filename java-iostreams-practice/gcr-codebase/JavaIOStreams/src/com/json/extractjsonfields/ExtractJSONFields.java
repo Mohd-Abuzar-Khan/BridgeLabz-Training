@@ -1,41 +1,43 @@
 package com.json.extractjsonfields;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import org.json.JSONObject;
+
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
+// Reads a JSON file and prints selected fields
 public class ExtractJSONFields {
+
     public static void main(String[] args) {
-        String jsonFile = "src/com/json/extractjsonfields/data.json";
+        String jsonFilePath = "src/com/json/extractjsonfields/data.json";
 
-        // Read JSON file and extract specific fields using regex
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
-            StringBuilder jsonContent = new StringBuilder();
-            String line;
+        try {
+            // Read the JSON file as a string
+            String jsonContent = Files.readString(Paths.get(jsonFilePath));
 
-            while ((line = br.readLine()) != null) {
-                jsonContent.append(line);
-            }
-
-            String json = jsonContent.toString();
+            // Convert the string into a JSONObject
+            JSONObject jsonObject = new JSONObject(jsonContent);
 
             System.out.println("=== Extracted Fields ===");
             System.out.println("----------------------------------------");
 
-            Matcher nameMatcher = Pattern.compile("\"name\"\\s*:\\s*\"([^\"]+)\"").matcher(json);
-            if (nameMatcher.find()) System.out.println("Name: " + nameMatcher.group(1));
+            // Read fields safely using opt methods
+            System.out.println("Name: " + jsonObject.optString("name", "N/A"));
+            System.out.println("Email: " + jsonObject.optString("email", "N/A"));
 
-            Matcher emailMatcher = Pattern.compile("\"email\"\\s*:\\s*\"([^\"]+)\"").matcher(json);
-            if (emailMatcher.find()) System.out.println("Email: " + emailMatcher.group(1));
-
-            Matcher ageMatcher = Pattern.compile("\"age\"\\s*:\\s*(\\d+)").matcher(json);
-            if (ageMatcher.find()) System.out.println("Age: " + ageMatcher.group(1));
+            if (jsonObject.has("age")) {
+                System.out.println("Age: " + jsonObject.optInt("age"));
+            } else {
+                System.out.println("Age: N/A");
+            }
 
             System.out.println("----------------------------------------");
+
         } catch (IOException e) {
-            System.err.println("Error reading JSON file: " + e.getMessage());
+            System.err.println("Failed to read JSON file: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Invalid JSON format: " + e.getMessage());
         }
     }
 }
