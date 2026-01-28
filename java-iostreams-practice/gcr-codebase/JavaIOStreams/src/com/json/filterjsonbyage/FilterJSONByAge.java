@@ -1,66 +1,54 @@
 package com.json.filterjsonbyage;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+// Filters users from a JSON array based on age
 public class FilterJSONByAge {
+
     public static void main(String[] args) {
-        String jsonFile = "src/com/json/filterjsonbyage/data.json";
+        String jsonFilePath = "src/com/json/filterjsonbyage/data.json";
         int ageThreshold = 25;
 
-        // Read JSON file and display records where age > threshold
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
-            StringBuilder jsonContent = new StringBuilder();
-            String line;
-            while ((line = br.readLine()) != null) jsonContent.append(line);
+        try {
+            // Read the JSON file as text
+            String jsonContent = Files.readString(Paths.get(jsonFilePath));
 
-            String json = jsonContent.toString();
+            // Parse the text into a JSON array
+            JSONArray users = new JSONArray(jsonContent);
+
             System.out.println("=== Filtered Records (Age > " + ageThreshold + ") ===");
             System.out.println("----------------------------------------");
 
-            List<String> records = extractRecords(json);
-            int count = 0;
-            for (String record : records) {
-                int age = extractAge(record);
+            int matchCount = 0;
+
+            for (int i = 0; i < users.length(); i++) {
+                JSONObject user = users.getJSONObject(i);
+
+                // Read age safely
+                int age = user.optInt("age", 0);
+
                 if (age > ageThreshold) {
-                    count++;
-                    System.out.println("\nRecord #" + count + ":");
-                    printRecord(record);
+                    matchCount++;
+
+                    System.out.println("\nRecord #" + matchCount + ":");
+                    System.out.println("  Name: " + user.optString("name", "N/A"));
+                    System.out.println("  Age: " + age);
+                    System.out.println("  Email: " + user.optString("email", "N/A"));
                 }
             }
 
             System.out.println("\n----------------------------------------");
-            System.out.println("Total records with age > " + ageThreshold + ": " + count);
+            System.out.println("Total records with age > " + ageThreshold + ": " + matchCount);
+
         } catch (IOException e) {
-            System.err.println("Error reading JSON file: " + e.getMessage());
+            System.err.println("Failed to read JSON file: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Invalid JSON format: " + e.getMessage());
         }
-    }
-
-    private static List<String> extractRecords(String json) {
-        List<String> records = new ArrayList<>();
-        Matcher matcher = Pattern.compile("\\{[^}]*\\}").matcher(json);
-        while (matcher.find()) records.add(matcher.group());
-        return records;
-    }
-
-    private static int extractAge(String record) {
-        Matcher matcher = Pattern.compile("\"age\"\\s*:\\s*(\\d+)").matcher(record);
-        if (matcher.find()) return Integer.parseInt(matcher.group(1));
-        return 0;
-    }
-
-    private static void printRecord(String record) {
-        Matcher nameMatcher = Pattern.compile("\"name\"\\s*:\\s*\"([^\"]+)\"").matcher(record);
-        Matcher ageMatcher = Pattern.compile("\"age\"\\s*:\\s*(\\d+)").matcher(record);
-        Matcher emailMatcher = Pattern.compile("\"email\"\\s*:\\s*\"([^\"]+)\"").matcher(record);
-
-        if (nameMatcher.find()) System.out.println("  Name: " + nameMatcher.group(1));
-        if (ageMatcher.find()) System.out.println("  Age: " + ageMatcher.group(1));
-        if (emailMatcher.find()) System.out.println("  Email: " + emailMatcher.group(1));
     }
 }
