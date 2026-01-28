@@ -1,42 +1,64 @@
 package com.json.printjsonkeysvalues;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
-// Reads a JSON file and prints all key-value pairs
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+// Reads a JSON file and prints all keys and values
 public class PrintJSONKeysValues {
+
     public static void main(String[] args) {
-        String jsonFile = "src/com/json/printjsonkeysvalues/data.json";
-        
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
-            StringBuilder jsonContent = new StringBuilder();
-            String line;
-            while ((line = br.readLine()) != null) jsonContent.append(line);
-            
-            String json = jsonContent.toString();
-            
+        String jsonFilePath = "src/com/json/printjsonkeysvalues/data.json";
+
+        try {
+            // Read JSON content from file
+            String jsonContent = Files.readString(Paths.get(jsonFilePath)).trim();
+
             System.out.println("=== All Keys and Values ===");
-            printKeyValuePairs(json);
+
+            // Parse JSON as array or object
+            if (jsonContent.startsWith("[")) {
+                JSONArray array = new JSONArray(jsonContent);
+                printValue(array, "$");
+            } else {
+                JSONObject object = new JSONObject(jsonContent);
+                printValue(object, "$");
+            }
+
             System.out.println("----------------------------------------");
+
         } catch (IOException e) {
-            System.err.println("Error reading JSON file: " + e.getMessage());
+            System.err.println("Failed to read JSON file: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Invalid JSON format: " + e.getMessage());
         }
     }
-    
-    private static void printKeyValuePairs(String json) {
-        extractAndPrint(json, "\"([^\"]+)\"\\s*:\\s*\"([^\"]+)\""); // strings
-        extractAndPrint(json, "\"([^\"]+)\"\\s*:\\s*(\\d+(?:\\.\\d+)?)"); // numbers
-        extractAndPrint(json, "\"([^\"]+)\"\\s*:\\s*(true|false)"); // booleans
-    }
-    
-    private static void extractAndPrint(String json, String patternStr) {
-        Pattern pattern = Pattern.compile(patternStr);
-        Matcher matcher = pattern.matcher(json);
-        while (matcher.find()) {
-            System.out.println("Key: " + matcher.group(1) + " | Value: " + matcher.group(2));
+
+    // Prints objects and arrays using path notation
+    private static void printValue(Object value, String path) {
+
+        if (value instanceof JSONObject) {
+            JSONObject object = (JSONObject) value;
+
+            for (String key : object.keySet()) {
+                printValue(object.get(key), path + "." + key);
+            }
+            return;
         }
+
+        if (value instanceof JSONArray) {
+            JSONArray array = (JSONArray) value;
+
+            for (int i = 0; i < array.length(); i++) {
+                printValue(array.get(i), path + "[" + i + "]");
+            }
+            return;
+        }
+
+        // Print primitive values
+        System.out.println("Key: " + path + " | Value: " + value);
     }
 }
