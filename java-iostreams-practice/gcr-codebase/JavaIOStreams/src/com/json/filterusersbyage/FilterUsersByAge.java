@@ -1,95 +1,61 @@
 package com.json.filterusersbyage;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
-// Filters and prints users older than the age threshold
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+// Filters and prints users older than a given age
 public class FilterUsersByAge {
+
     public static void main(String[] args) {
-        String jsonFile = "src/com/json/filterusersbyage/users.json";
+        String jsonFilePath = "src/com/json/filterusersbyage/users.json";
         int ageThreshold = 25;
-        
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonFile))) {
-            StringBuilder jsonContent = new StringBuilder();
-            String line;
-            
-            while ((line = br.readLine()) != null) {
-                jsonContent.append(line);
-            }
-            
-            String json = jsonContent.toString();
-            
+
+        try {
+            // Read the JSON file as text
+            String jsonContent = Files.readString(Paths.get(jsonFilePath));
+
+            // Parse the text into a JSON array
+            JSONArray users = new JSONArray(jsonContent);
+
             System.out.println("=== Users Older Than " + ageThreshold + " Years ===");
             System.out.println("----------------------------------------");
-            
-            List<String> users = extractUsers(json);
-            int count = 0;
-            
-            for (String user : users) {
-                int age = extractAge(user);
+
+            int matchCount = 0;
+
+            for (int i = 0; i < users.length(); i++) {
+                JSONObject user = users.getJSONObject(i);
+
+                // Read age safely
+                int age = user.optInt("age", 0);
+
                 if (age > ageThreshold) {
-                    count++;
-                    System.out.println("\nUser #" + count + ":");
-                    printUser(user);
+                    matchCount++;
+                    System.out.println("\nUser #" + matchCount + ":");
+
+                    // Print basic fields
+                    System.out.println("  Name: " + user.optString("name", "N/A"));
+                    System.out.println("  Age: " + age);
+                    System.out.println("  Email: " + user.optString("email", "N/A"));
+
+                    // Print nested address city if present
+                    JSONObject address = user.optJSONObject("address");
+                    if (address != null) {
+                        System.out.println("  City: " + address.optString("city", "N/A"));
+                    }
                 }
             }
-            
+
             System.out.println("\n----------------------------------------");
-            System.out.println("Total users older than " + ageThreshold + ": " + count);
+            System.out.println("Total users older than " + ageThreshold + ": " + matchCount);
+
         } catch (IOException e) {
-            System.err.println("Error reading JSON file: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
-    
-    private static List<String> extractUsers(String json) {
-        List<String> users = new ArrayList<>();
-        Pattern pattern = Pattern.compile("\\{[^}]*\"age\"[^}]*\\}");
-        Matcher matcher = pattern.matcher(json);
-        
-        while (matcher.find()) {
-            users.add(matcher.group());
-        }
-        
-        return users;
-    }
-    
-    private static int extractAge(String user) {
-        Pattern agePattern = Pattern.compile("\"age\"\\s*:\\s*(\\d+)");
-        Matcher matcher = agePattern.matcher(user);
-        if (matcher.find()) {
-            return Integer.parseInt(matcher.group(1));
-        }
-        return 0;
-    }
-    
-    private static void printUser(String user) {
-        Pattern namePattern = Pattern.compile("\"name\"\\s*:\\s*\"([^\"]+)\"");
-        Pattern agePattern = Pattern.compile("\"age\"\\s*:\\s*(\\d+)");
-        Pattern emailPattern = Pattern.compile("\"email\"\\s*:\\s*\"([^\"]+)\"");
-        Pattern cityPattern = Pattern.compile("\"city\"\\s*:\\s*\"([^\"]+)\"");
-        
-        Matcher nameMatcher = namePattern.matcher(user);
-        Matcher ageMatcher = agePattern.matcher(user);
-        Matcher emailMatcher = emailPattern.matcher(user);
-        Matcher cityMatcher = cityPattern.matcher(user);
-        
-        if (nameMatcher.find()) {
-            System.out.println("  Name: " + nameMatcher.group(1));
-        }
-        if (ageMatcher.find()) {
-            System.out.println("  Age: " + ageMatcher.group(1));
-        }
-        if (emailMatcher.find()) {
-            System.out.println("  Email: " + emailMatcher.group(1));
-        }
-        if (cityMatcher.find()) {
-            System.out.println("  City: " + cityMatcher.group(1));
+            System.err.println("Failed to read JSON file: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Invalid JSON format: " + e.getMessage());
         }
     }
 }
