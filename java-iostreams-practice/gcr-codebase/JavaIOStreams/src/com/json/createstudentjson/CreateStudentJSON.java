@@ -1,35 +1,43 @@
 package com.json.createstudentjson;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.FileWriter;
 import java.io.IOException;
 
+// Creates a JSON file that stores student data
 public class CreateStudentJSON {
+
     public static void main(String[] args) {
-        String jsonFile = "src/com/json/createstudentjson/student.json";
+        String jsonFilePath = "src/com/json/createstudentjson/student.json";
 
-        try (FileWriter writer = new FileWriter(jsonFile)) {
+        try {
+            // Create a JSON array to store subjects
+            JSONArray subjects = new JSONArray();
+            subjects.put("Mathematics");
+            subjects.put("Physics");
+            subjects.put("Chemistry");
+            subjects.put("Computer Science");
 
-            // Write JSON object to file
-            writer.write("{\n");
-            writer.write("  \"name\": \"Abuzar Khan\",\n");
-            writer.write("  \"age\": 20,\n");
-            writer.write("  \"subjects\": [\n");
-            writer.write("    \"Mathematics\",\n");
-            writer.write("    \"Physics\",\n");
-            writer.write("    \"Chemistry\",\n");
-            writer.write("    \"Computer Science\"\n");
-            writer.write("  ]\n");
-            writer.write("}\n");
+            // Create a JSON object for the student
+            JSONObject student = new JSONObject();
+            student.put("name", "Abuzar Khan");
+            student.put("age", 20);
+            student.put("subjects", subjects);
 
-            writer.flush();
-            System.out.println("Student JSON object created successfully: " + jsonFile);
+            // Write the JSON object to a file with indentation
+            try (FileWriter writer = new FileWriter(jsonFilePath)) {
+                writer.write(student.toString(2));
+            }
 
-            // Print JSON to console
+            // Print confirmation and JSON content
+            System.out.println("Student JSON file created: " + jsonFilePath);
             System.out.println("\nJSON Content:");
-            System.out.println("{\"name\": \"John Doe\", \"age\": 20, \"subjects\": [\"Mathematics\", \"Physics\", \"Chemistry\", \"Computer Science\"]}");
+            System.out.println(student.toString(2));
 
         } catch (IOException e) {
-            System.err.println("Error creating JSON file: " + e.getMessage());
+            System.err.println("Failed to create JSON file: " + e.getMessage());
         }
     }
 }
