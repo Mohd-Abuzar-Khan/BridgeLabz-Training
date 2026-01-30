@@ -1027,26 +1027,22 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
-## 📅 Day 39 – Functional Interfaces in Java  
+## 📅 Day 39 – Streams API in Java 
 **(Date: 29-Jan-2026)**
 
 ### 📝 Topics Covered
 
-- Understood the concept of **Functional Interfaces** and their role in enabling lambda expressions.
-- Learned the purpose of the `@FunctionalInterface` annotation and its compile-time safety benefits.
-- Explored **built-in functional interfaces** from `java.util.function`:
-  - `Predicate<T>` for boolean conditions
-  - `Function<T, R>` for data transformation
-  - `Consumer<T>` for performing actions
-  - `Supplier<T>` for providing values
-- Implemented **custom functional interfaces** for domain-specific operations.
-- Practiced **lambda expressions vs anonymous classes** and identified when to use each.
-- Learned **functional interface composition** using `andThen()`, `compose()`, `and()`, `or()`, and `negate()`.
-- Used **method references** as a clean alternative to lambda expressions.
-- Combined functional interfaces with **Streams API** for real-world data processing.
+Learned the fundamentals of the **Java Streams API** and how it enables functional-style data processing.
+- Understood the difference between **Streams vs Collections** and when to use each.
+- Explored **stream creation techniques** from collections, arrays, files, and generators.
+- Practiced **intermediate operations** such as `filter()`, `map()`, `flatMap()`, `distinct()`, `sorted()`, and `limit()`.
+- Implemented **terminal operations** like `forEach()`, `collect()`, `reduce()`, `count()`, `min()`, and `max()`.
+- Used **Collectors** (`toList()`, `toSet()`, `toMap()`, `groupingBy()`, `partitioningBy()`, `joining()`).
+- Learned **lazy evaluation** and how streams process data only when a terminal operation is invoked.
+- Explored **parallel streams**, their performance benefits, and when to avoid them
 
 🔗 **Code:**  
-👉 [Day 39 - Functional Interfaces]()
+👉 [Day 39 - Streams API in Java]()
 
 ---
 
