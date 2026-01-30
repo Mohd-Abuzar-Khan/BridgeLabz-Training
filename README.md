@@ -1027,6 +1027,30 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 
 ---
 
+## 📅 Day 39 – Functional Interfaces in Java  
+**(Date: 29-Jan-2026)**
+
+### 📝 Topics Covered
+
+- Understood the concept of **Functional Interfaces** and their role in enabling lambda expressions.
+- Learned the purpose of the `@FunctionalInterface` annotation and its compile-time safety benefits.
+- Explored **built-in functional interfaces** from `java.util.function`:
+  - `Predicate<T>` for boolean conditions
+  - `Function<T, R>` for data transformation
+  - `Consumer<T>` for performing actions
+  - `Supplier<T>` for providing values
+- Implemented **custom functional interfaces** for domain-specific operations.
+- Practiced **lambda expressions vs anonymous classes** and identified when to use each.
+- Learned **functional interface composition** using `andThen()`, `compose()`, `and()`, `or()`, and `negate()`.
+- Used **method references** as a clean alternative to lambda expressions.
+- Combined functional interfaces with **Streams API** for real-world data processing.
+
+🔗 **Code:**  
+👉 [Day 39 - Functional Interfaces]()
+
+---
+
+
 
 
 
