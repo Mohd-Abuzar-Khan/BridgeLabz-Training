@@ -1000,7 +1000,7 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Compared **imperative vs functional programming** styles using real examples.
 
 🔗 **Code:**  
-👉 [Day 37 - Java 8 Features & Lambda Expressions]()
+👉 [Day 37 - Java 8 Features & Lambda Expressions](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/lamda)
 
 ---
 
