@@ -1,4 +1,4 @@
-package com.lamda.samrthomelighting;
+package com.lambda.samrthomelighting;
 
 public class SmartHomeLightingSystem {
 

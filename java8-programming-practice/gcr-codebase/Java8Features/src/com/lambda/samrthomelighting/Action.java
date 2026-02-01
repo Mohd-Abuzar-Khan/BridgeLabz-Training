@@ -1,4 +1,4 @@
-package com.lamda.samrthomelighting;
+package com.lambda.samrthomelighting;
 @FunctionalInterface
 interface Action {
     void execute();
