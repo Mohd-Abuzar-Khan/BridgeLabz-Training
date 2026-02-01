@@ -1071,6 +1071,31 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 41 – Smart City Transport Management System (Java 8 Use Case)
+**(Date: 29-Jan-2026)**
+
+### 📝 Topics & Concepts Applied
+
+- **Lambda Expressions & Method References**  
+  Used for filtering, sorting transport schedules (earliest time, lowest fare), quick logging, and invoking utility methods cleanly.
+
+- **Interfaces with Default & Static Methods**  
+  `TransportService` provides shared default behaviors like `printServiceDetails()`, while static methods (e.g., distance calculation) handle common utilities.
+
+- **Stream API & forEach()**  
+  Streams process real-time passenger and service data, while `forEach()` dynamically updates dashboards with live schedules.
+
+- **Collectors for Data Analysis**  
+  Applied `groupingBy()` for route-wise passengers, `partitioningBy()` for peak vs non-peak trips, and `summarizingDouble()` for fare statistics.
+
+- **Functional & Marker Interfaces**  
+  `FareCalculator` functional interface enables flexible fare logic using lambdas, while `EmergencyService` marker interface prioritizes critical services.
+
+🔗 **Code:**
+👉 [Day 41 – Smart City Transport Management System]()
+
+---
+
 
 
 
