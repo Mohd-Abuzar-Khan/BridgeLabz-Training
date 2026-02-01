@@ -1,8 +1,0 @@
-*.metadata
-*.classpath
-*.class
-*.project
-*.settings
-
-bin
-module-info.java
