@@ -1096,6 +1096,33 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 42 – Design Principles & Design Patterns in Java
+**(Date: 01-Feb-2026)**
+
+### 📝 Topics Covered
+
+- **Design Principles (SOLID)**  
+  Studied **Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion** to build maintainable, scalable, and testable applications.
+
+- **Other Core Principles**  
+  Explored **DRY (Don’t Repeat Yourself)**, **KISS (Keep It Simple)**, and **YAGNI (You Aren’t Gonna Need It)** to reduce complexity and avoid over-engineering.
+
+- **Creational Design Patterns**  
+  Learned patterns like **Singleton**, **Factory Method**, and **Builder** for controlled object creation and flexibility in system design.
+
+- **Structural Design Patterns**  
+  Understood **Adapter**, **Decorator**, and **Facade** patterns to simplify interfaces, extend behavior, and integrate incompatible components.
+
+- **Behavioral Design Patterns**  
+  Covered **Strategy**, **Observer**, and **Command** patterns to handle communication, algorithms, and event-driven behavior efficiently.
+
+🔗 **Code:**
+👉 [Day 42 – Design Principles & Design Patterns in Java]()
+
+---
+
+
+
 
 
 
