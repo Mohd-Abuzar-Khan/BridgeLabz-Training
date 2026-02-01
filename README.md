@@ -1047,7 +1047,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 ---
 
 ### 📅 Day 40 – Collectors in Java 8
-**(Date: 29-Jan-2026)**
+**(Date: 30-Jan-2026)**
 
 ### 📝 Topics Covered
 
@@ -1072,7 +1072,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 ---
 
 ## 📅 Day 41 – Smart City Transport Management System (Java 8 Use Case)
-**(Date: 29-Jan-2026)**
+**(Date: 31-Jan-2026)**
 
 ### 📝 Topics & Concepts Applied
 
