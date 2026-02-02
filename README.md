@@ -126,6 +126,20 @@ BridgeLabz-Training/
 
 ---
 
+### 🔹 Week 5 & 6: Data Handeling and Java 8 Features
+
+| Day | Topics Covered                                   | Code Link |
+|----:|--------------------------------------------------|-----------|
+| 30  | CSV                                        | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/JavaIOStreams/src/com/csv) |
+| 31  | JSON                                       | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/JavaIOStreams/src/com/json) |
+| 32  | Lambda Function                            | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/lambda)) |
+| 33  | Functional Interface                       | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/functionalinterface) |
+| 34  | Stream Api                                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/streamapi) |
+| 35  | Collectors                                 | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/collectors) |
+| 36  | Workshop on Java 8                         | [View Code](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based) |
+
+---
+
 ## Daily Overview
 
 ## 📅 Day 1 – Git & GitHub Setup  
