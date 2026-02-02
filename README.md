@@ -1023,7 +1023,7 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
 - Combined functional interfaces with **Streams API** for real-world data processing.
 
 🔗 **Code:**  
-👉 [Day 38 - Functional Interfaces]()
+👉 [Day 38 - Functional Interfaces](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/functionalinterface)
 
 ---
 
@@ -1042,7 +1042,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 - Explored **parallel streams**, their performance benefits, and when to avoid them
 
 🔗 **Code:**  
-👉 [Day 39 - Streams API in Java]()
+👉 [Day 39 - Streams API in Java](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/streamapi)
 
 ---
 
@@ -1067,7 +1067,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
   Collectors offer ready-made reductions that make stream-based code concise, readable, and maintainable.
 
 🔗 **Code:**  
-👉 [Day 40 - Collectors in Java 8]()
+👉 [Day 40 - Collectors in Java 8](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/collectors)
 
 ---
 
