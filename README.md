@@ -1135,6 +1135,28 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 43 – Multithreading & Concurrency in Java  
+**(Date: 02-Feb-2026)**
+
+### 📝 Topics Covered
+
+- Understood the **need for multithreading** and how it improves performance and responsiveness in CPU-intensive and I/O-bound applications.
+- Learned different ways to **create threads**: extending `Thread`, implementing `Runnable`, and using `Callable` with `Future`.
+- Explored **thread lifecycle states**: New, Runnable, Running, Waiting/Blocked, and Terminated.
+- Studied **synchronization** to handle shared resources and avoid race conditions using `synchronized` methods and blocks.
+- Understood **inter-thread communication** using `wait()`, `notify()`, and `notifyAll()`.
+- Learned common **concurrency problems** such as deadlock, starvation, and livelock.
+- Introduced **Executor Framework** (`ExecutorService`, thread pools) for efficient thread management.
+- Explored **thread-safe collections** and basic concepts of `volatile` and atomic operations.
+- Compared **single-threaded vs multi-threaded** execution with real-world examples (banking, ticket booking, logging systems).
+
+
+🔗 **Code:**  
+👉 [Day 43 – Multithreading & Concurrency in Java]()
+
+---
+
+
 
 
 
