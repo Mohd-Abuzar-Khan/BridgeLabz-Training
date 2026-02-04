@@ -1,0 +1,6 @@
+/.metadata/
+*.class
+*.classpath
+*.settings
+*.project
+JavaDesignPatterns/src/module-info.java
