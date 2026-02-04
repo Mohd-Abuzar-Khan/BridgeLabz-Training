@@ -566,21 +566,14 @@ BridgeLabz-Training/
 
 ### 📝 Topics Covered
 
-- Applied **core Data Structures** to practical problems.
-- Focused on **efficient structure selection** and logical implementation.
+- Applied **fundamental data structures** to solve real-world problems with optimized logic.
+- Strengthened decision-making for **choosing the right structure** based on performance needs.
 
-#### Scenario-Based DSA Implemented
-1. **BookShelf – Library Organizer**
-   - `HashMap + LinkedList` for genre-wise book management.
-   - Efficient insert/delete operations.
+#### Scenario-Based Implementations
 
-2. **BrowserBuddy – Tab History Manager**
-   - `Doubly Linked List` for back/forward navigation.
-   - `Stack` for recently closed tabs restoration.
-
-3. **AmbulanceRoute – Emergency Navigation**
-   - `Circular Linked List` for rotating through hospital units.
-   - Dynamically remove unavailable units.
+- **BookShelf – Library Organizer:** Used `HashMap + LinkedList` for genre-based storage with fast insertions and deletions.  
+- **BrowserBuddy – Tab History Manager:** Implemented a `Doubly Linked List` for seamless back/forward navigation and a `Stack` to restore closed tabs.  
+- **AmbulanceRoute – Emergency Navigation:** Leveraged a `Circular Linked List` to rotate hospital units efficiently and handle dynamic removals.
 
 🔗 **Code:**  
 👉 [Day 22 - Scenario-Based Data Structures](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/scenario)
@@ -590,31 +583,17 @@ BridgeLabz-Training/
 ## 📅 Day 23 – Advanced Scenario-Based DSA Problems  
 **(Date: 10-Jan-2026)**
 
-### 📝 Topics Covered
+ Implemented **Stacks, Queues, HashMaps, Priority Queues, and Doubly Linked Lists** in practical system designs.
+- Emphasized **efficient data flow, traversal, and state management**.
+- Enhanced **interview-focused problem-solving** through scenario-based implementations.
 
-- Applied **Queues, Stacks, HashMaps, Priority Queues, and Doubly Linked Lists** to real-world systems.
-- Focused on **efficient data handling, traversal, and state management**.
-- Strengthened **interview-oriented problem-solving** using scenario-driven design.
+#### Scenario-Based Implementations
 
-#### Scenario-Based DSA Implemented
+- **CallCenter – Customer Queue Manager:** Combined `Queue` for call handling, `PriorityQueue` for VIP escalation, and `HashMap` for tracking call frequency to ensure balanced processing.  
 
-4. **CallCenter – Customer Queue Manager**
-   - `Queue` for managing incoming customer calls.
-   - `PriorityQueue` for handling VIP customers.
-   - `HashMap` to track call frequency per customer.
-   - Ensured fair processing with priority handling.
+- **TrainCompanion – Compartment Navigation System:** Modeled compartments using a `Doubly Linked List`, enabling bidirectional traversal with dynamic add/remove operations and quick neighbor lookup.  
 
-5. **TrainCompanion – Compartment Navigation System**
-   - `Doubly Linked List` to model train compartments.
-   - Enabled forward and backward traversal.
-   - Supported dynamic insertion and removal of compartments.
-   - Displayed adjacent compartments for quick navigation decisions.
-
-6. **TextEditor – Undo/Redo Functionality**
-   - `Stack` to track user actions (insert, delete, format).
-   - Implemented **Undo** using the primary stack.
-   - Maintained a separate stack for **Redo** operations.
-   - Simulated real-world editor behavior with action history.
+- **TextEditor – Undo/Redo Functionality:** Used dual `Stack` structures to manage action history, supporting reliable undo and redo operations similar to modern editors.
 
 🔗 **Code:**  
 👉 [Day 23 - Advanced Scenario-Based DSA](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/scenario)
@@ -626,39 +605,17 @@ BridgeLabz-Training/
 
 ### 📝 Topics Covered
 
-- Implemented **story-driven, real-world Java applications** using OOP principles.
-- Integrated **Classes, Objects, Constructors, Interfaces, Operators, and Access Modifiers**.
-- Strengthened **system design thinking** and interview readiness through complex scenarios.
+- Built **story-driven Java applications** applying core OOP principles.
+- Worked with **classes, objects, constructors, interfaces, operators, and access modifiers** to design scalable systems.
+- Improved **system design mindset** and interview readiness through structured, real-world scenarios.
 
-#### Scenario-Based OOP Implemented
+#### Scenario-Based OOP Implementations
 
-1. **HomeNest – Smart Home Device Manager**
-   - Base `Device` class with common attributes and behavior.
-   - Subclasses: `Light`, `Camera`, `Thermostat`, `Lock`.
-   - `IControllable` interface for device operations.
-   - Used constructors for device registration.
-   - Applied encapsulation to protect device state.
-   - Implemented polymorphic `reset()` behavior.
-   - Used operators for energy usage calculations.
-   - Secured firmware logs using access modifiers.
+- **HomeNest – Smart Home Device Manager:** Designed a base `Device` class with subclasses (`Light`, `Camera`, `Thermostat`, `Lock`) and an `IControllable` interface. Applied encapsulation for device security and polymorphism for reset behavior while using operators to calculate energy usage.
 
-2. **BudgetWise – Personal Finance Tracker**
-   - `Transaction` and `Budget` classes for financial modeling.
-   - `IAnalyzable` interface for reports and overspend detection.
-   - Constructors for customizable monthly budgets.
-   - Used operators for net savings calculation.
-   - Applied encapsulation to restrict expense modification.
-   - Implemented inheritance: `MonthlyBudget`, `AnnualBudget`.
-   - Used polymorphism for different report formats.
+- **BudgetWise – Personal Finance Tracker:** Modeled finances with `Transaction` and `Budget` classes alongside an `IAnalyzable` interface. Leveraged inheritance (`Monthly`, `Annual`) and polymorphism for reporting, while operators handled savings calculations and encapsulation protected expense data.
 
-3. **GameBox – Mobile Game Distribution Platform**
-   - `Game` and `User` classes for game management.
-   - `IDownloadable` interface for download and demo features.
-   - Constructors for free and paid games.
-   - Applied operators for seasonal discounts.
-   - Used encapsulation to protect user-owned data.
-   - Implemented inheritance: `ArcadeGame`, `StrategyGame`.
-   - Polymorphic demo behavior based on game genre.
+- **GameBox – Mobile Game Distribution Platform:** Created `Game` and `User` classes with an `IDownloadable` interface. Implemented inheritance for game genres, polymorphic demo features, secure user data through encapsulation, and operator-based discount logic.
 
 🔗 **Code:**  
 👉 [Day 24 - Real-World OOP Java Scenarios](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
