@@ -1156,6 +1156,29 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 44 – Scenario-Based Problems on Java Streams  
+**(Date: 03-Feb-2026)**  
+
+### 📝 Topics Covered
+
+- Applied the **Streams API** to solve real-world, scenario-based problems instead of isolated coding exercises.  
+- Practiced **flatMap()** to process nested collections such as multiple contact numbers per student.  
+- Used **filter(), map(), and reduce()** to extract meaningful insights from large datasets.  
+- Implemented **groupingBy() and partitioningBy()** to categorize data efficiently.  
+- Leveraged **distinct()** and **sorted()** for data cleansing and ordered outputs.  
+- Performed **aggregation operations** like counting, averaging, and finding top results.  
+- Strengthened understanding of **stream pipelines** for writing clean and readable logic.  
+- Improved ability to choose between **map vs flatMap** based on one-to-one vs one-to-many transformations.  
+- Focused on writing **declarative code** that replaces complex nested loops.  
+- Enhanced problem-solving skills aligned with **technical interview patterns**.
+
+🔗 **Code:**  
+👉 [Day 44 – Scenario-Based Streams Practice]()
+
+---
+
+
+
 
 
 
