@@ -339,22 +339,11 @@ BridgeLabz-Training/
 
 ### 📝 Topics Covered
 
-- Implemented core Java keywords:  
-  - `this` for current object reference  
-  - `static` for class-level members  
-  - `final` to restrict modification  
-
-- Understood key distinctions:  
-  - `this` vs `static`  
-  - Instance vs static members  
-  - Final vs non-final variables  
-
-- Solved real-world, scenario-based problems:
-  - Parking Lot System  
-  - Phone Recharge Simulation  
-  - Number Guessing Game  
-  - Discount Calculation  
-- Improved debugging and problem-solving skills.
+- Implemented essential Java keywords: `this`, `static`, and `final` to manage object references, shared members, and immutability.  
+- Understood core differences between **instance vs static members** and **final vs non-final variables**.  
+- Compared practical usage of **this vs static** in object-oriented design.  
+- Applied concepts through scenario-based projects such as **Parking Lot System, Phone Recharge Simulation, Number Guessing Game,** and **Discount Calculator**.  
+- Strengthened debugging ability and structured problem-solving approach.
 
 🔗 Code Link:
 👉 [Day 11 – Keywords & Scenario-Based Programs](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-code-base/JavaOopsConcepts/src/com/objectmodeling/levelone)
@@ -473,33 +462,11 @@ BridgeLabz-Training/
 
 ### 📝 Topics Covered
 
-- Studied **Stack (LIFO)**:
-  - Core operations: `push`, `pop`, `peek`
-  - Use cases: recursion, undo/redo, expression evaluation
-  - Implemented **Balanced Parentheses Checker**
-  - Complexity: **O(n)** time, **O(n)** space
-
-- Learned **Queue (FIFO)**:
-  - Operations: `offer`, `poll`, `peek`
-  - Implementations: `LinkedList`, `PriorityQueue`, `ArrayDeque`
-  - Built **Ticket Counter Management System**
-  - Use cases: BFS, scheduling, request handling
-
-- Explored **HashMap & Hashing**:
-  - Key methods: `put`, `get`, `remove`
-  - Implemented word frequency counter
-  - Understood hashing, collisions, load factor, resizing
-  - Compared `HashMap`, `LinkedHashMap`, `ConcurrentHashMap`
-
-- Learned **hashCode() & equals()**:
-  - Role in hash-based collections
-  - Implemented custom hashing for user-defined classes
-  - Focused on collision minimization and consistency
-
-- Emphasized:
-  - Right data structure selection
-  - Internal working for interviews
-  - Clean and efficient implementations
+- Learned **Stack (LIFO)** operations (`push`, `pop`, `peek`) and implemented a **Balanced Parentheses Checker**, understanding its **O(n)** time and space complexity.  
+- Explored **Queue (FIFO)** concepts using `LinkedList`, `PriorityQueue`, and `ArrayDeque`, and built a **Ticket Counter Management System** for real-world request handling.  
+- Studied **HashMap and hashing mechanics**, including collisions, load factor, and resizing, while implementing a **word frequency counter**.  
+- Understood the importance of **hashCode() and equals()** by creating consistent hashing for user-defined classes.  
+- Compared `HashMap`, `LinkedHashMap`, and `ConcurrentHashMap`, focusing on selecting the right data structure and writing clean, efficient implementations for interview-ready code.
 
 
 🔗 **Code Link:**  
@@ -513,37 +480,15 @@ BridgeLabz-Training/
 
 ### 📝 Topics Covered
 
-Studied **7 essential sorting algorithms** in Java, focusing on concepts, complexities, and use cases:
+### 📝 Sorting Algorithms (Java)
 
-### Sorting Algorithms Overview
+- Studied **7 core sorting algorithms**, focusing on **working principles, time–space complexity, stability, and real-world use cases**.
+- Covered **simple sorts** (Bubble, Insertion, Selection) for small or nearly sorted datasets and conceptual clarity.
+- Learned **non-comparison sorting** with **Counting Sort**, effective for integers within a limited range.
+- Implemented **divide-and-conquer algorithms** like **Merge Sort** (stable, scalable) and **Quick Sort** (fast average performance).
+- Explored **Heap Sort** using heap data structures for **in-place, priority-based sorting**.
+- Emphasized **choosing the right algorithm** based on data size, constraints, and performance requirements.
 
-1. **Bubble Sort**
-   - Swaps adjacent elements repeatedly.
-   - Best for small or nearly sorted arrays.
-
-2. **Insertion Sort**
-   - Inserts elements into their correct position.
-   - Efficient for small and adaptive datasets.
-
-3. **Selection Sort**
-   - Selects the minimum element and places it at the start.
-   - Simple but inefficient for large data.
-
-4. **Counting Sort**
-   - Counts element frequencies and reconstructs the array.
-   - Works well for integers with a limited range.
-
-5. **Merge Sort**
-   - Divides array, sorts recursively, then merges.
-   - Stable and efficient for large datasets.
-
-6. **Quick Sort**
-   - Partitions array around a pivot.
-   - Very fast on average for large datasets.
-
-7. **Heap Sort**
-   - Uses heap structure to sort elements.
-   - In-place and good for priority-based sorting.
 
 ### 🔹 Comparison Table
 
@@ -568,18 +513,12 @@ Studied **7 essential sorting algorithms** in Java, focusing on concepts, comple
 
 ### 📝 Topics Covered
 
-Focused on **Java best practices** for string handling and file I/O, along with **Linear Search and Binary Search**, reinforced through practical and challenge-based problems.
-
-- Practiced efficient **string handling** and **file I/O** using standard Java utilities.
-- Applied **searching algorithms** through problem-solving and challenges.
-
-**Key Concepts**
-- **StringBuilder:** Fast, non-thread-safe string modification.
-- **StringBuffer:** Thread-safe string manipulation.
-- **FileReader:** Read text files (character-based).
-- **InputStreamReader:** Convert byte streams to character streams.
-- **Linear Search:** Simple search for small or unsorted data.
-- **Binary Search:** Fast search on sorted data.
+- Focused on **Java best practices** for efficient **string manipulation** and **file handling**.
+- Compared **StringBuilder vs StringBuffer** based on performance and thread-safety.
+- Worked with **character-based I/O** using `FileReader` and `InputStreamReader`.
+- Solved practical problems using **Linear Search** for small or unsorted datasets.
+- Implemented **Binary Search** to achieve faster lookups on sorted data.
+- Reinforced concepts through **challenge-based and real-world scenarios**.
 
 
 🔗 **Code Link:**  
@@ -593,38 +532,13 @@ Focused on **Java best practices** for string handling and file I/O, along with 
 
 ### 📝 Topics Covered
 
-Studied **Big O Notation** to analyze **time and space complexity** and evaluate algorithm performance as input size grows.
-### Algorithm Analysis & Big O – Scenario-Based Insights
-
-- Studied **Big O Notation** to evaluate time & space complexity for growing inputs.
-
-**Scenario-Based Learnings**
-
-1. **Searching Large Datasets**
-   - Linear Search → O(N)
-   - Binary Search → O(log N)  Efficient for large, sorted data
-
-2. **Sorting Algorithms**
-   - Bubble Sort → O(N²)
-   - Merge Sort → O(N log N)
-   - Quick Sort → O(N log N) Avoid Bubble Sort for large inputs
-
-3. **String Concatenation**
-   - `String` → O(N²)
-   - `StringBuilder` / `StringBuffer` → O(N) Mutable strings are faster
-
-4. **Large File Reading**
-   - `FileReader` → Slower (character-based)
-   - `InputStreamReader` → Faster (byte-based) Efficient stream selection matters
-
-5. **Fibonacci Computation**
-   - Recursive → O(2ⁿ)
-   - Iterative → O(N) Iterative is faster & memory-efficient
-
-6. **Data Structure Lookups**
-   - Array → O(N)
-   - HashSet → O(1)
-   - TreeSet → O(log N) HashSet offers fastest lookup; TreeSet maintains order
+- Learned **Big O Notation** to measure time and space complexity and predict algorithm scalability.
+- Compared **search algorithms**: Linear → `O(N)`, Binary → `O(log N)` for efficient large-data lookups.
+- Evaluated **sorting performance**: Bubble → `O(N²)` vs Merge/Quick → `O(N log N)` for better optimization.
+- Optimized **string operations** by preferring `StringBuilder/StringBuffer` (`O(N)`) over immutable `String` (`O(N²)`).
+- Improved performance in **file processing** by selecting efficient stream types.
+- Analyzed **recursive vs iterative approaches**, recognizing iterative solutions as more memory-efficient.
+- Compared **data structure lookup times**: Array `O(N)`, HashSet `O(1)`, TreeSet `O(log N)` to choose the right structure.
 
 🔗 **Code Link:**  
 👉 [*Day 20 – Runtime Analysis Implementation*](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/algorithmsanalysis)
@@ -636,9 +550,6 @@ Studied **Big O Notation** to analyze **time and space complexity** and evaluate
 
 ### 📝 Topics Covered
 
-Worked on **multiple real-world problem statements** to strengthen understanding of Object-Oriented Programming by designing scalable and modular systems.
-
-### Scenario-Based OOP Practice
 - Implemented real-world **OOP scenarios** to apply concepts practically.  
 - Used **Encapsulation** to protect data and control access.  
 - Applied **Inheritance** for logical hierarchies and code reuse.  
