@@ -1,0 +1,6 @@
+/.metadata/
+*.class
+*.settings
+*.project
+*.classpath
+ScenarioBased/src/module-info.java
