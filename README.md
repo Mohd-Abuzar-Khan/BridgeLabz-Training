@@ -480,8 +480,6 @@ BridgeLabz-Training/
 
 ### 📝 Topics Covered
 
-### 📝 Sorting Algorithms (Java)
-
 - Studied **7 core sorting algorithms**, focusing on **working principles, time–space complexity, stability, and real-world use cases**.
 - Covered **simple sorts** (Bubble, Insertion, Selection) for small or nearly sorted datasets and conceptual clarity.
 - Learned **non-comparison sorting** with **Counting Sort**, effective for integers within a limited range.
@@ -657,19 +655,13 @@ BridgeLabz-Training/
 **(Date: 14-Jan-2026)**
 
 ### 📝 Topics Covered
+
 -- Applied **type-safe Java Generics** (`<T>`, `<E>`, `<K, V>`) to build reusable and reliable components.
 - Used **generic methods and bounded wildcards** (`? extends`, `? super`) to achieve flexibility without compromising safety.
 - Avoided **raw types and type-erasure pitfalls**, ensuring cleaner and more maintainable code.
 - Designed **clean generic APIs** through real-world systems like warehouse, marketplace, and course management.
 - Implemented **scenario-driven solutions** (meal planning, resume screening) showcasing scalable, interview-ready generic designs.
 
-
-### Scenario-Based Implementations
-1. **Smart Warehouse Management System**
-2. **Dynamic Online Marketplace**
-3. **University Course Management System**
-4. **Personalized Meal Plan Generator**
-5. **AI-Driven Resume Screening System**
 
 🔗 **Code:**  
 👉 [Day 26 - Java Generics](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/dsa-practice/dsa-java-practice/gcr-codebase/JavaDsaPractice/src/com/oop)
@@ -682,6 +674,7 @@ BridgeLabz-Training/
 Focused on understanding **Trees and Graphs** as core non-linear data structures used in complex problem solving and system design.
 
 ### 📝 Topics Covered
+
 - **Trees**
   - Concept of hierarchical data representation.
   - Key terminology: root, parent, child, leaf, depth, height.
@@ -694,16 +687,6 @@ Focused on understanding **Trees and Graphs** as core non-linear data structures
   - Types: Directed vs Undirected, Weighted vs Unweighted.
   - Graph representations: Adjacency List and Adjacency Matrix.
   - Conceptual understanding of graph traversal (BFS, DFS).
-
-### Real-World Sorting Scenarios
-
-#### 1. **EventManager – Ticket Price Optimizer (Quick Sort)**
-- Sorts millions of unsorted ticket prices.
-- Displays top 50 cheapest or costliest tickets.
-
-#### 2. **ExamCell – Student Rank Generator (Merge Sort)**
-- Merges scores from multiple exam centers.
-- Generates accurate, state-level rank lists.
 
   
 🔗 **Code:**  
