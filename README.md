@@ -1028,17 +1028,17 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
-## 📅 Day 45 – Basics of DBMS  
+## 📅 Day 45 – Indexing in MySQL  
 **(Date: 05-Feb-2026)**  
 
 ### 📝 Topics Covered
 
-- Learned core **DBMS concepts** and how databases ensure efficient, secure, and structured data management compared to file systems.  
-- Understood **Relational Database design**, including tables, schemas, primary keys, and foreign keys to maintain data integrity.  
-- Practiced **CRUD operations** using SQL (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) for effective data manipulation.  
-- Explored **Normalization** to reduce redundancy and improve database efficiency.  
-- Studied **ACID properties** to understand how databases guarantee reliable and consistent transactions.  
-- Built a foundational understanding of **indexing, transactions, and basic query techniques**, preparing for advanced topics like joins and query optimization.  
+- Learned the concept of **indexing** as a data structure that speeds up data retrieval, reduces table scans, and improves filtering, sorting, and JOIN performance.  
+- Explored **types of indexes** including Primary, Unique, Regular, Composite, Full-Text, and Spatial, and understood when each should be used.  
+- Understood how **B-Tree indexes** organize data for **O(log n)** search time, enabling faster queries compared to sequential scans.  
+- Practiced **creating, viewing, and dropping indexes**, and analyzed query performance using **EXPLAIN** to identify optimization opportunities.  
+- Studied **composite indexes and the leftmost prefix rule**, along with covering indexes that eliminate the need to access the main table.  
+- Evaluated **trade-offs and best practices** — indexes improve read performance but increase storage and slow write operations, so they must be used strategically.  
 
 🔗 **Code:**  
 👉 [Day 45 – Basic of DBMS]()
