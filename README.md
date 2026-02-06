@@ -1028,6 +1028,21 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 45 – Basics of DBMS  
+
+### 📝 Topics Covered
+
+- Learned core **DBMS concepts** and how databases ensure efficient, secure, and structured data management compared to file systems.  
+- Understood **Relational Database design**, including tables, schemas, primary keys, and foreign keys to maintain data integrity.  
+- Practiced **CRUD operations** using SQL (`SELECT`, `INSERT`, `UPDATE`, `DELETE`) for effective data manipulation.  
+- Explored **Normalization** to reduce redundancy and improve database efficiency.  
+- Studied **ACID properties** to understand how databases guarantee reliable and consistent transactions.  
+- Built a foundational understanding of **indexing, transactions, and basic query techniques**, preparing for advanced topics like joins and query optimization.  
+
+🔗 **Code:**  
+👉 [Day 45 – Basic of DBMS]()
+
+---
 
 
 
