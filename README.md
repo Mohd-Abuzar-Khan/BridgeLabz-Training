@@ -1045,6 +1045,22 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 46 – MySQL Queries & Data Retrieval  
+
+### 📝 Topics Covered
+
+- Practiced writing **core SQL queries** including `SELECT`, `INSERT`, `UPDATE`, and `DELETE` to efficiently manage relational data.  
+- Mastered **filtering techniques** using `WHERE`, `BETWEEN`, `IN`, `LIKE`, and logical operators for precise data retrieval.  
+- Learned **sorting and limiting results** with `ORDER BY`, `LIMIT`, and pagination concepts for scalable applications.  
+- Explored **aggregate functions** such as `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()` along with `GROUP BY` and `HAVING` for data analysis.  
+- Implemented **JOIN operations** (INNER, LEFT, RIGHT) to combine data across multiple tables and support real-world relational queries.  
+- Strengthened query performance awareness by writing **optimized, readable SQL** aligned with industry best practices.  
+
+🔗 **Code:**  
+👉 [Day 46 – MySQL Queries & Data Retrieval  ]()
+
+
+
 
 
 
