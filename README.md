@@ -1046,7 +1046,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 ---
 
 ## 📅 Day 46 – MySQL Queries & Data Retrieval  
-
+**(Date: 06-Feb-2026)**  
 ### 📝 Topics Covered
 
 - Practiced writing **core SQL queries** including `SELECT`, `INSERT`, `UPDATE`, and `DELETE` to efficiently manage relational data.  
@@ -1059,8 +1059,21 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 🔗 **Code:**  
 👉 [Day 46 – MySQL Queries & Data Retrieval  ]()
 
+---
 
+## 📅 Day 47 – Basics of JDBC (Java Database Connectivity)
+**(Date: 07-Feb-2026)**  
+### 📝 Topics Covered
 
+- Understood **JDBC architecture** and how Java applications interact with databases using drivers and APIs.  
+- Learned the **JDBC workflow**: loading the driver, establishing a connection, creating statements, executing queries, and closing resources.  
+- Practiced connecting Java to **MySQL** using `DriverManager` and managing credentials securely.  
+- Executed SQL operations through **Statement** and **PreparedStatement**, emphasizing protection against SQL injection.  
+- Retrieved and processed data using **ResultSet** while mapping database records to Java objects.  
+- Followed best practices like **try-with-resources** for automatic resource management and improved application stability.  
+
+🔗 **Code:**  
+👉 [Day 47 – Basics of JDBC (Java Database Connectivity) ]()
 
 
 
