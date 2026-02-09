@@ -17,10 +17,7 @@ This week focused on writing **clean, scalable, and production-ready Java code**
 - Applied **DRY (Don’t Repeat Yourself)** to eliminate redundant code  
 - Followed **KISS (Keep It Simple)** to improve readability and reduce unnecessary complexity  
 - Learned **YAGNI (You Aren’t Gonna Need It)** to avoid premature optimization  
-- Understood how strong design principles directly improve **scalability, testing, and long-term maintainability**
-
-🔗 **Code:**  
-Week 7 Day 01 – Design Principles  
+- Understood how strong design principles directly improve **scalability, testing, and long-term maintainability** 
 
 ---
 
@@ -47,7 +44,7 @@ Week 7 Day 01 – Design Principles
 - Connected patterns to **real-world architecture and interview scenarios**
 
 🔗 **Code:**  
-Week 7 Day 02 – Design Patterns  
+[Week 7 Day 02 – Design Patterns](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaDesignPatterns/src/com/casestudy/librarymanagementsystem)
 
 ---
 
@@ -66,7 +63,7 @@ Week 7 Day 02 – Design Patterns
 - Compared **single-threaded vs multi-threaded models** using practical examples  
 
 🔗 **Code:**  
-Week 7 Day 03 – Multithreading & Concurrency  
+[Week 7 Day 03 – Multithreading & Concurrency](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaMultithreadingConcepts/src/com) 
 
 ---
 
