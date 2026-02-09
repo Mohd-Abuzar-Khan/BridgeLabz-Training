@@ -1,0 +1,7 @@
+/.metadata/
+*.classpath
+*.project
+*.settings
+MySQLConcepts/src/module-info.java
+
+MySQLConcepts/bin/
