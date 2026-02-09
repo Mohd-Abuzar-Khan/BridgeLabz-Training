@@ -1,0 +1,215 @@
+
+Exercise 2: Transaction Management
+=================================
+
+Objective:
+Implement a banking system with:
+• Transfer money between accounts (use transactions)
+• Check balance
+• Transaction history
+
+
+===============================
+ADD ACCOUNTS
+===============================
+
+mysql> INSERT INTO accounts (holder_name, balance)
+    -> VALUES
+    -> ('Aarav Sharma', 25000.00),
+    -> ('Vivaan Gupta', 18000.00),
+    -> ('Aditya Verma', 32000.00),
+    -> ('Ananya Singh', 27000.00),
+    -> ('Ishita Patel', 15000.00),
+    -> ('Rohan Mehta', 22000.00),
+    -> ('Sneha Reddy', 19500.00),
+    -> ('Karan Malhotra', 28000.00),
+    -> ('Neha Kapoor', 21000.00),
+    -> ('Arjun Nair', 35000.00);
+
+Query OK, 10 rows affected
+
+
+mysql> SELECT * FROM accounts;
+
++------------+----------------+----------+---------------------+
+| account_id | holder_name    | balance  | created_at          |
++------------+----------------+----------+---------------------+
+| 1          | Aarav Sharma   | 25000.00 | YYYY-MM-DD HH:MM:SS |
+| 2          | Vivaan Gupta   | 18000.00 | YYYY-MM-DD HH:MM:SS |
+| 3          | Aditya Verma   | 32000.00 | YYYY-MM-DD HH:MM:SS |
+| 4          | Ananya Singh   | 27000.00 | YYYY-MM-DD HH:MM:SS |
+| 5          | Ishita Patel   | 15000.00 | YYYY-MM-DD HH:MM:SS |
+| 6          | Rohan Mehta    | 22000.00 | YYYY-MM-DD HH:MM:SS |
+| 7          | Sneha Reddy    | 19500.00 | YYYY-MM-DD HH:MM:SS |
+| 8          | Karan Malhotra | 28000.00 | YYYY-MM-DD HH:MM:SS |
+| 9          | Neha Kapoor    | 21000.00 | YYYY-MM-DD HH:MM:SS |
+| 10         | Arjun Nair     | 35000.00 | YYYY-MM-DD HH:MM:SS |
++------------+----------------+----------+---------------------+
+
+
+===============================
+CHECK BALANCE
+===============================
+
+mysql> SELECT holder_name, balance
+    -> FROM accounts
+    -> WHERE account_id = 1;
+
++--------------+----------+
+| holder_name  | balance  |
++--------------+----------+
+| Aarav Sharma | 25000.00 |
++--------------+----------+
+
+
+===============================
+TRANSFER MONEY USING TRANSACTION
+===============================
+
+mysql> START TRANSACTION;
+Query OK
+
+mysql> UPDATE accounts
+    -> SET balance = balance - 2000
+    -> WHERE account_id = 1;
+Query OK, 1 row affected
+
+mysql> UPDATE accounts
+    -> SET balance = balance + 2000
+    -> WHERE account_id = 2;
+Query OK, 1 row affected
+
+mysql> INSERT INTO transactions(from_account, to_account, amount, status)
+    -> VALUES (1, 2, 2000, 'SUCCESS');
+Query OK, 1 row affected
+
+mysql> COMMIT;
+Query OK
+
+
+mysql> SELECT account_id, holder_name, balance FROM accounts WHERE account_id IN (1,2);
+
++------------+--------------+----------+
+| account_id | holder_name  | balance  |
++------------+--------------+----------+
+| 1          | Aarav Sharma | 23000.00 |
+| 2          | Vivaan Gupta | 20000.00 |
++------------+--------------+----------+
+
+
+===============================
+STORED PROCEDURE FOR TRANSFER
+===============================
+
+DELIMITER $$
+
+CREATE PROCEDURE transfer_money(
+    IN sender_id INT,
+    IN receiver_id INT,
+    IN transfer_amount DECIMAL(12,2)
+)
+BEGIN
+    DECLARE sender_balance DECIMAL(12,2);
+
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        INSERT INTO transactions(from_account, to_account, amount, status)
+        VALUES(sender_id, receiver_id, transfer_amount, 'FAILED');
+    END;
+
+    START TRANSACTION;
+
+    SELECT balance
+    INTO sender_balance
+    FROM accounts
+    WHERE account_id = sender_id
+    FOR UPDATE;
+
+    IF sender_balance >= transfer_amount THEN
+
+        UPDATE accounts
+        SET balance = balance - transfer_amount
+        WHERE account_id = sender_id;
+
+        UPDATE accounts
+        SET balance = balance + transfer_amount
+        WHERE account_id = receiver_id;
+
+        INSERT INTO transactions(from_account, to_account, amount, status)
+        VALUES(sender_id, receiver_id, transfer_amount, 'SUCCESS');
+
+        COMMIT;
+    ELSE
+        ROLLBACK;
+        INSERT INTO transactions(from_account, to_account, amount, status)
+        VALUES(sender_id, receiver_id, transfer_amount, 'FAILED');
+    END IF;
+
+END$$
+
+DELIMITER ;
+
+Query OK, 0 rows affected
+
+
+===============================
+CALL PROCEDURE (TRANSFERS)
+===============================
+
+mysql> CALL transfer_money(1, 4, 7000);
+Query OK
+
+mysql> CALL transfer_money(3, 6, 7000);
+Query OK
+
+mysql> CALL transfer_money(4, 9, 17000);
+Query OK
+
+
+mysql> SELECT account_id, holder_name, balance FROM accounts;
+
++------------+----------------+----------+
+| account_id | holder_name    | balance  |
++------------+----------------+----------+
+| 1          | Aarav Sharma   | 16000.00 |
+| 2          | Vivaan Gupta   | 20000.00 |
+| 3          | Aditya Verma   | 25000.00 |
+| 4          | Ananya Singh   | 17000.00 |
+| 5          | Ishita Patel   | 15000.00 |
+| 6          | Rohan Mehta    | 29000.00 |
+| 7          | Sneha Reddy    | 19500.00 |
+| 8          | Karan Malhotra | 28000.00 |
+| 9          | Neha Kapoor    | 38000.00 |
+| 10         | Arjun Nair     | 35000.00 |
++------------+----------------+----------+
+
+
+===============================
+TRANSACTION HISTORY
+===============================
+
+mysql> SELECT * FROM transactions;
+
++--------+--------------+------------+---------+---------------------+---------+
+| txn_id | from_account | to_account | amount  | txn_time            | status  |
++--------+--------------+------------+---------+---------------------+---------+
+| 1      | 1            | 2          | 2000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
+| 2      | 1            | 4          | 7000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
+| 3      | 3            | 6          | 7000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
+| 4      | 4            | 9          | 17000.00| YYYY-MM-DD HH:MM:SS | SUCCESS |
++--------+--------------+------------+---------+---------------------+---------+
+
+
+-- View history of a specific account
+
+mysql> SELECT *
+    -> FROM transactions
+    -> WHERE from_account = 1 OR to_account = 1;
+
++--------+--------------+------------+---------+---------------------+---------+
+| txn_id | from_account | to_account | amount  | txn_time            | status  |
++--------+--------------+------------+---------+---------------------+---------+
+| 1      | 1            | 2          | 2000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
+| 2      | 1            | 4          | 7000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
++--------+--------------+------------+---------+---------------------+---------+
