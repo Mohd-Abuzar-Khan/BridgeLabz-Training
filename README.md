@@ -1073,7 +1073,9 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 - Followed best practices like **try-with-resources** for automatic resource management and improved application stability.  
 
 🔗 **Code:**  
-👉 [Day 47 – Basics of JDBC (Java Database Connectivity) ]()
+👉 [Day 47 – Basics of JDBC ]()
+
+---
 
 
 
