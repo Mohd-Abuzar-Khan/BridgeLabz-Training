@@ -1,105 +1,131 @@
+-- =====================================================
+-- BANKING SYSTEM (TRANSACTION MANAGEMENT)
+-- =====================================================
 
-Exercise 2: Transaction Management
-=================================
-
-Objective:
-Implement a banking system with:
-• Transfer money between accounts (use transactions)
-• Check balance
-• Transaction history
+-- STEP 1: Create Database
+CREATE DATABASE IF NOT EXISTS banking_system;
+USE banking_system;
 
 
-===============================
-ADD ACCOUNTS
-===============================
+-- =====================================================
+-- STEP 2: Create Tables
+-- =====================================================
 
-mysql> INSERT INTO accounts (holder_name, balance)
-    -> VALUES
-    -> ('Aarav Sharma', 25000.00),
-    -> ('Vivaan Gupta', 18000.00),
-    -> ('Aditya Verma', 32000.00),
-    -> ('Ananya Singh', 27000.00),
-    -> ('Ishita Patel', 15000.00),
-    -> ('Rohan Mehta', 22000.00),
-    -> ('Sneha Reddy', 19500.00),
-    -> ('Karan Malhotra', 28000.00),
-    -> ('Neha Kapoor', 21000.00),
-    -> ('Arjun Nair', 35000.00);
+CREATE TABLE accounts (
+    account_id INT PRIMARY KEY AUTO_INCREMENT,
+    holder_name VARCHAR(100) NOT NULL,
+    balance DECIMAL(12,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-Query OK, 10 rows affected
+CREATE TABLE transactions (
+    txn_id INT PRIMARY KEY AUTO_INCREMENT,
+    from_account INT,
+    to_account INT,
+    amount DECIMAL(12,2),
+    txn_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(20),
+    FOREIGN KEY (from_account) REFERENCES accounts(account_id),
+    FOREIGN KEY (to_account) REFERENCES accounts(account_id)
+);
 
+SHOW TABLES;
 
-mysql> SELECT * FROM accounts;
-
-+------------+----------------+----------+---------------------+
-| account_id | holder_name    | balance  | created_at          |
-+------------+----------------+----------+---------------------+
-| 1          | Aarav Sharma   | 25000.00 | YYYY-MM-DD HH:MM:SS |
-| 2          | Vivaan Gupta   | 18000.00 | YYYY-MM-DD HH:MM:SS |
-| 3          | Aditya Verma   | 32000.00 | YYYY-MM-DD HH:MM:SS |
-| 4          | Ananya Singh   | 27000.00 | YYYY-MM-DD HH:MM:SS |
-| 5          | Ishita Patel   | 15000.00 | YYYY-MM-DD HH:MM:SS |
-| 6          | Rohan Mehta    | 22000.00 | YYYY-MM-DD HH:MM:SS |
-| 7          | Sneha Reddy    | 19500.00 | YYYY-MM-DD HH:MM:SS |
-| 8          | Karan Malhotra | 28000.00 | YYYY-MM-DD HH:MM:SS |
-| 9          | Neha Kapoor    | 21000.00 | YYYY-MM-DD HH:MM:SS |
-| 10         | Arjun Nair     | 35000.00 | YYYY-MM-DD HH:MM:SS |
-+------------+----------------+----------+---------------------+
+-- Expected Output:
+-- +-------------------+
+-- | Tables_in_banking |
+-- +-------------------+
+-- | accounts          |
+-- | transactions      |
+-- +-------------------+
 
 
-===============================
-CHECK BALANCE
-===============================
 
-mysql> SELECT holder_name, balance
-    -> FROM accounts
-    -> WHERE account_id = 1;
+-- =====================================================
+-- STEP 3: Insert Accounts
+-- =====================================================
 
-+--------------+----------+
-| holder_name  | balance  |
-+--------------+----------+
-| Aarav Sharma | 25000.00 |
-+--------------+----------+
+INSERT INTO accounts (holder_name, balance)
+VALUES
+('Aarav Sharma', 25000.00),
+('Vivaan Gupta', 18000.00),
+('Aditya Verma', 32000.00),
+('Ananya Singh', 27000.00),
+('Ishita Patel', 15000.00),
+('Rohan Mehta', 22000.00),
+('Sneha Reddy', 19500.00),
+('Karan Malhotra', 28000.00),
+('Neha Kapoor', 21000.00),
+('Arjun Nair', 35000.00);
 
+SELECT * FROM accounts;
 
-===============================
-TRANSFER MONEY USING TRANSACTION
-===============================
-
-mysql> START TRANSACTION;
-Query OK
-
-mysql> UPDATE accounts
-    -> SET balance = balance - 2000
-    -> WHERE account_id = 1;
-Query OK, 1 row affected
-
-mysql> UPDATE accounts
-    -> SET balance = balance + 2000
-    -> WHERE account_id = 2;
-Query OK, 1 row affected
-
-mysql> INSERT INTO transactions(from_account, to_account, amount, status)
-    -> VALUES (1, 2, 2000, 'SUCCESS');
-Query OK, 1 row affected
-
-mysql> COMMIT;
-Query OK
+-- Expected Output:
+-- +------------+----------------+----------+---------------------+
+-- | account_id | holder_name    | balance  | created_at          |
+-- +------------+----------------+----------+---------------------+
+-- | 1          | Aarav Sharma   | 25000.00 | (timestamp)         |
+-- | 2          | Vivaan Gupta   | 18000.00 | (timestamp)         |
+-- | ...                                                     |
+-- | 10         | Arjun Nair     | 35000.00 |
+-- +------------+----------------+----------+---------------------+
 
 
-mysql> SELECT account_id, holder_name, balance FROM accounts WHERE account_id IN (1,2);
 
-+------------+--------------+----------+
-| account_id | holder_name  | balance  |
-+------------+--------------+----------+
-| 1          | Aarav Sharma | 23000.00 |
-| 2          | Vivaan Gupta | 20000.00 |
-+------------+--------------+----------+
+-- =====================================================
+-- STEP 4: Check Balance
+-- =====================================================
+
+SELECT holder_name, balance
+FROM accounts
+WHERE account_id = 1;
+
+-- Expected Output:
+-- +--------------+----------+
+-- | holder_name  | balance  |
+-- +--------------+----------+
+-- | Aarav Sharma | 25000.00 |
+-- +--------------+----------+
 
 
-===============================
-STORED PROCEDURE FOR TRANSFER
-===============================
+
+-- =====================================================
+-- STEP 5: Manual Transaction Example
+-- =====================================================
+
+START TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 2000
+WHERE account_id = 1;
+
+UPDATE accounts
+SET balance = balance + 2000
+WHERE account_id = 2;
+
+INSERT INTO transactions(from_account, to_account, amount, status)
+VALUES (1, 2, 2000, 'SUCCESS');
+
+COMMIT;
+
+
+SELECT account_id, holder_name, balance
+FROM accounts
+WHERE account_id IN (1,2);
+
+-- Expected Output:
+-- +------------+--------------+----------+
+-- | account_id | holder_name  | balance  |
+-- +------------+--------------+----------+
+-- | 1          | Aarav Sharma | 23000.00 |
+-- | 2          | Vivaan Gupta | 20000.00 |
+-- +------------+--------------+----------+
+
+
+
+-- =====================================================
+-- STEP 6: Stored Procedure for Safe Transfer
+-- =====================================================
 
 DELIMITER $$
 
@@ -111,6 +137,7 @@ CREATE PROCEDURE transfer_money(
 BEGIN
     DECLARE sender_balance DECIMAL(12,2);
 
+    -- If anything fails → rollback
     DECLARE EXIT HANDLER FOR SQLEXCEPTION
     BEGIN
         ROLLBACK;
@@ -140,8 +167,10 @@ BEGIN
         VALUES(sender_id, receiver_id, transfer_amount, 'SUCCESS');
 
         COMMIT;
+
     ELSE
         ROLLBACK;
+
         INSERT INTO transactions(from_account, to_account, amount, status)
         VALUES(sender_id, receiver_id, transfer_amount, 'FAILED');
     END IF;
@@ -150,66 +179,58 @@ END$$
 
 DELIMITER ;
 
-Query OK, 0 rows affected
 
 
-===============================
-CALL PROCEDURE (TRANSFERS)
-===============================
+-- =====================================================
+-- STEP 7: Execute Transfers
+-- =====================================================
 
-mysql> CALL transfer_money(1, 4, 7000);
-Query OK
-
-mysql> CALL transfer_money(3, 6, 7000);
-Query OK
-
-mysql> CALL transfer_money(4, 9, 17000);
-Query OK
+CALL transfer_money(1, 4, 7000);
+CALL transfer_money(3, 6, 7000);
+CALL transfer_money(4, 9, 17000);
 
 
-mysql> SELECT account_id, holder_name, balance FROM accounts;
+SELECT account_id, holder_name, balance FROM accounts;
 
-+------------+----------------+----------+
-| account_id | holder_name    | balance  |
-+------------+----------------+----------+
-| 1          | Aarav Sharma   | 16000.00 |
-| 2          | Vivaan Gupta   | 20000.00 |
-| 3          | Aditya Verma   | 25000.00 |
-| 4          | Ananya Singh   | 17000.00 |
-| 5          | Ishita Patel   | 15000.00 |
-| 6          | Rohan Mehta    | 29000.00 |
-| 7          | Sneha Reddy    | 19500.00 |
-| 8          | Karan Malhotra | 28000.00 |
-| 9          | Neha Kapoor    | 38000.00 |
-| 10         | Arjun Nair     | 35000.00 |
-+------------+----------------+----------+
+-- Expected Output:
+-- +------------+----------------+----------+
+-- | account_id | holder_name    | balance  |
+-- +------------+----------------+----------+
+-- | 1          | Aarav Sharma   | 16000.00 |
+-- | 3          | Aditya Verma   | 25000.00 |
+-- | 6          | Rohan Mehta    | 29000.00 |
+-- | 9          | Neha Kapoor    | 38000.00 |
+-- +------------+----------------+----------+
 
 
-===============================
-TRANSACTION HISTORY
-===============================
 
-mysql> SELECT * FROM transactions;
+-- =====================================================
+-- STEP 8: Transaction History
+-- =====================================================
 
-+--------+--------------+------------+---------+---------------------+---------+
-| txn_id | from_account | to_account | amount  | txn_time            | status  |
-+--------+--------------+------------+---------+---------------------+---------+
-| 1      | 1            | 2          | 2000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
-| 2      | 1            | 4          | 7000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
-| 3      | 3            | 6          | 7000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
-| 4      | 4            | 9          | 17000.00| YYYY-MM-DD HH:MM:SS | SUCCESS |
-+--------+--------------+------------+---------+---------------------+---------+
+SELECT * FROM transactions;
+
+-- Expected Output:
+-- +--------+--------------+------------+---------+---------------------+---------+
+-- | txn_id | from_account | to_account | amount  | txn_time            | status  |
+-- +--------+--------------+------------+---------+---------------------+---------+
+-- | 1      | 1            | 2          | 2000.00 | (timestamp)         | SUCCESS |
+-- | 2      | 1            | 4          | 7000.00 | (timestamp)         | SUCCESS |
+-- | 3      | 3            | 6          | 7000.00 | (timestamp)         | SUCCESS |
+-- | 4      | 4            | 9          | 17000.00| (timestamp)         | SUCCESS |
+-- +--------+--------------+------------+---------+---------------------+---------+
+
 
 
 -- View history of a specific account
 
-mysql> SELECT *
-    -> FROM transactions
-    -> WHERE from_account = 1 OR to_account = 1;
+SELECT *
+FROM transactions
+WHERE from_account = 1 OR to_account = 1;
 
-+--------+--------------+------------+---------+---------------------+---------+
-| txn_id | from_account | to_account | amount  | txn_time            | status  |
-+--------+--------------+------------+---------+---------------------+---------+
-| 1      | 1            | 2          | 2000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
-| 2      | 1            | 4          | 7000.00 | YYYY-MM-DD HH:MM:SS | SUCCESS |
-+--------+--------------+------------+---------+---------------------+---------+
+-- Expected Output:
+-- Shows all transfers involving account 1
+
+-- =====================================================
+-- END OF SCRIPT
+-- =====================================================

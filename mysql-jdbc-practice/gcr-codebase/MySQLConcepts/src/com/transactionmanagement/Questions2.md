@@ -1,4 +1,4 @@
-# 🏦 SQL Challenge: Transaction Management System
+# Transaction Management System
 
 ## Difficulty: Medium → Advanced  
 **Topics:** SQL Transactions, Stored Procedures, ACID Properties, Database Design  
