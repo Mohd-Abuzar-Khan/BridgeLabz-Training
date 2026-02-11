@@ -1,0 +1,204 @@
+-- =====================================================
+-- LIBRARY MANAGEMENT SYSTEM (WITH COMMENTED OUTPUT)
+-- =====================================================
+
+-- STEP 1: Create Database
+CREATE DATABASE IF NOT EXISTS library_system;
+USE library_system;
+
+-- =====================================================
+-- STEP 2: Create Tables
+-- =====================================================
+
+CREATE TABLE books (
+    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100) NOT NULL,
+    author VARCHAR(100),
+    category VARCHAR(50),
+    total_copies INT,
+    available_copies INT
+);
+
+CREATE TABLE student (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE borrow_records (
+    record_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    book_id INT,
+    borrow_date DATE,
+    due_date DATE,
+    return_date DATE,
+    fine DECIMAL(6,2) DEFAULT 0,
+    FOREIGN KEY (student_id) REFERENCES student(student_id),
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
+);
+
+-- Display tables
+SHOW TABLES;
+
+-- Expected Output:
+-- +-------------------+
+-- | Tables_in_library |
+-- +-------------------+
+-- | books             |
+-- | borrow_records    |
+-- | student           |
+-- +-------------------+
+
+-- =====================================================
+-- STEP 3: Insert Books
+-- =====================================================
+
+INSERT INTO books(title, author, category, total_copies, available_copies) VALUES
+('Clean Code','Robert Martin','Programming',5,5),
+('Atomic Habits','James Clear','Self Help',4,4),
+('Database Systems','Korth','Education',3,3),
+('The Pragmatic Programmer','Andrew Hunt','Programming',4,4),
+('Introduction to Algorithms','Thomas H. Cormen','Computer Science',3,3),
+('Design Patterns','Erich Gamma','Programming',2,2),
+('Database System Concepts','Abraham Silberschatz','Database',6,6),
+('Harry Potter','J.K. Rowling','Fiction',10,10),
+('The Hobbit','J.R.R. Tolkien','Fantasy',7,7),
+('Artificial Intelligence: A Modern Approach','Stuart Russell','AI',3,3);
+
+SELECT * FROM books;
+
+-- Expected Output:
+-- +---------+------------------------------------------+----------------------+------------------+---------------+------------------+
+-- | book_id | title                                    | author               | category         | total_copies | available_copies |
+-- +---------+------------------------------------------+----------------------+------------------+---------------+------------------+
+-- | 1       | Clean Code                               | Robert Martin        | Programming      | 5            | 5                |
+-- | 2       | Atomic Habits                            | James Clear          | Self Help        | 4            | 4                |
+-- | 3       | Database Systems                         | Korth                | Education        | 3            | 3                |
+-- | ...                                                                                                   |
+-- +---------+------------------------------------------+----------------------+------------------+---------------+------------------+
+
+-- =====================================================
+-- STEP 4: Insert Students
+-- =====================================================
+
+INSERT INTO student(name, email) VALUES
+('Zary','zary@gmail.com'),
+('Itachi','itachi@gmail.com'),
+('Rahul Sharma','rahul@gmail.com'),
+('Ananya Gupta','ananya@gmail.com'),
+('Arjun Verma','arjun@gmail.com'),
+('Sneha Iyer','sneha@gmail.com'),
+('Kabir Khan','kabir@gmail.com');
+
+SELECT * FROM student;
+
+-- Expected Output:
+-- +------------+---------------+--------------------+
+-- | student_id | name          | email              |
+-- +------------+---------------+--------------------+
+-- | 1          | Zary          | zary@gmail.com     |
+-- | 2          | Itachi        | itachi@gmail.com   |
+-- | 3          | Rahul Sharma  | rahul@gmail.com    |
+-- | ...                                               |
+-- +------------+---------------+--------------------+
+
+-- =====================================================
+-- STEP 5: Borrow Book Stored Procedure
+-- =====================================================
+
+DELIMITER //
+
+CREATE PROCEDURE borrow_book(
+    IN p_student_id INT,
+    IN p_book_id INT,
+    IN p_days INT
+)
+BEGIN
+    DECLARE available INT;
+
+    START TRANSACTION;
+
+    SELECT available_copies
+    INTO available
+    FROM books
+    WHERE book_id = p_book_id
+    FOR UPDATE;
+
+    IF available <= 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'No copies available';
+    ELSE
+        INSERT INTO borrow_records(student_id, book_id, borrow_date, due_date)
+        VALUES(p_student_id, p_book_id, CURDATE(),
+               DATE_ADD(CURDATE(), INTERVAL p_days DAY));
+
+        UPDATE books
+        SET available_copies = available_copies - 1
+        WHERE book_id = p_book_id;
+
+        COMMIT;
+    END IF;
+END //
+
+DELIMITER ;
+
+-- =====================================================
+-- STEP 6: Borrow Books
+-- =====================================================
+
+CALL borrow_book(1, 1, 4);
+CALL borrow_book(2, 1, 9);
+CALL borrow_book(3, 3, 7);
+
+SELECT * FROM borrow_records;
+
+-- Expected Output:
+-- +-----------+------------+---------+-------------+------------+-------------+------+
+-- | record_id | student_id | book_id | borrow_date | due_date   | return_date | fine |
+-- +-----------+------------+---------+-------------+------------+-------------+------+
+-- | 1         | 1          | 1       | 2026-02-11  | 2026-02-15 | NULL        | 0.00 |
+-- | 2         | 2          | 1       | 2026-02-11  | 2026-02-20 | NULL        | 0.00 |
+-- | 3         | 3          | 3       | 2026-02-11  | 2026-02-18 | NULL        | 0.00 |
+-- +-----------+------------+---------+-------------+------------+-------------+------+
+
+SELECT book_id, title, available_copies FROM books;
+
+-- Expected Output:
+-- +---------+-------------------+------------------+
+-- | book_id | title             | available_copies |
+-- +---------+-------------------+------------------+
+-- | 1       | Clean Code        | 3                |
+-- | 3       | Database Systems  | 2                |
+-- +---------+-------------------+------------------+
+
+-- =====================================================
+-- STEP 7: Search Stored Procedure
+-- =====================================================
+
+DELIMITER //
+
+CREATE PROCEDURE search_books(
+    IN p_title VARCHAR(100),
+    IN p_author VARCHAR(100),
+    IN p_category VARCHAR(50),
+    IN p_available_only BOOLEAN
+)
+BEGIN
+    SELECT * FROM books
+    WHERE (p_title IS NULL OR title LIKE CONCAT('%', p_title, '%'))
+      AND (p_author IS NULL OR author = p_author)
+      AND (p_category IS NULL OR category = p_category)
+      AND (p_available_only = FALSE OR available_copies > 0);
+END //
+
+DELIMITER ;
+
+-- Example Search
+CALL search_books(NULL, NULL, 'Programming', FALSE);
+
+-- Expected Output:
+-- Returns all books with category = Programming
+
+-- =====================================================
+-- END OF SCRIPT
+-- =====================================================
