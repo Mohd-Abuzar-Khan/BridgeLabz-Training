@@ -1,69 +1,29 @@
-EMPLOYEE MANAGEMENT SYSTEM
-MySQL Command Line Practice : Question 1
---------------------------------------------
+-- =====================================================
+-- EMPLOYEE MANAGEMENT SYSTEM (WITH COMMENTED OUTPUT)
+-- =====================================================
 
-Login to MySQL
---------------------------------------------
-mysql -u root -p
-Enter password: *********
-
-Welcome to the MySQL monitor.
-Server version: MySQL Community Server
-
-
---------------------------------------------
-STEP 1: Create Database
---------------------------------------------
-
-Command:
-CREATE DATABASE employee_db;
-
-Output:
-Query OK, 1 row affected
-
-
---------------------------------------------
-STEP 2: Show Databases
---------------------------------------------
-
-Incorrect Command:
-SHOW DATABASE;
-
-Error:
-ERROR 1064 (42000): You have an error in your SQL syntax
-
-Correct Command:
-SHOW DATABASES;
-
-Output:
-+--------------------+
-| Database           |
-+--------------------+
-| employee_db        |
-| information_schema |
-| mydb               |
-| mysql              |
-| performance_schema |
-| sakila             |
-| sys                |
-| world              |
-+--------------------+
-
-
---------------------------------------------
-STEP 3: Use Database
---------------------------------------------
-
-Command:
+-- STEP 1: Create Database
+CREATE DATABASE IF NOT EXISTS employee_db;
 USE employee_db;
 
-Output:
-Database changed
+-- Verify Database
+SHOW DATABASES;
+
+-- Expected Output:
+-- +--------------------+
+-- | Database           |
+-- +--------------------+
+-- | employee_db        |
+-- | information_schema |
+-- | mysql              |
+-- | performance_schema |
+-- | sys                |
+-- +--------------------+
 
 
---------------------------------------------
-STEP 4: Create Employees Table
---------------------------------------------
+-- =====================================================
+-- STEP 2: Create Employees Table
+-- =====================================================
 
 CREATE TABLE employees (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -74,159 +34,117 @@ CREATE TABLE employees (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-Output:
-Query OK, 0 rows affected
-
-
---------------------------------------------
-STEP 5: View Table Structure
---------------------------------------------
-
-Command:
 DESC employees;
 
-(Note: Command must be executed on a single line)
+-- Expected Output:
+-- +------------+---------------+------+-----+-------------------+-------------------+
+-- | Field      | Type          | Null | Key | Default           | Extra             |
+-- +------------+---------------+------+-----+-------------------+-------------------+
+-- | id         | int           | NO   | PRI | NULL              | auto_increment    |
+-- | name       | varchar(100)  | NO   |     | NULL              |                   |
+-- | email      | varchar(100)  | YES  | UNI | NULL              |                   |
+-- | department | varchar(50)   | YES  |     | NULL              |                   |
+-- | salary     | decimal(10,2) | YES  |     | NULL              |                   |
+-- | created_at | timestamp     | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+-- +------------+---------------+------+-----+-------------------+-------------------+
 
---------------------------------------------
-STEP 6: View All Employees (Initially Empty)
---------------------------------------------
 
-Command:
+-- =====================================================
+-- STEP 3: Check Empty Table
+-- =====================================================
+
 SELECT * FROM employees;
 
-Output:
-Empty set
+-- Expected Output:
+-- Empty set
 
 
---------------------------------------------
-STEP 7: Insert Employee Records
---------------------------------------------
+-- =====================================================
+-- STEP 4: Insert Employee Records
+-- =====================================================
 
-Command:
 INSERT INTO employees (name, email, department, salary)
-VALUES ('Rahul Sharma', 'rahul@gmail.com', 'Engineering', 55000);
+VALUES 
+('Rahul Sharma', 'rahul@gmail.com', 'Engineering', 55000),
+('Ananya Verma', 'ananya@gmail.com', 'HR', 45000);
 
-Output:
-Query OK, 1 row affected
-
-
-Command:
-INSERT INTO employees (name, email, department, salary)
-VALUES ('Ananya Verma', 'ananya@gmail.com', 'HR', 45000);
-
-Output:
-Query OK, 1 row affected
-
-
---------------------------------------------
-STEP 8: View All Employees
---------------------------------------------
-
-Command:
 SELECT * FROM employees;
 
-Output:
-+----+--------------+------------------+-------------+----------+---------------------+
-| id | name         | email            | department  | salary   | created_at          |
-+----+--------------+------------------+-------------+----------+---------------------+
-|  1 | Rahul Sharma | rahul@gmail.com  | Engineering | 55000.00 | 2026-02-09 12:45:58 |
-|  2 | Ananya Verma | ananya@gmail.com | HR          | 45000.00 | 2026-02-09 12:46:07 |
-+----+--------------+------------------+-------------+----------+---------------------+
+-- Expected Output:
+-- +----+--------------+------------------+-------------+----------+---------------------+
+-- | id | name         | email            | department  | salary   | created_at          |
+-- +----+--------------+------------------+-------------+----------+---------------------+
+-- | 1  | Rahul Sharma | rahul@gmail.com  | Engineering | 55000.00 | (auto timestamp)    |
+-- | 2  | Ananya Verma | ananya@gmail.com | HR          | 45000.00 | (auto timestamp)    |
+-- +----+--------------+------------------+-------------+----------+---------------------+
 
 
---------------------------------------------
-STEP 9: Search Employee by Name
---------------------------------------------
+-- =====================================================
+-- STEP 5: Search Employee by Name
+-- =====================================================
 
-Command:
 SELECT * FROM employees
 WHERE name LIKE '%Rahul%';
 
-Output:
-+----+--------------+-----------------+-------------+----------+---------------------+
-| id | name         | email           | department  | salary   | created_at          |
-+----+--------------+-----------------+-------------+----------+---------------------+
-|  1 | Rahul Sharma | rahul@gmail.com | Engineering | 55000.00 | 2026-02-09 12:45:58 |
-+----+--------------+-----------------+-------------+----------+---------------------+
+-- Expected Output:
+-- Returns only Rahul Sharma
 
 
---------------------------------------------
-STEP 10: View Selected Columns
---------------------------------------------
+-- =====================================================
+-- STEP 6: View Selected Columns
+-- =====================================================
 
-Command:
 SELECT id, name, salary FROM employees;
 
-Output:
-+----+--------------+----------+
-| id | name         | salary   |
-+----+--------------+----------+
-|  1 | Rahul Sharma | 55000.00 |
-|  2 | Ananya Verma | 45000.00 |
-+----+--------------+----------+
+-- Expected Output:
+-- +----+--------------+----------+
+-- | id | name         | salary   |
+-- +----+--------------+----------+
+-- | 1  | Rahul Sharma | 55000.00 |
+-- | 2  | Ananya Verma | 45000.00 |
+-- +----+--------------+----------+
 
 
---------------------------------------------
-STEP 11: Update Employee Salary
---------------------------------------------
+-- =====================================================
+-- STEP 7: Update Employee Salary
+-- =====================================================
 
-Incorrect Command:
-UPDATE employees WHERE id = 1;
-
-Error:
-ERROR 1064 (42000): SQL syntax error
-
-Correct Command:
 UPDATE employees
 SET salary = 60000
 WHERE id = 2;
 
-Output:
-Query OK, 1 row affected
-Rows matched: 1  Changed: 1
-
-
---------------------------------------------
-STEP 12: Verify Updated Record
---------------------------------------------
-
-Command:
 SELECT * FROM employees WHERE id = 2;
 
-Output:
-+----+--------------+------------------+------------+----------+---------------------+
-| id | name         | email            | department | salary   | created_at          |
-+----+--------------+------------------+------------+----------+---------------------+
-|  2 | Ananya Verma | ananya@gmail.com | HR         | 60000.00 | 2026-02-09 12:46:07 |
-+----+--------------+------------------+------------+----------+---------------------+
+-- Expected Output:
+-- +----+--------------+------------------+------------+----------+---------------------+
+-- | id | name         | email            | department | salary   | created_at          |
+-- +----+--------------+------------------+------------+----------+---------------------+
+-- | 2  | Ananya Verma | ananya@gmail.com | HR         | 60000.00 | (timestamp)         |
+-- +----+--------------+------------------+------------+----------+---------------------+
 
 
---------------------------------------------
-STEP 13: Delete Employee
---------------------------------------------
+-- =====================================================
+-- STEP 8: Delete Employee
+-- =====================================================
 
-Command:
 DELETE FROM employees
 WHERE id = 2;
 
-Output:
-Query OK, 1 row affected
-
-
---------------------------------------------
-STEP 14: Final Table State
---------------------------------------------
-
-Command:
 SELECT * FROM employees;
 
-Output:
-+----+--------------+-----------------+-------------+----------+---------------------+
-| id | name         | email           | department  | salary   | created_at          |
-+----+--------------+-----------------+-------------+----------+---------------------+
-|  1 | Rahul Sharma | rahul@gmail.com | Engineering | 55000.00 | 2026-02-09 12:45:58 |
-+----+--------------+-----------------+-------------+----------+---------------------+
+-- Expected Output:
+-- +----+--------------+-----------------+-------------+----------+---------------------+
+-- | id | name         | email           | department  | salary   | created_at          |
+-- +----+--------------+-----------------+-------------+----------+---------------------+
+-- | 1  | Rahul Sharma | rahul@gmail.com | Engineering | 55000.00 | (timestamp)         |
+-- +----+--------------+-----------------+-------------+----------+---------------------+
 
---------------------------------------------
-END OF FILE
---------------------------------------------
+
+-- =====================================================
+-- FINAL STATE CHECK
+-- =====================================================
+
+SELECT * FROM employees;
+
+-- System now contains only one employee.
+-- =====================================================
