@@ -1041,7 +1041,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 - Evaluated **trade-offs and best practices** — indexes improve read performance but increase storage and slow write operations, so they must be used strategically.  
 
 🔗 **Code:**  
-👉 [Day 45 – Basic of DBMS]()
+👉 [Day 45 – Basic of DBMS](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/mysql-jdbc-practice/mysql-jdbc-practice/gcr-codebase)
 
 ---
 
