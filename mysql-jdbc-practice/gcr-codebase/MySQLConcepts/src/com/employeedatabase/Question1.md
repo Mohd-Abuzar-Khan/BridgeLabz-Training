@@ -1,4 +1,4 @@
-# 🧩 SQL Challenge: Employee Management System
+#Employee Management System
 
 ## Difficulty: Easy → Medium  
 **Topics:** SQL, CRUD Operations, Database Design  
