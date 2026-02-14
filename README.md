@@ -1125,6 +1125,23 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+## 📅 Day 48 – Practice on Stream API  
+**(Date: 10-Feb-2026)**  
+
+### 📝 Topics Covered
+- Practiced building **real-world data processing pipelines** using `Stream` API  
+- Strengthened understanding of **filter, map, flatMap, distinct, sorted, limit**  
+- Used **terminal operations** like `collect`, `reduce`, `count`, `min`, `max`, `findFirst`, `anyMatch`  
+- Implemented advanced **Collectors**: `groupingBy`, `partitioningBy`, `mapping`, `counting`, `summarizingInt`  
+- Compared **sequential vs parallel streams** and analyzed performance trade-offs  
+- Solved scenario-based problems (student records, order management, employee salary analysis)  
+ 
+
+🔗 **Code:**  
+👉 [Day 48 –  Practice on Stream API  ]()
+
+---
+
 
 
 
