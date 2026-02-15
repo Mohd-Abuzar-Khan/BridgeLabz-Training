@@ -1142,9 +1142,12 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 
 ---
 
+# 📅 Day 49 – Practice on Collections Question 
+**(Date: 12-Feb-2026)**  
 
 
 
+---
 
 
 
