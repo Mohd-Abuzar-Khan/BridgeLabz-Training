@@ -1145,7 +1145,13 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 # 📅 Day 49 – Practice on Collections Question 
 **(Date: 12-Feb-2026)**  
 
-
+### 📝 Topics Covered
+- Introduction to **Spring Boot** and how it simplifies Spring application development  
+- Understood **Auto-Configuration** and dependency management via `spring-boot-starter`  
+- Set up a project using **Spring Initializr**  
+- Learned project structure (`controller`, `service`, `repository`, `model`)  
+- Configured application properties using `application.properties`  
+- Ran embedded **Tomcat server** and tested APIs locally  
 
 ---
 
