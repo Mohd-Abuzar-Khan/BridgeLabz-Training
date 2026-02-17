@@ -1153,6 +1153,8 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 - Configured application properties using `application.properties`  
 - Ran embedded **Tomcat server** and tested APIs locally  
 
+🔗 **Code:**  
+👉 [Day 49 –  Practice on Collections Question ]()
 ---
 
 
