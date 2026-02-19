@@ -1157,6 +1157,22 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 👉 [Day 49 –  Practice on Collections Question ]()
 ---
 
+## 📅 Day 50 – Case Study: Quantity Measurement App (Feature 1 – Measure in Feet)  
+**Date:** 16-Feb-2026  
+
+### 📝 Topics Covered
+- Designed a **Quantity Measurement Application** following clean architecture principles  
+- Implemented **Feature 1: Measure and Compare Length in Feet**  
+- Applied **OOP concepts** (Encapsulation, Abstraction, Validation)  
+- Ensured proper **input validation and edge case handling**  
+- Practiced writing **testable and extensible code structure**  
+- Followed interview-oriented approach for **real-world problem modeling**
+
+🔗 **Code:**  
+👉 [Day 50 – Case Study: Quantity Measurement App - Feature 1 ]()
+---
+---
+
 
 
 ✨ *More updates coming as I continue my Java & DSA journey...*
