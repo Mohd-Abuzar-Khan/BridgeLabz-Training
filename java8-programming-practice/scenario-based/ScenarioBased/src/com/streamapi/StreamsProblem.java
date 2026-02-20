@@ -138,9 +138,9 @@ public class StreamsProblem {
         
         List<String> arr = List.of("Apple", "Cat", "Dog", "Man", "Pigeon", "buton");
         
-        System.out.println(arr.stream().collect(Collectors.groupingBy(c -> c.length(), 
-        		Collectors.counting())
-        		).entrySet().stream().collect(null));
+//        System.out.println(arr.stream().collect(Collectors.groupingBy(c -> c.length(), 
+//        		Collectors.counting())
+//        		).entrySet().stream().collect(null));
         
         
     }

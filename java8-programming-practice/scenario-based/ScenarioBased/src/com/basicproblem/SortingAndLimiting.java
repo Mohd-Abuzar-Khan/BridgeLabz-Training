@@ -55,7 +55,13 @@ public class SortingAndLimiting {
 		System.out.println("-------------------------------------->");
 		System.out.println(students.stream().sorted((a,b) -> a.name.compareTo(b.name)).map(x -> x.name).collect(Collectors.toList()));
 		System.out.println(students.stream().sorted((a,b) -> a.rank - b.rank).map(x -> x.name).collect(Collectors.toList()));
-
+		
+		
+		String str = "trhaaaaklm";
+		
+		if(str.matches(".*(([a-zA-z])\\3)*.")) {
+			System.out.println("Yes");
+		}
 		
 	}
 }

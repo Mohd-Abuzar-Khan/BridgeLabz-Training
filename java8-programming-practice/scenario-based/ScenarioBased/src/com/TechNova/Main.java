@@ -13,7 +13,7 @@ public class Main {
 		
 		if (serviceCharge(details[3]).equals("Yes")) { service = (double) Double.parseDouble(details[4]) * 0.15; }
 		
-		if (discountApplied(details[2]).equals("Yes")) { discount = (double) Double.parseDouble(details[4]) * 0.5; }
+		if (discountApplied(details[2]).equals("Yes")) { discount = (double) Double.parseDouble(details[4]) * 0.05; }
 
 		finalAmount = (Double.parseDouble(details[4]) + service) - discount;
 		

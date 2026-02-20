@@ -99,24 +99,24 @@ public class TrailUtil {
 		
 		return ans;
 	}
-
-	public Map<String, List<Trail>> getTopTrailsByRegion(int n){
-		
-		Map<String, List<Trail>> topRegion = new HashMap<>();
-		
-		for(Trail t : listOfTaril) {
-			if(t.region.equals(region)) {
-				ans.add(t);
-			}
-		}
-		
-		return topRegion;
-		
-	}
-
-	public Map<String, String> getDifficultyStats() {
-		
-	}
+//
+//	public Map<String, List<Trail>> getTopTrailsByRegion(int n){
+//		
+//		Map<String, List<Trail>> topRegion = new HashMap<>();
+//		
+//		for(Trail t : listOfTaril) {
+//			if(t.region.equals(region)) {
+//				ans.add(t);
+//			}
+//		}
+//		
+//		return topRegion;
+//		
+//	}
+//
+//	public Map<String, String> getDifficultyStats() {
+//		
+//	}
 
 	
 	

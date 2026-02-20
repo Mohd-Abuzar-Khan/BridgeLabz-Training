@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CodeCrafts {
 	
-	public static Submission validateSubmission(String submissionCode) {
+	public static void validateSubmission(String submissionCode) {
 		
 		
 		String pattern = "^CC-([A-Z]{3}[0-9]{2}[A-Z])-([A-Z]{5}[0-9]{2})-";
@@ -46,11 +46,7 @@ public class CodeCrafts {
 		
 		String input = sc.nextLine();
 		
-		Submission submit  = validateSubmission(input);
-		
-		if (submit == null) {
-			System.out.println("Invalid Submission Format");
-		}
+
 	}
 
 }
