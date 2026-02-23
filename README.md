@@ -1121,7 +1121,7 @@ Learned the fundamentals of the **Java Streams API** and how it enables function
 - Followed best practices like **try-with-resources** for automatic resource management and improved application stability.  
 
 🔗 **Code:**  
-👉 [Day 47 – Basics of JDBC ]()
+👉 [Day 47 – Basics of JDBC ](https://github.com/Mohd-Abuzar-Khan/BridgeLabz-Training/tree/mysql-jdbc-practice/mysql-jdbc-practice/gcr-codebase/JDBCProject)
 
 ---
 
